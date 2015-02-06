@@ -18,8 +18,6 @@ obj/
 *.user
 *.unityproj
 *.booproj
-Assets/_Scenes/Test.unity
-Assets/_Scenes/Test.unity.meta
 
 # ============ #
 # OS generated #
