@@ -18,6 +18,8 @@ obj/
 *.user
 *.unityproj
 *.booproj
+Test.unity
+Test.unity.meta
 
 # ============ #
 # OS generated #
