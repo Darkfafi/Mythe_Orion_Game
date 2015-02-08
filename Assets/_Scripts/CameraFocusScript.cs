@@ -7,12 +7,13 @@ public class CameraFocusScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (target);
 		if(target != null){
-			transform.position = new Vector3 (target.transform.position.x, transform.position.y, target.transform.position.z - 5);
+			Vector3 dis = target.transform.position - transform.position;
+			float moveSpeed = dis.magnitude;
+			Debug.Log(moveSpeed / 1.7f);
+			transform.position = Vector3.MoveTowards(transform.position,new Vector3(target.transform.position.x,target.transform.position.y + 7,target.transform.position.z - 5),moveSpeed / 1.7f * Time.deltaTime);
 		}
 	}
-
 	public static void SetTarget(GameObject givenTarget){
 		target = givenTarget;
 	}

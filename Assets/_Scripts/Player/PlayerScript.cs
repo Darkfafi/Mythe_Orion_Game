@@ -13,6 +13,6 @@ public class PlayerScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		moveScript.Move (MovementScript.BACKWARD, 1);
+		moveScript.Move (moveScript.LEFT, 5);
 	}
 }
