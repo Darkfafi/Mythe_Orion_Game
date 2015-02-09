@@ -5,52 +5,58 @@ public class ControllerScript : MonoBehaviour {
 
 	private Vector3 topStartPos; // start positie van waar je begint met besturen
 
-	private bool controlling = false; //bepaald of je aan het "Touchen" bent. Dit kan beter met een simpele onTouch check denk ik.
-
+	private bool controllingLeft = false; //bepaald of je aan het "Touchen" bent. op de linker kant
+	private bool controllingRight = false; // bepaald of je aan het "Touchen" bent. op de rechter kant
 	private GameObject target; //wie er word bestuurd.
 
+	private int leftTouch = -1; //welke touch de movement bestuurt
+	private int rightTouch = -1; // welke touch de ... bestuurt
+
 	void Update(){
-		/* // De multi touch code om die vraagt of touch is begonnen en of het aan het linker deel van het scherm is.
-		foreach(Touch touch in Input.touches){
-			if(touch.phase == TouchPhase.Began || touch.position.x < Screen.width / 2){
-				Debug.Log("herro");
+		for (var i = 0; i < Input.touchCount; ++i) {
+			Touch touch = Input.GetTouch(i);
+			if (touch.phase == TouchPhase.Began) {
+				if (touch.position.x < Screen.width/2 && leftTouch == -1) {
+					target = GetComponent<CameraFocusScript> ().GetTarger ();
+					topStartPos = Input.GetTouch(i).position;
+					controllingLeft = true;
+					leftTouch = i;
+					print("touch");
+				}
+				else if (rightTouch == -1) {
+					//TODO rechter kant scherm
+				}
+			}
+			else if (touch.phase == TouchPhase.Ended){
+				print("touch ended");
+				if(i == leftTouch){
+					leftTouch = -1;
+					controllingLeft = false;
+				}
+				else if (i < leftTouch){
+					leftTouch --;
+				}
+				print(leftTouch);
 			}
 		}
-		*/
-		if(Input.GetMouseButtonDown(0)){
-
-			target = GetComponent<CameraFocusScript> ().GetTarger (); //checkt wie de camera volgt en diegene kan je besturen.
-
-			if(Input.mousePosition.x < Screen.width / 2){
-				// als het scherm word aangeraakt dan word de start positie opgeslagen zodat je altijd vanaf het midden het verschil kan berekenen (of je naar links of rechts gaat met je vinger etc).
-				topStartPos = Input.mousePosition;
-				controlling = true; 
-			}
-		}
-
-		if(Input.GetMouseButtonUp(0)){
-			controlling = false; // Als je het scherm los laat dan stopt hij met checken.
-		}
-
-		if(controlling){
+		if(controllingLeft){
 
 			float tiltVal;
+			tiltVal = Mathf.Abs(Input.GetTouch(leftTouch).position.x - topStartPos.x) * 0.02f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
 
-			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.02f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
-
-			if (Input.mousePosition.x < topStartPos.x) { 
+			if (Input.GetTouch(leftTouch).position.x < topStartPos.x) { 
 				//Left
 				target.GetComponent<MovementScript>().Move(MovementScript.LEFT,tiltVal); //ieder gameobject die kan bewegen heeft het movementScript. De controller bepaald welke kant hij op beweegt en met welke snelheid.
 
-			}else if(Input.mousePosition.x > topStartPos.x){
+			}else if(Input.GetTouch(leftTouch).position.x > topStartPos.x){
 				//Right
 				target.GetComponent<MovementScript>().Move(MovementScript.RIGHT,tiltVal);
 			}
-			tiltVal = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.02f;
+			tiltVal = Mathf.Abs(Input.GetTouch(leftTouch).position.y - topStartPos.y) * 0.02f;
 			if(Input.mousePosition.y < topStartPos.y){
 				//Down
 				target.GetComponent<MovementScript>().Move(MovementScript.BACKWARD,tiltVal);
-			}else if(Input.mousePosition.y > topStartPos.y){
+			}else if(Input.GetTouch(leftTouch).position.y > topStartPos.y){
 				//Up
 				target.GetComponent<MovementScript>().Move(MovementScript.FORWARD,tiltVal);
 			}
