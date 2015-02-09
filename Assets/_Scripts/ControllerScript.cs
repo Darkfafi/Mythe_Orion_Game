@@ -10,13 +10,7 @@ public class ControllerScript : MonoBehaviour {
 	private GameObject target; //wie er word bestuurd.
 
 	void Update(){
-		/* // De multi touch code om die vraagt of touch is begonnen en of het aan het linker deel van het scherm is.
-		foreach(Touch touch in Input.touches){
-			if(touch.phase == TouchPhase.Began || touch.position.x < Screen.width / 2){
-				Debug.Log("herro");
-			}
-		}
-		*/
+
 		if(Input.GetMouseButtonDown(0)){
 
 			target = GetComponent<CameraFocusScript> ().GetTarger (); //checkt wie de camera volgt en diegene kan je besturen.
@@ -35,25 +29,28 @@ public class ControllerScript : MonoBehaviour {
 		if(controlling){
 
 			float tiltVal;
-
+			Vector3 moveDir = new Vector3();
+			float tilt = 0;
 			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.02f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
-
+			tilt += tiltVal;
 			if (Input.mousePosition.x < topStartPos.x) { 
 				//Left
-				target.GetComponent<MovementScript>().Move(MovementScript.LEFT,tiltVal); //ieder gameobject die kan bewegen heeft het movementScript. De controller bepaald welke kant hij op beweegt en met welke snelheid.
+				moveDir = moveDir - Vector3.right * tiltVal;
 
 			}else if(Input.mousePosition.x > topStartPos.x){
 				//Right
-				target.GetComponent<MovementScript>().Move(MovementScript.RIGHT,tiltVal);
+				moveDir = moveDir + Vector3.right * tiltVal;
 			}
 			tiltVal = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.02f;
+			tilt += tiltVal;
 			if(Input.mousePosition.y < topStartPos.y){
 				//Down
-				target.GetComponent<MovementScript>().Move(MovementScript.BACKWARD,tiltVal);
+				moveDir = moveDir - Vector3.forward * tiltVal;
 			}else if(Input.mousePosition.y > topStartPos.y){
 				//Up
-				target.GetComponent<MovementScript>().Move(MovementScript.FORWARD,tiltVal);
+				moveDir = moveDir + Vector3.forward * tiltVal;
 			}
+			target.GetComponent<MovementScript>().MoveTransRotation(moveDir,tilt);
 		}
 	}
 

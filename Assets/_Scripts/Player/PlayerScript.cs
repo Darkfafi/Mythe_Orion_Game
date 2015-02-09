@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	private float movSpeed = 2f;
+	private float movSpeed = 3f;
 
 	MovementScript moveScript;
 
 	// Use this for initialization
 	void Start () {
 		moveScript = GetComponent<MovementScript> ();
-		moveScript.maxSpeed = 2f;
+		moveScript.maxSpeed = movSpeed;
 		CameraFocusScript.SetTarget(this.gameObject);
 	}
 	
