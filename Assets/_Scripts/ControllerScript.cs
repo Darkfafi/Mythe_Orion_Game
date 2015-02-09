@@ -31,7 +31,7 @@ public class ControllerScript : MonoBehaviour {
 			float tiltVal;
 			Vector3 moveDir = new Vector3();
 			float tilt = 0;
-			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.02f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
+			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.03f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
 			tilt += tiltVal;
 			if (Input.mousePosition.x < topStartPos.x) { 
 				//Left
@@ -41,7 +41,7 @@ public class ControllerScript : MonoBehaviour {
 				//Right
 				moveDir = moveDir + Vector3.right * tiltVal;
 			}
-			tiltVal = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.02f;
+			tiltVal = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.03f;
 			tilt += tiltVal;
 			if(Input.mousePosition.y < topStartPos.y){
 				//Down
