@@ -31,8 +31,11 @@ public class ControllerScript : MonoBehaviour {
 			float tiltVal;
 			Vector3 moveDir = new Vector3();
 			float tilt = 0;
+
 			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.03f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
-			tilt += tiltVal;
+
+			tilt += tiltVal; //berekend de snelheid waarin de character moet lopen aan de hand van de tilt
+
 			if (Input.mousePosition.x < topStartPos.x) { 
 				//Left
 				moveDir = moveDir - Vector3.right * tiltVal;

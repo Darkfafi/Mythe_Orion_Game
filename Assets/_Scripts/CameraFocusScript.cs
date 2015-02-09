@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CameraFocusScript : MonoBehaviour {
 
-	public GameObject controller;
+	//public GameObject controller;
 
 	private static GameObject target;
 	
