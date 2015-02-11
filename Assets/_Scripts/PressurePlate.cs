@@ -2,13 +2,13 @@
 using System.Collections;
 
 public class PressurePlate : MonoBehaviour {
-	public DoorScript doorScript;
+
+	public GameObject door;
 
 	void OnTriggerEnter(Collider other) {
 		if(other.gameObject.tag == "Player"){
-			doorScript.ChangeDoorPos ();
+			door.GetComponent<DoorScript>().ChangeDoorPos ();
 			Destroy(this.gameObject);
-			Destroy(this);
 		}
 	}
 }
