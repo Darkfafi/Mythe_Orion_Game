@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour {
+public class DoorBehavior : MonoBehaviour {
 
 	public bool doorOpen = false;
 	private bool doorMoving = false;
