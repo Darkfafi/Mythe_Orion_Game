@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ControllerScriptTouch : MonoBehaviour {
+public class JoyStickTouch : MonoBehaviour {
 
 	private Vector3 topStartPos; // start positie van waar je begint met besturen
 
@@ -18,7 +18,7 @@ public class ControllerScriptTouch : MonoBehaviour {
 			Touch touch = Input.GetTouch(i);
 			if (touch.phase == TouchPhase.Began) {
 				if (touch.position.x < Screen.width/2 && leftTouch == -1) {
-					target = GetComponent<CameraFocusScript> ().GetTarger ();
+					target = GetComponent<CameraFocus> ().GetTarger ();
 					topStartPos = Input.GetTouch(i).position;
 					controllingLeft = true;
 					leftTouch = i;
@@ -66,7 +66,7 @@ public class ControllerScriptTouch : MonoBehaviour {
 				//Up
 				moveDir = moveDir + Vector3.forward * tiltVal;
 			}
-			target.GetComponent<MovementScript>().MoveTransRotation(moveDir,tilt);
+			target.GetComponent<Movement>().MoveTransRotation(moveDir,tilt);
 		}
 	}
 

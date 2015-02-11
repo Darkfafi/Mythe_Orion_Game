@@ -1,0 +1,32 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Health : MonoBehaviour {
+
+	private int _maxHealth;
+	public int health;
+
+
+	void Start(){
+		_maxHealth = health;
+	}
+
+	public void AddHealth(int amount){
+		health += amount;
+		if(health > _maxHealth){
+			health = _maxHealth;
+		}
+	}
+
+	public void RemoveHealth(int amount){
+		health -= amount;
+		if(health <= 0){
+			health = 0;
+			HealthHitZero();
+		}
+	}
+
+	private void HealthHitZero(){
+		gameObject.SendMessage ("HealthToZero");
+	}
+}

@@ -1,24 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerScript : Creature {
+public class Player : Creature {
+
+	public GameObject[] weapons = new GameObject[]{};
+
+	private GameObject _currentWeapon;
+
 
 	// Use this for initialization
 	protected override void Start () {
 
 		base.Start ();
-		CameraFocusScript.SetTarget(this.gameObject);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
+		CameraFocus.SetTarget(this.gameObject);
 	}
 
 	protected override void SetStats ()
 	{
 		base.SetStats ();
-		_hp = 100f;
+
+		_hp = 100;
 		_moveSpeed = 3f;
 	}
 }

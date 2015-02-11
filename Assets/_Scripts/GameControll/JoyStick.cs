@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ControllerScript : MonoBehaviour {
+public class JoyStick : MonoBehaviour {
 
 	private Vector3 topStartPos; // start positie van waar je begint met besturen
 
@@ -13,7 +13,7 @@ public class ControllerScript : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0)){
 
-			target = GetComponent<CameraFocusScript> ().GetTarger (); //checkt wie de camera volgt en diegene kan je besturen.
+			target = GetComponent<CameraFocus> ().GetTarger (); //checkt wie de camera volgt en diegene kan je besturen.
 
 			if(Input.mousePosition.x < Screen.width / 2){
 				// als het scherm word aangeraakt dan word de start positie opgeslagen zodat je altijd vanaf het midden het verschil kan berekenen (of je naar links of rechts gaat met je vinger etc).
@@ -28,32 +28,32 @@ public class ControllerScript : MonoBehaviour {
 
 		if(controlling){
 
-			float tiltVal;
+			float tiltValue;
 			Vector3 moveDir = new Vector3();
 			float tilt = 0;
 
-			tiltVal = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.03f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
+			tiltValue = Mathf.Abs(Input.mousePosition.x - topStartPos.x) * 0.03f; // ziet hoe ver je vanaf het beginpunt af staat in x as. *0.02f is m reële snelheid mee te geven.
 
-			tilt += tiltVal; //berekend de snelheid waarin de character moet lopen aan de hand van de tilt
+			tilt += tiltValue; //berekend de snelheid waarin de character moet lopen aan de hand van de tilt
 
 			if (Input.mousePosition.x < topStartPos.x) { 
 				//Left
-				moveDir = moveDir - Vector3.right * tiltVal;
+				moveDir = moveDir - Vector3.right * tiltValue;
 
 			}else if(Input.mousePosition.x > topStartPos.x){
 				//Right
-				moveDir = moveDir + Vector3.right * tiltVal;
+				moveDir = moveDir + Vector3.right * tiltValue;
 			}
-			tiltVal = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.03f;
-			tilt += tiltVal;
+			tiltValue = Mathf.Abs(Input.mousePosition.y - topStartPos.y) * 0.03f;
+			tilt += tiltValue;
 			if(Input.mousePosition.y < topStartPos.y){
 				//Down
-				moveDir = moveDir - Vector3.forward * tiltVal;
+				moveDir = moveDir - Vector3.forward * tiltValue;
 			}else if(Input.mousePosition.y > topStartPos.y){
 				//Up
-				moveDir = moveDir + Vector3.forward * tiltVal;
+				moveDir = moveDir + Vector3.forward * tiltValue;
 			}
-			target.GetComponent<MovementScript>().MoveTransRotation(moveDir,tilt);
+			target.GetComponent<Movement>().MoveTransRotation(moveDir,tilt);
 		}
 	}
 
