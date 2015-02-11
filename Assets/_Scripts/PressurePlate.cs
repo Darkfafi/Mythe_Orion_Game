@@ -7,8 +7,8 @@ public class PressurePlate : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if(other.gameObject.tag == "Player"){
 			doorScript.ChangeDoorPos ();
-			/*Destroy(this.gameObject);
-			Destroy(this);*/
+			Destroy(this.gameObject);
+			Destroy(this);
 		}
 	}
 }
