@@ -11,11 +11,11 @@ public class Creature : MonoBehaviour {
 
 	//combat
 	protected GameObject _target;
-	protected float _attackDmg; //voor basis. Wapens tellen hierbij op.
+	protected int _attackDmg; //voor basis. Wapens tellen hierbij op.
 	protected float _fireRate; 
 	protected float _attackRange;
 
-	Movement moveScript;
+	protected Movement moveScript;
 
 	// Use this for initialization
 	protected virtual void Start () {
@@ -37,6 +37,10 @@ public class Creature : MonoBehaviour {
 	}
 	protected virtual void Attack(){
 
+	}
+
+	public virtual void NewTarget(GameObject target){
+		_target = target;
 	}
 
 	protected virtual void HealthToZero(){
