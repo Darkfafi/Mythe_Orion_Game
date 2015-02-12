@@ -32,20 +32,4 @@ public class BaseWeapon : MonoBehaviour{
 	public virtual void Use(GameObject target){
 
 	}
-
-	public bool CheckIfInRange(GameObject target,string tag = "BerendIsBestEenCooleGast"){
-		bool result = false;
-
-		Ray raycast = new Ray (transform.position,target.transform.position - transform.position);
-		RaycastHit hitInfo;
-		if(Physics.Raycast(raycast,out hitInfo,_range)){
-			if(hitInfo.transform.gameObject.tag == tag || tag == "BerendIsBestEenCooleGast"){
-				result = true;
-			}
-		}
-		Vector3 test = target.transform.position - transform.position;
-		test.Normalize ();
-		Debug.DrawRay(transform.position, test * _range,Color.red);
-		return result;
-	}
 }
