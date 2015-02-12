@@ -17,12 +17,12 @@ public class HealthBar : MonoBehaviour {
 
 	void Update (){
 		if (health != targetHealth.health) {
-			TakeDamage();
+			ChangeHealth();
 			health = targetHealth.health;
 		}
 	}
 
-	void TakeDamage (){
+	void ChangeHealth (){
 		targetHealthSlider.value = health;
 	}
 }
