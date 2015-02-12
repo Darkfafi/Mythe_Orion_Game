@@ -9,7 +9,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 441368}
   - 33: {fileID: 3341368}
-  - 65: {fileID: 6541368}
   - 23: {fileID: 2341368}
   m_Layer: 0
   m_Name: door
@@ -125,6 +124,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 441382}
+  - 65: {fileID: 6511418}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -370,18 +370,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 141380}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &6541368
+--- !u!65 &6511418
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141368}
+  m_GameObject: {fileID: 141382}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: .200000003, y: 3, z: 2}
+  m_Center: {x: 0, y: 1.5, z: .949999988}
 --- !u!114 &11441368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -394,6 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorOpen: 1
+  doorCollider: {fileID: 6511418}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
