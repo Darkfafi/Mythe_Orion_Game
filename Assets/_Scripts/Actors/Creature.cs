@@ -18,7 +18,7 @@ public class Creature : MonoBehaviour {
 	Movement moveScript;
 
 	// Use this for initialization
-	protected virtual void Start () {
+	protected virtual void Awake () {
 		SetStats ();
 
 		moveScript = gameObject.AddComponent<Movement> ();

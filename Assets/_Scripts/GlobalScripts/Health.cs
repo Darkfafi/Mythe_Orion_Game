@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	private int _maxHealth;
+	public int _maxHealth;
 	public int health;
 
 

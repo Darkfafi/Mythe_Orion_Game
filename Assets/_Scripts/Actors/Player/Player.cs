@@ -9,9 +9,8 @@ public class Player : Creature {
 
 
 	// Use this for initialization
-	protected override void Start () {
+	void Start () {
 
-		base.Start ();
 		CameraFocus.SetTarget(this.gameObject);
 	}
 
