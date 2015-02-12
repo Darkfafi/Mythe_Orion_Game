@@ -1,14 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DoorScript : MonoBehaviour {
+public class DoorBehavior : MonoBehaviour {
 
 	public bool doorOpen = false;
 	private bool doorMoving = false;
+	public BoxCollider doorCollider;
 
 	void Awake () {
 		if (doorOpen == true) {
 			transform.Translate(Vector3.up * 2.7f);
+			doorCollider.enabled = false;
 		}
 	}
 
@@ -18,6 +20,7 @@ public class DoorScript : MonoBehaviour {
 				transform.Translate(Vector3.up * Time.deltaTime);
 				if(transform.localPosition.y >= 2.7){
 					doorMoving = false;
+					doorCollider.enabled = false;
 				}
 			}
 			else {
@@ -31,6 +34,7 @@ public class DoorScript : MonoBehaviour {
 	public void ChangeDoorPos () {
 		if(doorOpen == true){
 			doorOpen = false;
+			doorCollider.enabled = true;
 		}
 		else {
 			doorOpen = true;

@@ -10,9 +10,8 @@ public class Player : Creature {
 	private bool _movingToEnemy = false;
 
 	// Use this for initialization
-	protected override void Start () {
+	void Start () {
 
-		base.Start ();
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
 	}
