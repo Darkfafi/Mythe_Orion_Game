@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PoisonTimer : MonoBehaviour {
+public class DOTTimer : MonoBehaviour {
 
+	public int DPS;
 	private float finishTimer = 5;
 	private float timer = 0.25f;
 	private Health health;
@@ -15,12 +16,18 @@ public class PoisonTimer : MonoBehaviour {
 		finishTimer -= Time.deltaTime;
 		timer -= Time.deltaTime;
 		if (finishTimer <= 0) {
-			health.RemoveHealth(1);
+			Damage();
 			Destroy(this);
 		}
 		if (timer <= 0) {
-			health.RemoveHealth(1);
+			Damage();
 			timer += 0.25f;
+		}
+	}
+	void Damage () {
+		health.RemoveHealth(DPS / 4);
+		if (health.health <= 0) {
+			Destroy(this);
 		}
 	}
 }

@@ -3,17 +3,12 @@ using System.Collections;
 
 public class DeathTrap : MonoBehaviour {
 
-	public int DamageType; // 0 is instadeath, 1 is poison
-	private DeathTimer DeathTimer = new DeathTimer();
-	private PoisonTimer PoisonTimer = new PoisonTimer();
+	public int DPS;
+	private DOTTimer dotTimer = new DOTTimer();
 
 	void OnTriggerEnter(Collider other) {
-		if(DamageType == 0){
-			DeathTimer = other.gameObject.AddComponent("DeathTimer") as DeathTimer;
-		}
-		else {
-			PoisonTimer = other.gameObject.AddComponent("PoisonTimer") as PoisonTimer;
-		}
+		dotTimer = other.gameObject.AddComponent("DOTTimer") as DOTTimer;
+		dotTimer.DPS = DPS;
 		//Destroy (this.gameObject);
 	}
 }
