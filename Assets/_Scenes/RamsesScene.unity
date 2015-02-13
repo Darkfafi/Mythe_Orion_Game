@@ -246,7 +246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 10
   _range: 1
-  _fireRate: 10
+  _coolDownTime: 1
 --- !u!1001 &810778786
 Prefab:
   m_ObjectHideFlags: 0
@@ -285,6 +285,14 @@ Prefab:
     - target: {fileID: 485972, guid: 7c75612413173814588d6f2d3325bffe, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473430, guid: 7c75612413173814588d6f2d3325bffe, type: 2}
+      propertyPath: _coolDownTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11473428, guid: 7c75612413173814588d6f2d3325bffe, type: 2}
+      propertyPath: _coolDownTime
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7c75612413173814588d6f2d3325bffe, type: 2}
@@ -524,7 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 10
   _range: 3
-  _fireRate: 10
+  _coolDownTime: 1
 --- !u!23 &900151295
 Renderer:
   m_ObjectHideFlags: 0

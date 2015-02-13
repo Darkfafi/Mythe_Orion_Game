@@ -5,16 +5,20 @@ public class Movement : MonoBehaviour {
 
 	public float maxSpeed = float.MaxValue;
 
+	protected bool _moveAble = true;
+
 	//een functie die laat je naar een directie toe bewegen en houd je rotatie hetzelfde.
 	public void Move(Vector3 direction,float speed){
-		Vector3 realMove;
-		realMove = direction;
-		realMove.Normalize ();
-		if (speed > maxSpeed) {
-			speed = maxSpeed;
+		if(_moveAble){
+			Vector3 realMove;
+			realMove = direction;
+			realMove.Normalize ();
+			if (speed > maxSpeed) {
+				speed = maxSpeed;
+			}
+			transform.Translate((realMove * speed) * Time.deltaTime);
+			SendMessage ("Moving");
 		}
-		transform.Translate((realMove * speed) * Time.deltaTime);
-		SendMessage ("Moving");
 	}
 
 	//Een functie die laat je naar een directie toe bewegen door er naar toe te draaien en vervolgens naar voren te lopen.

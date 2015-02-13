@@ -45,7 +45,6 @@ public class Creature : MonoBehaviour {
 
 	protected virtual void HealthToZero(){
 		Debug.Log("bleh");
+		Destroy (this.gameObject);
 	}
-
-
 }

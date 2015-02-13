@@ -3,8 +3,9 @@ using System.Collections;
 
 public class MeleeWeapon : BaseWeapon {
 
-	public override void Use (GameObject target)
+	protected override void Attack (GameObject target)
 	{
-		base.Use (target);
+		base.Attack (target);
+		target.GetComponent<Health> ().RemoveHealth (damage);
 	}
 }

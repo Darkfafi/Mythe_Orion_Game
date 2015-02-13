@@ -3,11 +3,8 @@ using System.Collections;
 
 public class BaseWeapon : MonoBehaviour{
 
-
-
-	void Start(){
-
-	}
+	private float _nextTimeUseAble;
+	private bool canUse = true; 
 
 	[SerializeField] 
 	private int _damage;  
@@ -16,7 +13,7 @@ public class BaseWeapon : MonoBehaviour{
 	private float _range;
 
 	[SerializeField] 
-	private float _fireRate;  
+	private float _coolDownTime;  
 
 
 	public int damage{
@@ -25,11 +22,18 @@ public class BaseWeapon : MonoBehaviour{
 	public float range{
 		get{return _range;}
 	}
-	public float fireRate{
-		get{return _fireRate;}
+	public float coolDownTime{
+		get{return _coolDownTime;}
 	}
 
 	public virtual void Use(GameObject target){
-
+		if(Time.time > _nextTimeUseAble){
+			Attack(target);
+		}
+	}
+	protected virtual void Attack(GameObject target){
+		canUse = false;
+		//next time usable mag pas gezet worden nadat de animatie is afgespeeld. Anders telt de animatie als cooldown. Kan pas gemaakt worden met animatie though.
+		_nextTimeUseAble = Time.time + coolDownTime;
 	}
 }
