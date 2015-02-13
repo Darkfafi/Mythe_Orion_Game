@@ -5,7 +5,6 @@ public class PoisonTimer : MonoBehaviour {
 
 	private float finishTimer = 5;
 	private float timer = 0.25f;
-	private float poisonDamage = 1;
 	private Health health;
 	
 	void Start (){
@@ -16,11 +15,11 @@ public class PoisonTimer : MonoBehaviour {
 		finishTimer -= Time.deltaTime;
 		timer -= Time.deltaTime;
 		if (finishTimer <= 0) {
-			health.RemoveHealth(poisonDamage);
+			health.RemoveHealth(1);
 			Destroy(this);
 		}
 		if (timer <= 0) {
-			health.RemoveHealth(poisonDamage);
+			health.RemoveHealth(1);
 			timer += 0.25f;
 		}
 	}
