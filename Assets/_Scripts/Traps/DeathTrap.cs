@@ -5,7 +5,7 @@ public class DeathTrap : MonoBehaviour {
 
 	public int DamageType; // 0 is instadeath, 1 is poison
 	private DeathTimer DeathTimer = new DeathTimer();
-	private DeathTimer PoisonTimer = new PoisonTimer();
+	private PoisonTimer PoisonTimer = new PoisonTimer();
 
 	void OnTriggerEnter(Collider other) {
 		if(DamageType == 0){

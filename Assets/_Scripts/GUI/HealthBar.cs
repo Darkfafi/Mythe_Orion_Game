@@ -17,8 +17,8 @@ public class HealthBar : MonoBehaviour {
 
 	void Update (){
 		if (health != targetHealth.health) {
-			ChangeHealth();
 			health = targetHealth.health;
+			ChangeHealth();
 		}
 	}
 
