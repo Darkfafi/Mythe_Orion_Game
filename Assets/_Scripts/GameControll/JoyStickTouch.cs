@@ -22,14 +22,14 @@ public class JoyStickTouch : MonoBehaviour {
 					topStartPos = Input.GetTouch(i).position;
 					controllingLeft = true;
 					leftTouch = i;
-					print("touch");
+					//print("touch");
 				}
 				else if (rightTouch == -1) {
 					//TODO rechter kant scherm
 				}
 			}
 			else if (touch.phase == TouchPhase.Ended){
-				print("touch ended");
+				//print("touch ended");
 				if(i == leftTouch){
 					leftTouch = -1;
 					controllingLeft = false;
@@ -37,7 +37,7 @@ public class JoyStickTouch : MonoBehaviour {
 				else if (i < leftTouch){
 					leftTouch --;
 				}
-				print(leftTouch);
+				//print(leftTouch);
 			}
 		}
 		if(controllingLeft){
