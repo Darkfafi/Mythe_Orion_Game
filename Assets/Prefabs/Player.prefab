@@ -65,7 +65,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &185972
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,7 +288,7 @@ MonoBehaviour:
   _coolDownTime: 1
   projectile: {fileID: 144840, guid: aa8f56cd7fffaae4484a0e3776a5eccc, type: 2}
   spawnPosition: {fileID: 167342}
-  speedProjectile: 1
+  speedProjectile: 9
 --- !u!114 &11485972
 MonoBehaviour:
   m_ObjectHideFlags: 1
