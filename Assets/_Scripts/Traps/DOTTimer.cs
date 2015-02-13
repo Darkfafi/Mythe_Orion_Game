@@ -16,12 +16,18 @@ public class DOTTimer : MonoBehaviour {
 		finishTimer -= Time.deltaTime;
 		timer -= Time.deltaTime;
 		if (finishTimer <= 0) {
-			health.RemoveHealth(DPS / 4);
+			Damage();
 			Destroy(this);
 		}
 		if (timer <= 0) {
-			health.RemoveHealth(DPS / 4);
+			Damage();
 			timer += 0.25f;
+		}
+	}
+	void Damage () {
+		health.RemoveHealth(DPS / 4);
+		if (health.health <= 0) {
+			Destroy(this);
 		}
 	}
 }
