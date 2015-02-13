@@ -15,6 +15,7 @@ public class Player : Creature {
 
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
+		_currentWeapon.SetActive (true);
 	}
 
 	protected override void SetStats ()
@@ -27,6 +28,7 @@ public class Player : Creature {
 	void Update(){
 		if (_target != null) {
 			if (CheckIfInRange (_target)) {
+				transform.LookAt(_target.transform.position);
 				Attack();
 			}else{
 				_movingToEnemy = true;
