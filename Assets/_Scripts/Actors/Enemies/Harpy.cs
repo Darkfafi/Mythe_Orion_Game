@@ -9,7 +9,7 @@ public class Harpy : Enemy {
 		_hp = 50;
 		_moveSpeed = 3;
 		_attackDmg = 10;
-		_viewRange = 10;
+		_viewRange = 5;
 		_attackRange = 1.5f;
 	}
 }

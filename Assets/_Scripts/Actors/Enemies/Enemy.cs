@@ -5,8 +5,7 @@ using System.Collections.Generic;
 public class Enemy : Creature {
 
 	protected Vector3 _spawnPosition;// met dit kan je zeggen (Als hij zo ver is van zijn spawnpoint dan ga terug) ofzo.
-
-	protected CapsuleCollider _view;
+	
 	protected float _viewRange;
 
 	protected enum States{
@@ -21,9 +20,10 @@ public class Enemy : Creature {
 	{
 		base.Awake ();
 
-		_view = gameObject.AddComponent<CapsuleCollider> ();
-		_view.isTrigger = true;
-		_view.radius = _viewRange;
+		View view;
+
+		view = gameObject.AddComponent<View> ();
+		view.ChangeViewRange (_viewRange);
 
 		_spawnPosition = transform.position;
 
@@ -57,7 +57,7 @@ public class Enemy : Creature {
 		RaycastHit hit;
 		Debug.DrawRay(transform.position, raycastDirection * _viewRange / 4);
 		
-		if(Physics.Raycast(ray, out hit,_viewRange / 2)){
+		if(Physics.Raycast(ray, out hit,_viewRange)){
 			if(hit.transform.tag == "Player"){
 				moveScript.MoveTransRotation(raycastDirection,_moveSpeed);
 				if (Vector3.Distance (transform.position, _target.transform.position) < _attackRange) {
@@ -73,7 +73,7 @@ public class Enemy : Creature {
 		Destroy (this.gameObject);
 	}
 
-	void OnTriggerEnter(Collider other){
+	void CameIntoView(Collider other){
 	
 		if(other.gameObject.tag == "Player"){
 			_target = other.gameObject;
@@ -82,7 +82,7 @@ public class Enemy : Creature {
 		}
 	}
 
-	void OnTriggerExit(Collider other){
+	void GotOutOfView(Collider other){
 		if(other.gameObject == _target){
 			_target = null;
 			state = States.patrolState;
