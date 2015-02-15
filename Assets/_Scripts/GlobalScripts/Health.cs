@@ -20,6 +20,7 @@ public class Health : MonoBehaviour {
 
 	public void RemoveHealth(int amount){
 		health -= amount;
+		gameObject.SendMessage ("LostHealth");
 		if(health <= 0){
 			health = 0;
 			HealthHitZero();

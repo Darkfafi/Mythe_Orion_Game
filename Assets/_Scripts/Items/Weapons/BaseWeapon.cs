@@ -27,12 +27,11 @@ public class BaseWeapon : MonoBehaviour{
 	}
 
 	public virtual void Use(GameObject target){
-		if(Time.time > _nextTimeUseAble){
+		if(canUse && Time.time > _nextTimeUseAble){
 			Attack(target);
 		}
 	}
 	protected virtual void Attack(GameObject target){
-		canUse = false;
 		//next time usable mag pas gezet worden nadat de animatie is afgespeeld. Anders telt de animatie als cooldown. Kan pas gemaakt worden met animatie though.
 		_nextTimeUseAble = Time.time + coolDownTime;
 	}

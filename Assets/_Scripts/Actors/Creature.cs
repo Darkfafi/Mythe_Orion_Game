@@ -12,7 +12,7 @@ public class Creature : MonoBehaviour {
 	//combat
 	protected GameObject _target;
 	protected int _attackDmg; //voor basis. Wapens tellen hierbij op.
-	protected float _fireRate; 
+	protected float _attackRate; 
 	protected float _attackRange;
 
 	protected Movement moveScript;
@@ -43,8 +43,19 @@ public class Creature : MonoBehaviour {
 		_target = target;
 	}
 
+	protected virtual void LostHealth(){
+		HitMark ();
+	}
+
 	protected virtual void HealthToZero(){
 		Debug.Log("bleh");
-		Destroy (this.gameObject);
+	}
+
+	private void HitMark(){
+		renderer.material.color = new Color(1f,0.2f,0.2f,0.2f);
+		Invoke("ChangeBack",0.1f);
+	}
+	private void ChangeBack(){
+		renderer.material.color = new Color (1f, 1f, 1f, 0.5f);
 	}
 }
