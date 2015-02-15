@@ -3,7 +3,7 @@ using System.Collections;
 
 public class ViewCollisionCheck : MonoBehaviour {
 
-	void OnTriggerEnter(Collider other){
+	void OnTriggerStay(Collider other){
 		//Debug.Log ("fdgfdfgdfg");
 		SendMessageUpwards ("CameIntoView",other);
 	}

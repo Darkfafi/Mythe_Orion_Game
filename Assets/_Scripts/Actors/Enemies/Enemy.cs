@@ -8,6 +8,10 @@ public class Enemy : Creature {
 	
 	protected float _viewRange;
 
+	protected float _attackDelay;
+
+	private float _nextAttackTime;
+
 	protected enum States{
 		patrolState,
 		chaseState,
@@ -41,7 +45,9 @@ public class Enemy : Creature {
 			break;
 
 			case States.attackState:
-				Attack();
+				if(_nextAttackTime < Time.time){
+					Attack();
+				}
 			break;
 		}
 	}
@@ -59,9 +65,10 @@ public class Enemy : Creature {
 		
 		if(Physics.Raycast(ray, out hit,_viewRange)){
 			if(hit.transform.tag == "Player"){
-				moveScript.MoveTransRotation(raycastDirection,_moveSpeed);
 				if (Vector3.Distance (transform.position, _target.transform.position) < _attackRange) {
 					state = States.attackState;
+				}else{
+					moveScript.MoveTransRotation(raycastDirection,_moveSpeed);
 				}
 			}
 		}
@@ -75,7 +82,7 @@ public class Enemy : Creature {
 
 	void CameIntoView(Collider other){
 	
-		if(other.gameObject.tag == "Player"){
+		if(other.gameObject.tag == "Player" && state != States.attackState){
 			_target = other.gameObject;
 			state = States.chaseState;
 
@@ -85,6 +92,18 @@ public class Enemy : Creature {
 	void GotOutOfView(Collider other){
 		if(other.gameObject == _target){
 			_target = null;
+			state = States.patrolState;
+		}
+	}
+	protected override void Attack ()
+	{
+		base.Attack ();
+
+		_nextAttackTime = Time.time + _attackDelay;
+
+		if(_target != null){
+			state = States.chaseState;
+		}else{
 			state = States.patrolState;
 		}
 	}
