@@ -26,12 +26,6 @@ public class Creature : MonoBehaviour {
 
 		moveScript.maxSpeed = _moveSpeed;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
-
 	protected virtual void SetStats(){
 
 	}
@@ -57,5 +51,9 @@ public class Creature : MonoBehaviour {
 	}
 	private void ChangeBack(){
 		renderer.material.color = new Color (1f, 1f, 1f, 0.5f);
+	}
+
+	protected virtual void Moving(){
+
 	}
 }

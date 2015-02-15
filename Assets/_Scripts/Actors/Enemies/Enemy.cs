@@ -52,8 +52,21 @@ public class Enemy : Creature {
 
 	protected virtual void Chase(){
 		//volg target tt target niet meer in zicht is, dood is of dicht bij genoeg is om aan te vallen..
+		Vector3 raycastDirection = _target.transform.position - transform.position;
+		Ray ray = new Ray(transform.position, raycastDirection);
+		RaycastHit hit;
+		Debug.DrawRay(transform.position, raycastDirection * _viewRange / 4);
+		
+		if(Physics.Raycast(ray, out hit,_viewRange / 2)){
+			if(hit.transform.tag == "Player"){
+				moveScript.MoveTransRotation(raycastDirection,_moveSpeed);
+				if (Vector3.Distance (transform.position, _target.transform.position) < _attackRange) {
+					state = States.attackState;
+				}
+			}
+		}
 	}
-
+	
 	protected override void HealthToZero ()
 	{
 		base.HealthToZero ();
@@ -61,14 +74,16 @@ public class Enemy : Creature {
 	}
 
 	void OnTriggerEnter(Collider other){
+	
 		if(other.gameObject.tag == "Player"){
-			_target = other;
+			_target = other.gameObject;
 			state = States.chaseState;
+
 		}
 	}
 
 	void OnTriggerExit(Collider other){
-		if(other == _target){
+		if(other.gameObject == _target){
 			_target = null;
 			state = States.patrolState;
 		}

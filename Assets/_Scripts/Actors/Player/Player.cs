@@ -56,7 +56,7 @@ public class Player : Creature {
 		base.NewTarget (target);
 	}
 
-	void Moving(){
+	protected override void Moving(){
 		if(_movingToEnemy == false){
 			_target = null;
 		}
