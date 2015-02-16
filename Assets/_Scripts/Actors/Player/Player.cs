@@ -68,6 +68,7 @@ public class Player : Creature {
 	}
 
 	public void SwitchWeapon(int weaponInt = 9999){
+		print ("Q");
 		_currentWeapon.SetActive(false);
 		if (weaponInt == 9999) {
 			int index = System.Array.IndexOf(weapons,_currentWeapon);
