@@ -8,8 +8,8 @@ public class Projectile : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other){
 		//een handle ofzo checkt zelf dat een arrow hem raakt en het efect. Dat doet de arrow niet
-		if (other.gameObject.GetComponent<Health>() != null && other.gameObject.tag != "Player"){
-			other.gameObject.GetComponent<Health>().RemoveHealth(_damage);
+		if (other.gameObject.GetComponent<Creature>() != null && other.gameObject.tag != "Player"){
+			other.gameObject.GetComponent<Creature>().GetDamage(_damage);
 			Destroy(this.gameObject);
 		}
 	}

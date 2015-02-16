@@ -63,7 +63,7 @@ public class Enemy : Creature {
 		RaycastHit hit;
 		Debug.DrawRay(transform.position, raycastDirection * _viewRange / 4);
 		
-		if(Physics.Raycast(ray, out hit,_viewRange)){
+		if(Physics.Raycast(ray, out hit)){
 			if(hit.transform.tag == "Player"){
 				if (Vector3.Distance (transform.position, _target.transform.position) < _attackRange) {
 					state = States.attackState;
@@ -73,7 +73,15 @@ public class Enemy : Creature {
 			}
 		}
 	}
-	
+
+	protected override void LostHealth ()
+	{
+		base.LostHealth ();
+		_target = GameObject.Find("Player");
+		state = States.chaseState;
+
+	}
+
 	protected override void HealthToZero ()
 	{
 		base.HealthToZero ();

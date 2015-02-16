@@ -40,9 +40,12 @@ public class Creature : MonoBehaviour {
 	protected virtual void LostHealth(){
 		HitMark ();
 	}
-
 	protected virtual void HealthToZero(){
-		Debug.Log("bleh");
+		Debug.Log("Creature is Dead ;-;");
+	}
+
+	public virtual void GetDamage(int dmg){
+		GetComponent<Health> ().RemoveHealth (dmg);
 	}
 
 	private void HitMark(){

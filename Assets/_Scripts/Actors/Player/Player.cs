@@ -10,6 +10,8 @@ public class Player : Creature {
 
 	private bool _movingToEnemy = false;
 
+	private int _chanceToBlockPercentage;
+
 	// Use this for initialization
 	void Start () {
 
@@ -23,7 +25,8 @@ public class Player : Creature {
 		base.SetStats ();
 
 		_hp = 100;
-		_moveSpeed = 3f;
+		_moveSpeed = 3.5f;
+		_chanceToBlockPercentage = 40; //40% chance
 	}
 	void Update(){
 		if (_target != null) {
@@ -49,6 +52,7 @@ public class Player : Creature {
 		//---------
 	}
 	protected override void Attack (){
+		//word door een animatie opgeroepen later en daarna de cooldown functie appart ofzo..
 		_currentWeapon.GetComponent<BaseWeapon>().Use(_target);
 	}
 	public override void NewTarget (GameObject target)
@@ -76,7 +80,24 @@ public class Player : Creature {
 		}
 		_currentWeapon.SetActive(true);
 	}
+	public override void GetDamage (int dmg)
+	{
+		int blockChance = 0;
 
+		if (_currentWeapon.GetComponent<MeleeWeapon>() != null) {
+			blockChance =  Mathf.RoundToInt(Random.Range (0, 100));
+			if(blockChance < _chanceToBlockPercentage){
+				blockChance = 1;
+			}else{
+				blockChance = 0;
+			}
+		}
+		if(blockChance == 0){
+			base.GetDamage (dmg);
+		}else{
+			//block animation.
+		}
+	}
 	public bool CheckIfInRange(GameObject target){
 		bool result = false;
 

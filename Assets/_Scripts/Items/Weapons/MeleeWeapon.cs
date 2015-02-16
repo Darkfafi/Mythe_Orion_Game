@@ -6,6 +6,6 @@ public class MeleeWeapon : BaseWeapon {
 	protected override void Attack (GameObject target)
 	{
 		base.Attack (target);
-		target.GetComponent<Health> ().RemoveHealth (damage);
+		target.GetComponent<Creature> ().GetDamage (damage);
 	}
 }
