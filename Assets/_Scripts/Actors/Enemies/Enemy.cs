@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 
+//Gemaakt door Ramses
+
 public class Enemy : Creature {
 
 	protected Vector3 _spawnPosition;// met dit kan je zeggen (Als hij zo ver is van zijn spawnpoint dan ga terug) ofzo.

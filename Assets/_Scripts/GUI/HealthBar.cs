@@ -7,7 +7,7 @@ public class HealthBar : MonoBehaviour {
 	public Slider targetHealthSlider;
 	private Health targetHealth;
 	public GameObject target;
-	private int health;
+	private float health;
 
 	void Start (){
 		targetHealth = target.GetComponent<Health> ();

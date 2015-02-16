@@ -1,24 +1,26 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+// Gemaakt door Ramses
+
 public class Health : MonoBehaviour {
 
-	public int _maxHealth;
-	public int health;
+	public float _maxHealth;
+	public float health;
 
 
 	void Start(){
 		_maxHealth = health;
 	}
 
-	public void AddHealth(int amount){
+	public void AddHealth(float amount){
 		health += amount;
 		if(health > _maxHealth){
 			health = _maxHealth;
 		}
 	}
 
-	public void RemoveHealth(int amount){
+	public void RemoveHealth(float amount){
 		health -= amount;
 		gameObject.SendMessage ("LostHealth");
 		if(health <= 0){

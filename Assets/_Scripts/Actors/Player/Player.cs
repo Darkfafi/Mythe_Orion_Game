@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Gemaakt door Ramses
 
 public class Player : Creature {
 

@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Gemaakt Door Ramses
+
 public class BaseWeapon : MonoBehaviour{
 
 	private float _nextTimeUseAble;
