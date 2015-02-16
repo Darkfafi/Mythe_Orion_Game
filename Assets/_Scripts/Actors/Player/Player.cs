@@ -14,8 +14,8 @@ public class Player : Creature {
 	private int _chanceToBlockPercentage;
 
 	// Use this for initialization
-	void Start () {
-
+	protected override void Awake () {
+		base.Awake ();
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
 		_currentWeapon.SetActive (true);
@@ -68,7 +68,6 @@ public class Player : Creature {
 	}
 
 	public void SwitchWeapon(int weaponInt = 9999){
-		print ("Q");
 		_currentWeapon.SetActive(false);
 		if (weaponInt == 9999) {
 			int index = System.Array.IndexOf(weapons,_currentWeapon);
