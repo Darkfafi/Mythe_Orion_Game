@@ -6,7 +6,7 @@ public class JoyStickTouch : MonoBehaviour {
 	private Vector3 topStartPos; // start positie van waar je begint met besturen
 
 	private bool controllingLeft = false; //bepaald of je aan het "Touchen" bent. op de linker kant
-	private bool controllingRight = false; // bepaald of je aan het "Touchen" bent. op de rechter kant
+//	private bool controllingRight = false; // bepaald of je aan het "Touchen" bent. op de rechter kant
 	private GameObject target; //wie er word bestuurd.
 
 	private int leftTouch = -1; //welke touch de movement bestuurt
