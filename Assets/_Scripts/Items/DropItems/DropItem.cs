@@ -9,16 +9,17 @@ public class DropChance : MonoBehaviour {
 
 	void Start () {
 		int Q = Random.Range (0, 100);
-		if (Q >= dropChance) {
+		if (Q <= dropChance) {
 			dropItemOnDeath = true;
 		}
 		else {
 			dropItemOnDeath = false;
 		}
+		DropItem ();
 	}
 	public void DropItem () {
 		if (dropItemOnDeath == true) {
-			Instantiate(dropableItem);
+			Instantiate(dropableItem, transform.position, transform.rotation);
 		}
 	}
 }
