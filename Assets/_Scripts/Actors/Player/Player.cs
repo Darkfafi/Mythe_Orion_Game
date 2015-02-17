@@ -14,8 +14,8 @@ public class Player : Creature {
 	private int _chanceToBlockPercentage;
 
 	// Use this for initialization
-	void Start () {
-
+	protected override void Awake () {
+		base.Awake ();
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
 		_currentWeapon.SetActive (true);
