@@ -51,6 +51,10 @@ public class Player : Creature {
 		//---- Test -----
 		if (Input.GetKeyDown(KeyCode.Space)) {
 			SwitchWeapon();
+			GameObject.Find("GameController").GetComponent<SaveLoadData>().Save();
+		}
+		if(Input.GetKeyDown(KeyCode.A)){
+			GameObject.Find("GameController").GetComponent<SaveLoadData>().Load();
 		}
 		//---------
 	}
