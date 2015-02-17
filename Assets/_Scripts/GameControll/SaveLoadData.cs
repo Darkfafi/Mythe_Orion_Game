@@ -42,6 +42,8 @@ public class SaveLoadData : MonoBehaviour {
 		public int currentLevel; //welk level je momenteel bent
 		public int newGamePlussed; //hoe vaak new game plus is gedaan
 		public int timesDied;//hoe vaak je character is dood gegaan.
+		public int goodPoints; //Je Good points die je door je keuzes vult
+		public int evilPoints; //Je Evil Points die je door je keuzes vult.
 		public int score; //je score;
 	}
 }

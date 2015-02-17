@@ -26,10 +26,12 @@ public class Player : Creature {
 		base.SetStats ();
 
 		_hp = 100;
+		_healthRegen = 0.5f;
 		_moveSpeed = 3.5f;
 		_chanceToBlockPercentage = 40; //40% chance
 	}
-	void Update(){
+	protected override void Update(){
+		base.Update ();
 		if (_target != null) {
 			if (CheckIfInRange (_target)) {
 				transform.LookAt(_target.transform.position);

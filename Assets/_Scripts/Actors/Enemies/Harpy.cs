@@ -9,6 +9,7 @@ public class Harpy : Enemy {
 	{
 		base.SetStats ();
 		_hp = 50;
+		_healthRegen = 1;
 		_moveSpeed = 2;
 
 		_attackDmg = 10;
