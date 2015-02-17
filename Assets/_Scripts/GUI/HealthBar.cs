@@ -7,24 +7,24 @@ public class HealthBar : MonoBehaviour {
 	public Slider targetHealthSlider;
 	private Health targetHealth;
 	public CameraFocus cameraFocus;
-	public GameObject target;
-	private float healthInt;
+	private GameObject target;
+	private float healthValue;
 
 
 	void Update (){
 		if (target != cameraFocus.GetTarger ()) {
 			target = cameraFocus.GetTarger ();
 			targetHealth = target.GetComponent<Health> ();
-			healthInt = targetHealth.health;
-			targetHealthSlider.value = healthInt;
+			healthValue = targetHealth.health;
+			targetHealthSlider.value = healthValue;
 		}
-		if (healthInt != targetHealth.health) {
-			healthInt = targetHealth.health;
+		if (healthValue != targetHealth.health) {
+			healthValue = targetHealth.health;
 			ChangeHealth();
 		}
 	}
 
 	void ChangeHealth (){
-		targetHealthSlider.value = healthInt;
+		targetHealthSlider.value = healthValue;
 	}
 }
