@@ -589,11 +589,11 @@ Prefab:
       objectReference: {fileID: 1045823593}
     - target: {fileID: 22478840, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22478840, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
@@ -1560,6 +1560,7 @@ GameObject:
   - 114: {fileID: 1456872520}
   - 54: {fileID: 1456872519}
   - 136: {fileID: 1456872518}
+  - 114: {fileID: 1456872521}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1654,6 +1655,19 @@ MonoBehaviour:
   weapons:
   - {fileID: 909687126}
   - {fileID: 1107475771}
+--- !u!114 &1456872521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1456872514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27b95d2d08a94254b92a4caec4f35700, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropChance: 100
+  dropableItem: {fileID: 190866, guid: 6d173f69f71f88a42b63cb1104f0b925, type: 2}
 --- !u!1 &1755926674
 GameObject:
   m_ObjectHideFlags: 0
