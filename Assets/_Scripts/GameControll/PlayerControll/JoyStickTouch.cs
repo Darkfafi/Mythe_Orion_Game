@@ -14,9 +14,19 @@ public class JoyStickTouch : MonoBehaviour {
 
 	void Update(){
 
+		Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
+		RaycastHit hit;
+		bool canMove = true;
+
 		for (var i = 0; i < Input.touchCount; ++i) {
+			if(Physics.Raycast(rayCast,out hit)){
+				if(hit.transform.tag == "Enemy"){
+					canMove = false;
+					target.GetComponent<Creature>().NewTarget(hit.transform.gameObject);
+				}
+			}
 			Touch touch = Input.GetTouch(i);
-			if (touch.phase == TouchPhase.Began) {
+			if (touch.phase == TouchPhase.Began && canMove == true) {
 				if (touch.position.x < Screen.width/2 && leftTouch == -1) {
 					target = GetComponent<CameraFocus> ().GetTarger ();
 					topStartPos = Input.GetTouch(i).position;

@@ -1202,7 +1202,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 127.800003, y: -70.6999969}
+  m_AnchoredPosition: {x: 182.899994, y: -70.6999969}
   m_SizeDelta: {x: 54.7799988, y: 30}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1240373842
@@ -1380,7 +1380,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetHealthSlider: {fileID: 1829288891}
-  target: {fileID: 1456872514}
+  cameraFocus: {fileID: 1045823593}
+  target: {fileID: 0}
 --- !u!1 &1456872514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,7 +1579,7 @@ Prefab:
     - target: {fileID: 11478836, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1456872514}
+      objectReference: {fileID: 0}
     - target: {fileID: 22478840, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1586,6 +1587,22 @@ Prefab:
     - target: {fileID: 22478840, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11478836, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
+      propertyPath: cameraFocus
+      value: 
+      objectReference: {fileID: 1045823593}
+    - target: {fileID: 11478832, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 1240373843}
+    - target: {fileID: 11478832, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
+      propertyPath: m_Colors.m_ColorMultiplier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22478832, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 182.899994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 07a5a1b04d9b9c44a82c1f42cb61226e, type: 2}

@@ -15,7 +15,6 @@ public class HealthBar : MonoBehaviour {
 		if (target != cameraFocus.GetTarger ()) {
 			target = cameraFocus.GetTarger ();
 			targetHealth = target.GetComponent<Health> ();
-			Debug.Log(target);
 			healthInt = targetHealth.health;
 			targetHealthSlider.value = healthInt;
 		}
