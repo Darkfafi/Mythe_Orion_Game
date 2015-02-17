@@ -99,6 +99,13 @@ public class Player : Creature {
 			//block animation.
 		}
 	}
+
+	protected override void HealthToZero ()
+	{
+		base.HealthToZero ();
+
+	}
+
 	public bool CheckIfInRange(GameObject target){
 		bool result = false;
 
