@@ -17,4 +17,9 @@ public class PressurePlate : MonoBehaviour {
 	private void ToggleDoor(){
 		doorScript.ChangeDoorPos ();
 	}
+
+
+	private void QuestComplete(){
+		ToggleDoor ();
+	}
 }
