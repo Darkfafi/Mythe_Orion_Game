@@ -7,8 +7,10 @@ public class DeathTrap : MonoBehaviour {
 	private DOTTimer dotTimer = new DOTTimer();
 
 	void OnTriggerEnter(Collider other) {
-		dotTimer = other.gameObject.AddComponent("DOTTimer") as DOTTimer;
-		dotTimer.DPS = DPS;
+		if(other.GetComponent<Health>()){
+			dotTimer = other.gameObject.AddComponent("DOTTimer") as DOTTimer;
+			dotTimer.DPS = DPS;
+		}
 		//Destroy (this.gameObject);
 	}
 }
