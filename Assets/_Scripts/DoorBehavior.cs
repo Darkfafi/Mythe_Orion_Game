@@ -9,7 +9,7 @@ public class DoorBehavior : MonoBehaviour {
 
 	void Awake () {
 		if (doorOpen == true) {
-			transform.Translate(Vector3.up * 2.7f);
+			transform.Translate(Vector3.down * 2.7f);
 			doorCollider.enabled = false;
 		}
 	}
@@ -17,15 +17,15 @@ public class DoorBehavior : MonoBehaviour {
 	void Update () {
 		if (doorMoving == true) {
 			if(doorOpen == true){
-				transform.Translate(Vector3.up * Time.deltaTime);
-				if(transform.localPosition.y >= 2.7){
+				transform.Translate(Vector3.down * Time.deltaTime);
+				if(transform.localPosition.y <= -2.7){
 					doorMoving = false;
 					doorCollider.enabled = false;
 				}
 			}
 			else {
-				transform.Translate(Vector3.down * Time.deltaTime);
-				if(transform.localPosition.y <= 0){
+				transform.Translate(Vector3.up * Time.deltaTime);
+				if(transform.localPosition.y >= 0){
 					doorMoving = false;
 				}
 			}
