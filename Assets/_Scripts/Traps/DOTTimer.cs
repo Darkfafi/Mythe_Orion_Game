@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Gemaakt door Nick
+
 public class DOTTimer : MonoBehaviour {
 
 	public int DPS;

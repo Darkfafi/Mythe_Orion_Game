@@ -2,6 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
+//Gemaakt door Nick
+
 public class StartMenu : MonoBehaviour {
 
 	public int highScore = 0;

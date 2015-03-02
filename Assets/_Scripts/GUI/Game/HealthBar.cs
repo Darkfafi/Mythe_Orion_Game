@@ -2,6 +2,8 @@
 using UnityEngine.UI;
 using System.Collections;
 
+//Gemaakt door Nick
+
 public class HealthBar : MonoBehaviour {
 
 	public Slider targetHealthSlider;
