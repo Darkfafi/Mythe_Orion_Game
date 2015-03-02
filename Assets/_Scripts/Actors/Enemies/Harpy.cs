@@ -9,7 +9,8 @@ public class Harpy : Enemy {
 	{
 		base.SetStats ();
 		_hp = 50;
-		_moveSpeed = 2;
+		_healthRegen = 1;
+		_moveSpeed = 1.5f;
 
 		_attackDmg = 10;
 		_viewRange = 5;
@@ -22,7 +23,7 @@ public class Harpy : Enemy {
 	{
 		if(Vector3.Distance (transform.position, _target.transform.position) < _attackRange){
 			_target.GetComponent<Creature> ().GetDamage (_attackDmg);
-			Debug.Log("Attack!");
+			//Debug.Log("Attack!");
 		}
 		base.Attack ();
 	}

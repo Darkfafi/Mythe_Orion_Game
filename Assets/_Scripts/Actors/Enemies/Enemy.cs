@@ -36,7 +36,8 @@ public class Enemy : Creature {
 		state = States.patrolState;
 	}
 
-	void Update(){
+	protected override void Update(){
+		base.Update ();
 		switch (state) {
 			case States.patrolState:
 				Patrol();

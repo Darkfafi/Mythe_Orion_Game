@@ -8,7 +8,8 @@ public class Creature : MonoBehaviour {
 	//Een creature is alles wat leeft en beweegt.
 
 	//Stats
-	protected int _hp;
+	protected float _hp;
+	protected float _healthRegen;
 	protected float _moveSpeed;
 
 	//combat
@@ -18,13 +19,16 @@ public class Creature : MonoBehaviour {
 	protected float _attackRange;
 
 	protected Movement moveScript;
+	protected Health healthScript;
 
 	// Use this for initialization
 	protected virtual void Awake () {
 		SetStats ();
 
 		moveScript = gameObject.AddComponent<Movement> ();
-		gameObject.AddComponent<Health> ().health = _hp;
+		healthScript = gameObject.AddComponent<Health> ();
+
+		healthScript.health = _hp;
 
 		moveScript.maxSpeed = _moveSpeed;
 	}
@@ -33,6 +37,10 @@ public class Creature : MonoBehaviour {
 	}
 	protected virtual void Attack(){
 
+	}
+
+	protected virtual void Update(){
+		healthScript.AddHealth (_healthRegen * Time.deltaTime);
 	}
 
 	public virtual void NewTarget(GameObject target){

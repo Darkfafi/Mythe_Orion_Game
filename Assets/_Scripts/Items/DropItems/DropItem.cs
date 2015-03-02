@@ -6,22 +6,12 @@ using System.Collections;
 public class DropChance : MonoBehaviour {
 
 	public int dropChance = 50;
-	private bool dropItemOnDeath;
 	public GameObject dropableItem;
 
-	void Start () {
+	public void DropItem () {
 		int Q = Random.Range (0, 100);
 		if (Q <= dropChance) {
-			dropItemOnDeath = true;
-		}
-		else {
-			dropItemOnDeath = false;
-		}
-		DropItem ();
-	}
-	public void DropItem () {
-		if (dropItemOnDeath == true) {
-			Instantiate(dropableItem, transform.position, transform.rotation);
+			Instantiate(dropableItem,transform.position,new Quaternion(0,0,0,0));
 		}
 	}
 }
