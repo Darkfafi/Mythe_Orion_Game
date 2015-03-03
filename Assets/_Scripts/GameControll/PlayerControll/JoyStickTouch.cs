@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Gemaakt door Nick
+
 public class JoyStickTouch : MonoBehaviour {
 
 	private Vector3 topStartPos; // start positie van waar je begint met besturen

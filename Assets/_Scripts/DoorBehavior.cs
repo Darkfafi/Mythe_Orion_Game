@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//Gemaakt door Nick
+
 public class DoorBehavior : MonoBehaviour {
 
 	public bool doorOpen = false;
