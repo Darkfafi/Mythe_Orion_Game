@@ -53,6 +53,7 @@ public class SaveLoadData : MonoBehaviour {
 		public int goodPoints; //Je Good points die je door je keuzes vult
 		public int evilPoints; //Je Evil Points die je door je keuzes vult.
 		public int score; //je score;
+		public int goodOrEvilRoom; //1 == good room en 0 == evil room (net een boolean)
 
 		public Dictionary<string,int> GetPlayerDataList(){
 			Dictionary<string,int> saveDataList = new Dictionary<string, int>();

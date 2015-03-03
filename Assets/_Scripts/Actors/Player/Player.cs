@@ -26,7 +26,7 @@ public class Player : Creature {
 		base.SetStats ();
 
 		_hp = 100;
-		_healthRegen = 0.5f;
+		_healthRegen = 1f;
 		_moveSpeed = 3.5f;
 		_chanceToBlockPercentage = 40; //40% chance
 	}
@@ -105,6 +105,16 @@ public class Player : Creature {
 			//block animation.
 		}
 	}
+	/*
+	public void InteractWith(GameObject targetInteractable){
+		if(targetInteractable.gameObject.GetComponent<InteractComponent>()){
+			if(Vector3.Distance(targetInteractable.transform.position,transform.position) > 1.5f){
+				//move to object
+			}else{
+				targetInteractable.gameObject.GetComponent<InteractComponent>().OnInteraction();
+			}
+		}
+	}*/
 
 	protected override void HealthToZero ()
 	{

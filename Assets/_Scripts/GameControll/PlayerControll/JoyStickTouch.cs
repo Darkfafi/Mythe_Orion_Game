@@ -28,7 +28,7 @@ public class JoyStickTouch : MonoBehaviour {
 			Touch touch = Input.GetTouch(i);
 			if (touch.phase == TouchPhase.Began && canMove == true) {
 				if (touch.position.x < Screen.width/2 && leftTouch == -1) {
-					target = GetComponent<CameraFocus> ().GetTarger ();
+					target = GetComponent<CameraFocus> ().GetTarget ();
 					topStartPos = Input.GetTouch(i).position;
 					controllingLeft = true;
 					leftTouch = i;

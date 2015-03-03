@@ -16,7 +16,7 @@ public class JoyStick : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0)){
 
-			target = GetComponent<CameraFocus> ().GetTarger (); //checkt wie de camera volgt en diegene kan je besturen.
+			target = GetComponent<CameraFocus> ().GetTarget (); //checkt wie de camera volgt en diegene kan je besturen.
 
 			Ray rayCast = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
@@ -27,9 +27,12 @@ public class JoyStick : MonoBehaviour {
 				if(hit.transform.tag == "Enemy"){
 					canMove = false;
 					target.GetComponent<Creature>().NewTarget(hit.transform.gameObject);
+				}else if(hit.transform.tag == "Interactable"){
+					if(target.gameObject.tag == "Player"){
+						//target.GetComponent<Player>().InteractWith(hit.transform.gameObject);
+					}
 				}
 			}
-
 			if(canMove){
 				if(Input.mousePosition.x < Screen.width / 2){
 					// als het scherm word aangeraakt dan word de start positie opgeslagen zodat je altijd vanaf het midden het verschil kan berekenen (of je naar links of rechts gaat met je vinger etc).

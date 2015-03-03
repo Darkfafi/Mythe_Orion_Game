@@ -55,7 +55,7 @@ public class Creature : MonoBehaviour {
 	}
 
 	public virtual void GetDamage(int dmg){
-		GetComponent<Health> ().RemoveHealth (dmg);
+		healthScript.RemoveHealth (dmg);
 	}
 
 	private void HitMark(){

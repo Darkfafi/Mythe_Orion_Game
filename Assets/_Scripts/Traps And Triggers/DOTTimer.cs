@@ -4,7 +4,7 @@ using System.Collections;
 public class DOTTimer : MonoBehaviour {
 
 	public int DPS;
-	private float finishTimer = 5;
+	private float finishTimer = 15;
 	private float timer = 0.25f;
 	private Health health;
 	
