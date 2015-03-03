@@ -11,8 +11,6 @@ public class PressurePlate : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if(other.gameObject.tag == "Player" && triggerOn){
 			ToggleDoor();
-			Destroy(this.gameObject);
-			Destroy(this);
 		}
 	}
 
