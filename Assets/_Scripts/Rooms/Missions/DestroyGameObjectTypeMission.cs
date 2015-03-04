@@ -12,7 +12,7 @@ public class DestroyGameObjectTypeMission : Mission {
 
 	public override void StartMission ()
 	{
-		totalOfGameObject = GameObject.FindGameObjectsWithTag (gameobjectToDestroy.gameObject.tag).Length;
+		totalOfGameObject = numberOfGameObjectType(gameobjectToDestroy);
 		base.StartMission ();
 	}
 
@@ -20,11 +20,11 @@ public class DestroyGameObjectTypeMission : Mission {
 	{
 		base.CheckMission ();
 		if(amount != 0){
-			if(GameObject.FindGameObjectsWithTag(gameobjectToDestroy.gameObject.tag).Length <= totalOfGameObject - amount){ //als de hoeveelheid nog aanwezig kleiner of gelijk is aan het aantal dat aanwezig was toen de missie begon - hoeveel je ervan moest destroyen.
+			if(numberOfGameObjectType(gameobjectToDestroy) <= totalOfGameObject - amount){ //Als de hoeveelheid nog aanwezig kleiner of gelijk is aan het aantal dat aanwezig was toen de missie begon - hoeveel je ervan moest destroyen.
 				//guest completed
 			}
 		}else{
-			if(GameObject.FindGameObjectsWithTag(gameobjectToDestroy.gameObject.tag).Length == 0){
+			if(numberOfGameObjectType(gameobjectToDestroy) == 0){ //als alle van het object vernietigt is.
 				//guest completed
 			}
 		}

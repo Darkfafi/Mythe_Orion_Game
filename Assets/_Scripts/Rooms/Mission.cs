@@ -23,4 +23,15 @@ public class Mission : MonoBehaviour {
 	protected virtual void CheckMission(){
 
 	}
+
+	protected int numberOfGameObjectType(GameObject checkingGameObject){
+		int amount = 0; 
+		foreach(GameObject gameobj in GameObject.FindObjectsOfType<GameObject>()){
+
+			if(checkingGameObject.name == gameobj.name){
+				amount += 1;
+			}
+		}
+		return amount;
+	}
 }
