@@ -7,6 +7,7 @@ public class PressurePlate : MonoBehaviour {
 
 	public DoorBehavior doorScript;
 	public bool triggerOn = true;
+	public bool destroyOnToggle = true;
 
 	void OnTriggerEnter(Collider other) {
 		if(other.gameObject.tag == "Player" && triggerOn){
@@ -16,6 +17,9 @@ public class PressurePlate : MonoBehaviour {
 
 	private void ToggleDoor(){
 		doorScript.ChangeDoorPos ();
+		if (destroyOnToggle) {
+			Destroy(gameObject);
+		}
 	}
 
 
