@@ -97,7 +97,6 @@ public class Enemy : Creature {
 		if(other.gameObject.tag == "Player" && state != States.attackState){
 			_target = other.gameObject;
 			state = States.chaseState;
-
 		}
 	}
 
