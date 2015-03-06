@@ -11,6 +11,12 @@ public class Objective : MonoBehaviour {
 
 	void Start(){
 		//get mission descrition and calculate time with mission info
+		SetTimeForObjective(mission.CalculateMissionTime ());
+		SetDescriptionForObjective (mission.GetMissionDescription());
+	}
+
+	public void StartMission(){
+
 	}
 
 	public void SetDescriptionForObjective(string text){

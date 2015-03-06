@@ -9,6 +9,25 @@ public class DestroyGameObjectTypeMission : Mission {
 
 	public int amount = 0;
 
+	protected override void Awake ()
+	{
+		base.Awake ();
+
+		int currentLevel = GameObject.Find ("GameController").GetComponent<PlayerProgression> ().currentLevel;
+		int totalToDestroy = amount;
+
+		missionBaseLevelTime = Mathf.RoundToInt (10 / currentLevel);
+
+		if(totalToDestroy == 0)	{
+			totalToDestroy = totalOfGameObject;
+			description = "Destroy all the " + gameobjectToDestroy.name + "(s).";
+		}else{
+			
+			description = "Destroy " + totalToDestroy +" "+ gameobjectToDestroy.name + "(s).";
+		}
+
+		missionPersonalTimeCal = totalToDestroy * (Mathf.RoundToInt(15 / currentLevel));
+	}
 
 	public override void StartMission ()
 	{

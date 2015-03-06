@@ -7,6 +7,18 @@ public class Mission : MonoBehaviour {
 
 	private bool _checkMission = false; 
 
+	//mission Time vars
+	protected int missionBaseLevelTime; //aan de hand van in welk level je zit hoe hoog is de timer.
+	protected int missionPersonalTimeCal; //aan de hand van de missie welke tijd zit er aan. Deze word gevult bij elke mission awake door hun eigen calculate. Voorbeeld: 'Killmission' missionPersonalTimeCal = enemiesToKill * timePerEnemy + (level * timeForEnemyPerLevel).
+
+	//--
+
+	protected string description = "";
+
+	protected virtual void Awake(){
+
+	}
+
 	// Use this for initialization
 	public virtual void StartMission () {
 		_checkMission = true;
@@ -19,6 +31,13 @@ public class Mission : MonoBehaviour {
 		}
 	}
 
+	public string GetMissionDescription(){
+		return description;
+	}
+
+	public int CalculateMissionTime(){
+		return missionBaseLevelTime + missionPersonalTimeCal;
+	}
 
 	protected virtual void CheckMission(){
 
