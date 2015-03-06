@@ -66,7 +66,7 @@ public class Creature : MonoBehaviour {
 		renderer.material.color = new Color (1f, 1f, 1f, 0.5f);
 	}
 
-	protected virtual void Moving(){
+	protected virtual void Moving(float speed){
 
 	}
 	protected virtual void StoppedMoving(){

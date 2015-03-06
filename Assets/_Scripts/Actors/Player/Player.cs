@@ -75,17 +75,23 @@ public class Player : Creature {
 		base.NewTarget (target);
 	}
 
-	protected override void Moving(){
+	protected override void Moving(float speed){
 		if(_movingToEnemy == false){
 			_target = null;
 		}
-		anim.Play ("WalkAnim");
+		Debug.Log (speed);
+		if(speed < 1.4f){
+			anim.Play ("WalkAnim");
+		}else{
+			anim.Play("Idle"); // <== ren animatie
+		}
 	}
 
 	protected override void StoppedMoving ()
 	{
 		base.StoppedMoving ();
 		anim.Play("Idle");
+		Debug.Log("gfgdffg");
 	}
 
 	public void SwitchWeapon(int weaponInt = 9999){

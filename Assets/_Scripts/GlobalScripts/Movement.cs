@@ -20,8 +20,8 @@ public class Movement : MonoBehaviour {
 			}
 			transform.Translate((realMove * speed) * Time.deltaTime);
 			if((realMove * speed).magnitude > 0.25f && (realMove * speed).magnitude != 1.5f){
-				Debug.Log((realMove * speed).magnitude);
-				SendMessage ("Moving");
+				//Debug.Log((realMove * speed).magnitude);
+				SendMessage ("Moving",speed);
 			}
 		}
 	}
