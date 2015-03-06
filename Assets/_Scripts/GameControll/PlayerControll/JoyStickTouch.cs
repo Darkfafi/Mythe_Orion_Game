@@ -45,6 +45,7 @@ public class JoyStickTouch : MonoBehaviour {
 				if(i == leftTouch){
 					leftTouch = -1;
 					controllingLeft = false;
+					target.GetComponent<Movement>().StopMoving();
 				}
 				else if (i < leftTouch){
 					leftTouch --;

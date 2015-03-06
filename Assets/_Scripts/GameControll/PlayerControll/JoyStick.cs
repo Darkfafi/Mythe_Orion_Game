@@ -45,6 +45,7 @@ public class JoyStick : MonoBehaviour {
 
 		if(Input.GetMouseButtonUp(0)){
 			controlling = false; // Als je het scherm los laat dan stopt hij met checken.
+			target.GetComponent<Movement>().StopMoving();
 		}
 
 		if(controlling){

@@ -16,7 +16,8 @@ public class Mission : MonoBehaviour {
 	protected string description = "";
 
 	protected virtual void Awake(){
-
+		//set missionBaseLevelTime and missionPersonalTimeCal.
+		//Add mission description. 
 	}
 
 	// Use this for initialization

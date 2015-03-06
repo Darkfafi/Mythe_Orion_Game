@@ -13,12 +13,15 @@ public class Player : Creature {
 
 	private int _chanceToBlockPercentage;
 
+	Animator anim;
+
 	// Use this for initialization
 	protected override void Awake () {
 		base.Awake ();
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
 		_currentWeapon.SetActive (true);
+		anim = GetComponent<Animator> ();
 	}
 
 	protected override void SetStats ()
@@ -34,7 +37,13 @@ public class Player : Creature {
 		base.Update ();
 		if (_target != null) {
 			if (CheckIfInRange (_target)) {
-				transform.LookAt(_target.transform.position);
+
+				Vector2 dir = new Vector2 (transform.position.x - _target.transform.position.x, transform.position.z - _target.transform.position.z);
+				float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+				transform.eulerAngles = new Vector3(transform.rotation.x,(angle + 90)  * -1,transform.rotation.z);
+
+				//transform.LookAt(_target.transform.position);
 				Attack();
 			}else{
 				_movingToEnemy = true;
@@ -70,6 +79,13 @@ public class Player : Creature {
 		if(_movingToEnemy == false){
 			_target = null;
 		}
+		anim.Play ("WalkAnim");
+	}
+
+	protected override void StoppedMoving ()
+	{
+		base.StoppedMoving ();
+		anim.Play("Idle");
 	}
 
 	public void SwitchWeapon(int weaponInt = 9999){

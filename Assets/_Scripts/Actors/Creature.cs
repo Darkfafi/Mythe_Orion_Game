@@ -69,4 +69,7 @@ public class Creature : MonoBehaviour {
 	protected virtual void Moving(){
 
 	}
+	protected virtual void StoppedMoving(){
+
+	}
 }

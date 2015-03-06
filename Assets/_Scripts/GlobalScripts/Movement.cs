@@ -19,7 +19,10 @@ public class Movement : MonoBehaviour {
 				speed = maxSpeed;
 			}
 			transform.Translate((realMove * speed) * Time.deltaTime);
-			SendMessage ("Moving");
+			if((realMove * speed).magnitude > 0.25f && (realMove * speed).magnitude != 1.5f){
+				Debug.Log((realMove * speed).magnitude);
+				SendMessage ("Moving");
+			}
 		}
 	}
 
@@ -31,5 +34,9 @@ public class Movement : MonoBehaviour {
 		//Debug.Log (angle);
 		transform.eulerAngles = new Vector3(transform.rotation.x,(angle * -1) + 90,transform.rotation.z);
 		Move(Vector3.forward, speed);
+	}
+
+	public void StopMoving(){
+		SendMessage("StoppedMoving");
 	}
 }

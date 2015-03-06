@@ -1,0 +1,155 @@
+fileFormatVersion: 2
+guid: abba41280ae184048a5083553ae41f55
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Cube
+    100002: Cube_1
+    100004: Head
+    100006: Linker_Arm
+    100008: Linker_Been
+    100010: Null_2
+    100012: Null_3
+    100014: //RootNode
+    100016: Rechter_Arm
+    100018: Rechter_been
+    100020: Romp
+    400000: Cube
+    400002: Cube_1
+    400004: Head
+    400006: Linker_Arm
+    400008: Linker_Been
+    400010: Null_2
+    400012: Null_3
+    400014: //RootNode
+    400016: Rechter_Arm
+    400018: Rechter_been
+    400020: Romp
+    2300000: Cube
+    2300002: Cube_1
+    2300004: Head
+    2300006: Linker_Arm
+    2300008: Linker_Been
+    2300010: Rechter_Arm
+    2300012: Rechter_been
+    2300014: Romp
+    3300000: Cube
+    3300002: Cube_1
+    3300004: Head
+    3300006: Linker_Arm
+    3300008: Linker_Been
+    3300010: Rechter_Arm
+    3300012: Rechter_been
+    3300014: Romp
+    4300000: Cube_1
+    4300002: Cube
+    4300004: Head
+    4300006: Rechter_Arm
+    4300008: Linker_Arm
+    4300010: Romp
+    4300012: Rechter_been
+    4300014: Linker_Been
+    7400000: WalkAnim
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: WalkAnim
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Cube_1
+        weight: 1
+      - path: Head
+        weight: 1
+      - path: Linker_Arm
+        weight: 1
+      - path: Linker_Arm/Null_3
+        weight: 1
+      - path: Linker_Been
+        weight: 1
+      - path: Rechter_Arm
+        weight: 1
+      - path: Rechter_Arm/Null_2
+        weight: 1
+      - path: Rechter_been
+        weight: 1
+      - path: Romp
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
