@@ -76,12 +76,12 @@ public class Player : Creature {
 		if(_movingToEnemy == false){
 			_target = null;
 		}
-		Debug.Log (speed);
 		if(speed < 1.4f){
-			PlayAnimation("WalkAnim");
+			//PlayAnimation("WalkAnim",speed / 1);
 		}else{
-			PlayAnimation("Idle"); // <== ren animatie
+			//PlayAnimation("Idle"); // <== ren animatie
 		}
+		PlayAnimation("WalkAnim",speed / 1);
 	}
 
 	protected override void StoppedMoving ()

@@ -33,7 +33,7 @@ public class BaseWeapon : MonoBehaviour{
 	public virtual void Use(GameObject target){
 		if(canUse && Time.time > _nextTimeUseAble){
 			Attack(target);
-			GetComponentInParent<Player>().PlayAnimation(userAnimation);
+			GetComponentInParent<Player>().PlayAnimation(userAnimation,1.5f);
 		}
 	}
 	protected virtual void Attack(GameObject target){

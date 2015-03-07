@@ -77,7 +77,12 @@ public class Creature : MonoBehaviour {
 
 	}
 
-	public virtual void PlayAnimation(string animationName){
+	public virtual void PlayAnimation(string animationName,float animationSpeed = 9999){
+		anim.speed = 1;
+		if(animationSpeed != 9999){
+			//anim.animation[animationName].speed = animationSpeed;
+			anim.speed = animationSpeed;
+		}
 		anim.Play (animationName);
 	}
 }
