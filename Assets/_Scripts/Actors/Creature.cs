@@ -85,4 +85,12 @@ public class Creature : MonoBehaviour {
 		}
 		anim.Play (animationName);
 	}
+
+	public bool CheckIfAnimationPlaying(string animationName){
+		bool result = false;
+		if(anim.GetCurrentAnimatorStateInfo (0).IsName (animationName)){
+			result = true;
+		}
+		return result;
+	}
 }
