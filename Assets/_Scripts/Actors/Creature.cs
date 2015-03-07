@@ -21,6 +21,8 @@ public class Creature : MonoBehaviour {
 	protected Movement moveScript;
 	protected Health healthScript;
 
+	Animator anim;
+
 	// Use this for initialization
 	protected virtual void Awake () {
 		SetStats ();
@@ -31,6 +33,8 @@ public class Creature : MonoBehaviour {
 		healthScript.health = _hp;
 
 		moveScript.maxSpeed = _moveSpeed;
+
+		anim = GetComponent<Animator> ();
 	}
 	protected virtual void SetStats(){
 
@@ -71,5 +75,9 @@ public class Creature : MonoBehaviour {
 	}
 	protected virtual void StoppedMoving(){
 
+	}
+
+	public virtual void PlayAnimation(string animationName){
+		anim.Play (animationName);
 	}
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: afb1be94f0b27bd4994a5324d219a1f8
+guid: 0728353fb91a42545969812358afc3b5
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -49,7 +49,7 @@ ModelImporter:
     4300010: Romp
     4300012: Rechter_been
     4300014: Linker_Been
-    7400000: BasicHammerAttack
+    7400000: BasicBowAttack
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -68,7 +68,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: BasicHammerAttack
+      name: BasicBowAttack
       takeName: C4D Animation Take
       firstFrame: 0
       lastFrame: 60

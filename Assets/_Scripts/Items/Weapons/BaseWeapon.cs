@@ -15,7 +15,9 @@ public class BaseWeapon : MonoBehaviour{
 	private float _range;
 
 	[SerializeField] 
-	private float _coolDownTime;  
+	private float _coolDownTime; 
+
+	protected string userAnimation;
 
 
 	public int damage{
@@ -31,6 +33,7 @@ public class BaseWeapon : MonoBehaviour{
 	public virtual void Use(GameObject target){
 		if(canUse && Time.time > _nextTimeUseAble){
 			Attack(target);
+			GetComponentInParent<Player>().PlayAnimation(userAnimation);
 		}
 	}
 	protected virtual void Attack(GameObject target){

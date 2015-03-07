@@ -20,5 +20,7 @@ public class RangedWeapon : BaseWeapon {
 		GameObject currentProjectile = Instantiate(projectile,spawnPosition.transform.position,spawnPosition.transform.rotation) as GameObject;
 
 		currentProjectile.GetComponent<Projectile> ().SetStats (damage,speedProjectile);
+
+		userAnimation = "BasicBowAttack";
 	}
 }

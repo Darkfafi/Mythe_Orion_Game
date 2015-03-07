@@ -5,6 +5,8 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
+	private float currentMovementSpeed = 0;
+
 	public float maxSpeed = float.MaxValue;
 
 	protected bool _moveAble = true;
@@ -22,6 +24,7 @@ public class Movement : MonoBehaviour {
 			if((realMove * speed).magnitude > 0.25f && (realMove * speed).magnitude != 1.5f){
 				//Debug.Log((realMove * speed).magnitude);
 				SendMessage ("Moving",speed);
+				currentMovementSpeed = speed;
 			}
 		}
 	}
@@ -37,6 +40,9 @@ public class Movement : MonoBehaviour {
 	}
 
 	public void StopMoving(){
-		SendMessage("StoppedMoving");
+		if(currentMovementSpeed > 0){
+			SendMessage("StoppedMoving");
+		}
+		currentMovementSpeed = 0;
 	}
 }

@@ -13,15 +13,12 @@ public class Player : Creature {
 
 	private int _chanceToBlockPercentage;
 
-	Animator anim;
-
 	// Use this for initialization
 	protected override void Awake () {
 		base.Awake ();
 		CameraFocus.SetTarget(this.gameObject);
 		_currentWeapon = weapons [0];
 		_currentWeapon.SetActive (true);
-		anim = GetComponent<Animator> ();
 	}
 
 	protected override void SetStats ()
@@ -81,17 +78,16 @@ public class Player : Creature {
 		}
 		Debug.Log (speed);
 		if(speed < 1.4f){
-			anim.Play ("WalkAnim");
+			PlayAnimation("WalkAnim");
 		}else{
-			anim.Play("Idle"); // <== ren animatie
+			PlayAnimation("Idle"); // <== ren animatie
 		}
 	}
 
 	protected override void StoppedMoving ()
 	{
 		base.StoppedMoving ();
-		anim.Play("Idle");
-		Debug.Log("gfgdffg");
+		PlayAnimation("Idle");
 	}
 
 	public void SwitchWeapon(int weaponInt = 9999){
