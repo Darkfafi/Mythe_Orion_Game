@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using System.Text;
 
 public class GoodSlashEvilIndicator : MonoBehaviour {
 
@@ -10,16 +9,14 @@ public class GoodSlashEvilIndicator : MonoBehaviour {
 	public GameObject playerProgressionObject;
 	private PlayerProgression playerProgression;
 
-	// Use this for initialization
-	void Start () {
-		playerProgression = playerProgressionObject.GetComponent<PlayerProgression>();
-		playerProgressionObject = null;
-		ChangeScore();
-	}
-	
-	// Update is called once per frame
-	void ChangeScore () {
-		goodGUI.text = playerProgression.goodPoints.ToString();
+	void OnEnable () {
+		if (playerProgression == null) {
+			playerProgression = playerProgressionObject.GetComponent<PlayerProgression>();
+			if(playerProgression != null){
+				playerProgressionObject = null;
+			}
+		}
+		goodGUI.text = playerProgression.goodPoints.ToString(); 
 		evilGUI.text = playerProgression.evilPoints.ToString();
 	}
 }
