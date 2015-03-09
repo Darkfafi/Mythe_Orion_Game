@@ -54,4 +54,8 @@ public class Mission : MonoBehaviour {
 		}
 		return amount;
 	}
+
+	protected virtual void CompletedMission(){
+		Debug.Log("Mission Complete!");
+	}
 }

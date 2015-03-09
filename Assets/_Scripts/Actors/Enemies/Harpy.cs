@@ -10,13 +10,13 @@ public class Harpy : Enemy {
 		base.SetStats ();
 		_hp = 50;
 		_healthRegen = 1;
-		_moveSpeed = 1.5f;
+		_moveSpeed = 1.3f;
 
 		_attackDmg = 10;
 		_viewRange = 5;
 		_attackRange = 1.5f;
 
-		_attackDelay = 1f;
+		_attackDelay = 2f;
 	}
 
 	protected override void Attack ()

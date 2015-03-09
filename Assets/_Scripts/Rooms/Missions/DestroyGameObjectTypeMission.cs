@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DestroyGameObjectTypeMission : Mission {
 
-	public int totalOfGameObject;
+	private int _totalOfGameObject;
 
 	public GameObject gameobjectToDestroy;
 
@@ -13,13 +13,13 @@ public class DestroyGameObjectTypeMission : Mission {
 	{
 		base.Awake ();
 
-		int currentLevel = GameObject.Find ("GameController").GetComponent<PlayerProgression> ().currentLevel;
+		int currentLevel = GameObject.Find("GameController").GetComponent<PlayerProgression> ().currentLevel;
 		int totalToDestroy = amount;
 
 		missionBaseLevelTime = Mathf.RoundToInt (10 / currentLevel);
 
 		if(totalToDestroy == 0)	{
-			totalToDestroy = totalOfGameObject;
+			totalToDestroy = _totalOfGameObject;
 			description = "Destroy all the " + gameobjectToDestroy.name + "(s).";
 		}else{
 			
@@ -28,10 +28,9 @@ public class DestroyGameObjectTypeMission : Mission {
 
 		missionPersonalTimeCal = totalToDestroy * (Mathf.RoundToInt(15 / currentLevel));
 	}
-
 	public override void StartMission ()
 	{
-		totalOfGameObject = numberOfGameObjectType(gameobjectToDestroy);
+		_totalOfGameObject = numberOfGameObjectType(gameobjectToDestroy);
 		base.StartMission ();
 	}
 
@@ -39,12 +38,14 @@ public class DestroyGameObjectTypeMission : Mission {
 	{
 		base.CheckMission ();
 		if(amount != 0){
-			if(numberOfGameObjectType(gameobjectToDestroy) <= totalOfGameObject - amount){ //Als de hoeveelheid nog aanwezig kleiner of gelijk is aan het aantal dat aanwezig was toen de missie begon - hoeveel je ervan moest destroyen.
+			if(numberOfGameObjectType(gameobjectToDestroy) <= _totalOfGameObject - amount){ //Als de hoeveelheid nog aanwezig kleiner of gelijk is aan het aantal dat aanwezig was toen de missie begon - hoeveel je ervan moest destroyen.
 				//guest completed
+				CompletedMission();
 			}
 		}else{
 			if(numberOfGameObjectType(gameobjectToDestroy) == 0){ //als alle van het object vernietigt is.
 				//guest completed
+				CompletedMission();
 			}
 		}
 	}

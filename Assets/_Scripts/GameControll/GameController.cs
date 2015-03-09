@@ -14,9 +14,10 @@ public class GameController : MonoBehaviour {
 	void Awake(){
 		//add alles wat met game controll heeft te maken.
 		if(destroyIfExists){
-			destroyIfExists = false;
 			if(GameObject.FindGameObjectsWithTag("GameController").Length > 1){
 				Destroy(gameObject);
+			}else{
+				destroyIfExists = false;
 			}
 		}else{
 			DontDestroyOnLoad (gameObject);
@@ -25,5 +26,7 @@ public class GameController : MonoBehaviour {
 		saveLoad = gameObject.AddComponent<SaveLoadData> ();
 		playerProgression = gameObject.AddComponent<PlayerProgression>();
 		dataScoreTransfer = gameObject.AddComponent<DataScoreTransfer> ();
+
+		//save data when scene loaded.
 	}
 }
