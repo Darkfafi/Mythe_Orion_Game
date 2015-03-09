@@ -1,59 +1,61 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerMovement : MonoBehaviour {
+//Gemaakt Door Ramses
 
-	Vector2 firstPressPos;
-	Vector2 secondPressPos;
-	Vector2 currentSwipe;
+public class PlayerMovement : Movement {
 
-	private Movement movement;
+	public Vector2 swipeStartPosition;
+	private Vector2 swipeDirectionValue = new Vector2 ();
 
-	void Start(){
-		movement = gameObject.GetComponent<Movement> ();
-	}
-	
-	void Update()
-	{
-		if(Input.touches.Length > 0)
-		{
-			Touch t = Input.GetTouch(0);
-			if(t.phase == TouchPhase.Began)
-			{
-				//save began touch 2d point
-				firstPressPos = new Vector2(t.position.x,t.position.y);
+	private bool controlling = false;
+	private bool moving = false;
+	private Vector2 tiltValue;
+
+	//als het word opgetilt en er geen tilt was dan stop. anders doe tilt opdracht (zoals springen etc)
+
+	void Update () {
+
+		if(Input.GetMouseButtonDown(0)){
+			tiltValue = new Vector2(0,0);
+			swipeStartPosition = Input.mousePosition;
+			controlling = true;
+		}
+
+		if(controlling){
+			tiltValue = new Vector2(Mathf.Abs(Input.mousePosition.x - swipeStartPosition.x),Mathf.Abs(Input.mousePosition.y - swipeStartPosition.y));
+			if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
+				if(tiltValue.x > tiltValue.y){
+					if(Input.mousePosition.x < swipeStartPosition.x){
+						swipeDirectionValue.x = LEFT;
+					}else if(Input.mousePosition.x > swipeStartPosition.x){
+						swipeDirectionValue.x = RIGHT;
+					}
+					moving = true;
+				}else{
+					if(Input.mousePosition.y < swipeStartPosition.y){
+						//throw ball/ star / thingy
+					}else if(Input.mousePosition.y > swipeStartPosition.y){
+						Jump();
+					}
+				}
+				controlling = false;
 			}
-			if(t.phase == TouchPhase.Ended)
-			{
-				//save ended touch 2d point
-				secondPressPos = new Vector2(t.position.x,t.position.y);
-				
-				//create vector from the two points
-				currentSwipe = new Vector3(secondPressPos.x - firstPressPos.x, secondPressPos.y - firstPressPos.y);
-				
-				//normalize the 2d vector
-				currentSwipe.Normalize();
-				
-				//swipe upwards
-				/*if(currentSwipe.y > 0  currentSwipe.x > -0.5f  currentSwipe.x < 0.5f)
-				{
-					Debug.Log("up swipe");
-				}
-				//swipe down
-				if(currentSwipe.y < 0  currentSwipe.x > -0.5f  currentSwipe.x < 0.5f)
-				{
-					Debug.Log("down swipe");
-				}*/
-				//swipe left
-				if(currentSwipe.x < 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-				{
-					movement.StartMovingLeft();
-				}
-				//swipe right
-				if(currentSwipe.x > 0 && currentSwipe.y > -0.5f && currentSwipe.y < 0.5f)
-				{
-					movement.StartMovingRight();
-				}
+		}
+
+		if(moving){
+			if (swipeDirectionValue.x < 0){
+				Move(LEFT);
+			}else if (swipeDirectionValue.x > 0){
+				Move(RIGHT);
+			}
+		}
+
+		if(Input.GetMouseButtonUp(0)){
+			if(tiltValue.x < 1 && tiltValue.y < 1){
+				Stop();
+				controlling = false;
+				swipeDirectionValue = new Vector2();
 			}
 		}
 	}

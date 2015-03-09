@@ -3,15 +3,20 @@ using System.Collections;
 
 public class Movement : MonoBehaviour {
 
+	protected int RIGHT = 1;
+	protected int LEFT = -1;
+
 	public int speed = 1;
 
-	public void StartMovingLeft(){
-
+	public void Move(int dir){
+		Debug.Log ("Move " + dir);
 	}
-	public void StopMoving(){
 
+	public void Stop(){
+		Debug.Log ("Stop");
 	}
-	public void StartMovingRight(){
 
+	public void Jump(){
+		Debug.Log("Jump");
 	}
 }
