@@ -18,5 +18,7 @@ public class Movement : MonoBehaviour {
 
 	public void Jump(){
 		Debug.Log("Jump");
+
+		//jump with vector 2 up.
 	}
 }
