@@ -6,6 +6,8 @@ public class Movement : MonoBehaviour {
 	protected int RIGHT = 1;
 	protected int LEFT = -1;
 
+	public bool moving = false;
+
 	public int speed = 1;
 
 	public void Move(int dir){
@@ -13,6 +15,7 @@ public class Movement : MonoBehaviour {
 	}
 
 	public void Stop(){
+		moving = false;
 		Debug.Log ("Stop");
 	}
 
