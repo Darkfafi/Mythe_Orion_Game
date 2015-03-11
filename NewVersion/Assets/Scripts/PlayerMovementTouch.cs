@@ -6,6 +6,9 @@ public class PlayerMovementTouch : MonoBehaviour {
 	private Vector3 topStartPos;
 	private Vector3 botStartPos;
 
+	public GameObject player1;
+	public GameObject player2;
+
 	Vector2 firstPressTop;
 	Vector2 secondPressTop;
 	Vector2 currentSwipeTop;
@@ -32,15 +35,14 @@ public class PlayerMovementTouch : MonoBehaviour {
 				if (Physics.Raycast(rayCast,out hit)){
 					if(hit.transform.tag == "Player1" || hit.transform.tag == "Player2"){
 						if(hit.transform.GetComponent <Movement>().moving == false){
-							print("touch " + hit.transform.tag);
-							if(touch.position.x < Screen.width/2){
-								if(topTouch > -1){
+							if(touch.position.y < Screen.height/2){
+								if(topTouch == -1){
 									topTouch = i;
 									topStartPos = Input.GetTouch(i).position;
 								}
 							}
 							else {
-								if(botTouch > -1){
+								if(botTouch == -1){
 									botTouch = i;
 									botStartPos = Input.GetTouch(i).position;
 								}
@@ -62,6 +64,7 @@ public class PlayerMovementTouch : MonoBehaviour {
 				}
 			}
 			else if (touch.phase == TouchPhase.Ended){
+				Debug.Log(topTouch + " " + botTouch);
 				//print("touch ended");
 				if(i == topTouch){
 					secondPressTop = new Vector2(Input.GetTouch(i).position.x,Input.GetTouch(i).position.y);
@@ -73,32 +76,33 @@ public class PlayerMovementTouch : MonoBehaviour {
 					//swipe up
 					if(currentSwipeTop.y > 0 && currentSwipeTop.x > -0.5f && currentSwipeTop.x < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Jump();
+						player1.transform.GetComponent<Movement>().Jump();
+						Debug.Log("up swipe top");
 					}
 					//swipe down
 					if(currentSwipeTop.y < 0 && currentSwipeTop.x > -0.5f && currentSwipeTop.x < 0.5f)
 					{
-						//hit.transform.GetComponent<Movement>().
-						Debug.Log("down swipe");
+						//player1.transform.GetComponent<Movement>().
+						Debug.Log("down swipe top");
 					}
 					//swipe left
 					if(currentSwipeTop.x < 0 && currentSwipeTop.y > -0.5f && currentSwipeTop.y < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Move(-1);
-						Debug.Log("left swipe");
+						player1.transform.GetComponent<Movement>().Move(-1);
+						Debug.Log("left swipe top");
 					}
 					//swipe right
 					if(currentSwipeTop.x > 0 && currentSwipeTop.y > -0.5f && currentSwipeTop.y < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Move(1);
-						Debug.Log("right swipe");
+						player1.transform.GetComponent<Movement>().Move(1);
+						Debug.Log("right swipe top");
 					}
 					topTouch = -1;
 				}
 				else if (i < topTouch){
 					topTouch --;
 				}
-				if(i == botTouch){
+				else if(i == botTouch){
 					secondPressBot = new Vector2(Input.GetTouch(i).position.x,Input.GetTouch(i).position.y);
 					
 					currentSwipeBot = new Vector3(secondPressBot.x - firstPressBot.x, secondPressBot.y - firstPressBot.y);
@@ -108,25 +112,26 @@ public class PlayerMovementTouch : MonoBehaviour {
 					//swipe up
 					if(currentSwipeBot.y > 0 && currentSwipeBot.x > -0.5f && currentSwipeBot.x < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Jump();
+						player2.transform.GetComponent<Movement>().Jump();
+						Debug.Log("up swipe bot");
 					}
 					//swipe down
 					if(currentSwipeBot.y < 0 && currentSwipeBot.x > -0.5f && currentSwipeBot.x < 0.5f)
 					{
 						//TODO throw star
-						Debug.Log("down swipe");
+						Debug.Log("down swipe bot");
 					}
 					//swipe left
 					if(currentSwipeBot.x < 0 && currentSwipeBot.y > -0.5f && currentSwipeBot.y < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Move(-1);
-						Debug.Log("left swipe");
+						player2.transform.GetComponent<Movement>().Move(-1);
+						Debug.Log("left swipe bot");
 					}
 					//swipe right
 					if(currentSwipeBot.x > 0 && currentSwipeBot.y > -0.5f && currentSwipeBot.y < 0.5f)
 					{
-						hit.transform.GetComponent<Movement>().Move(1);
-						Debug.Log("right swipe");
+						player2.transform.GetComponent<Movement>().Move(1);
+						Debug.Log("right swipe bot");
 					}
 					botTouch = -1;
 				}
