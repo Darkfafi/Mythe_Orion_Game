@@ -9,7 +9,6 @@ public class PlayerMovement : Movement {
 	private Vector2 swipeDirectionValue = new Vector2 ();
 
 	private bool controlling = false;
-	private bool moving = false;
 	private Vector2 tiltValue;
 
 	//als het word opgetilt en er geen tilt was dan stop. anders doe tilt opdracht (zoals springen etc)

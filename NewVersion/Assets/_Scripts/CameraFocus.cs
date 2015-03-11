@@ -29,7 +29,6 @@ public class CameraFocus : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (transform.rotation.z);
 		if(target != null){
 			Vector3 dis = target.transform.position - transform.position;
 			float moveSpeed = dis.magnitude;
