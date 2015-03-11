@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Scripts\CameraFocus.cs" />
+     <Compile Include="Assets\_Scripts\CameraRayChooser.cs" />
      <Compile Include="Assets\_Scripts\Global\Movement.cs" />
+     <Compile Include="Assets\_Scripts\Global\TouchAbleObject.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\PlayerMovementTouch.cs" />
  <Reference Include="UnityEngine.UI">
