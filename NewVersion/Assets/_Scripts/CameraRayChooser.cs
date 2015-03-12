@@ -13,6 +13,7 @@ public class CameraRayChooser : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			Ray2D rayCast;
 			RaycastHit2D hit;
+
 			Vector3 worldMousePosition;
 			Camera currentCam;
 
@@ -29,13 +30,14 @@ public class CameraRayChooser : MonoBehaviour {
 			worldMousePosition = currentCam.ScreenToWorldPoint(Input.mousePosition);
 			worldMousePosition.z = 0;
 
-			hit = Physics2D.Raycast(currentCam.transform.position,worldMousePosition - currentCam.transform.position);
+			hit = Physics2D.Raycast(worldMousePosition,worldMousePosition);
 
+			//Debug.DrawRay(currentCam.transform.position,worldMousePosition - currentCam.transform.position,Color.red,5f);
 			if(hit.collider != null){
 				if(hit.transform.gameObject.GetComponent<TouchAbleObject>() != null){
 					currentTarget = hit.transform.gameObject;
-					Debug.Log(currentTarget.name);
 					currentTarget.GetComponent<TouchAbleObject>().StartTouchObject();
+					Debug.Log(currentTarget.name);
 				}
 			}
 		}
