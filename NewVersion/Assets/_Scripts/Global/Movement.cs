@@ -11,7 +11,8 @@ public class Movement : MonoBehaviour {
 	public int speed = 1;
 
 	public void Move(int dir){
-		Debug.Log ("Move " + dir);
+		//Debug.Log ("Move " + dir);
+		gameObject.transform.Translate (new Vector2 (speed * dir,0) * Time.deltaTime);
 	}
 
 	public void Stop(){
@@ -20,8 +21,7 @@ public class Movement : MonoBehaviour {
 	}
 
 	public void Jump(){
-		Debug.Log("Jump");
-
+		//Debug.Log("Jump");
 		//jump with vector 2 up.
 	}
 }

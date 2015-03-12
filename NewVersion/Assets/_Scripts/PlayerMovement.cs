@@ -15,12 +15,6 @@ public class PlayerMovement : Movement {
 
 	void Update () {
 
-		if(Input.GetMouseButtonDown(0)){
-			tiltValue = new Vector2(0,0);/*
-			swipeStartPosition = Input.mousePosition;
-			controlling = true;*/
-		}
-
 		if(controlling){
 			tiltValue = new Vector2(Mathf.Abs(Input.mousePosition.x - swipeStartPosition.x),Mathf.Abs(Input.mousePosition.y - swipeStartPosition.y));
 			if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
@@ -41,22 +35,12 @@ public class PlayerMovement : Movement {
 				controlling = false;
 			}
 		}
-
 		if(moving){
 			if (swipeDirectionValue.x < 0){
 				Move(LEFT);
 			}else if (swipeDirectionValue.x > 0){
 				Move(RIGHT);
 			}
-		}
-
-		if(Input.GetMouseButtonUp(0)){
-			/*
-			if(tiltValue.x < 1 && tiltValue.y < 1){
-				Stop();
-				controlling = false;
-				swipeDirectionValue = new Vector2();
-			}*/
 		}
 	}
 

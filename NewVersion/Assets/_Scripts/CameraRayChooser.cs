@@ -11,7 +11,6 @@ public class CameraRayChooser : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {	
 		if (Input.GetMouseButtonDown (0)) {
-			Ray2D rayCast;
 			RaycastHit2D hit;
 
 			Vector3 worldMousePosition;
@@ -20,11 +19,11 @@ public class CameraRayChooser : MonoBehaviour {
 			if(Input.mousePosition.y > Screen.height / 2){
 				//cameraOne
 				currentCam = cameraOne;
-				Debug.Log("Player1 Cam");
+				Debug.Log("Player1 Camera");
 			}else{
 				//cameraTwo
 				currentCam = cameraTwo;
-				Debug.Log("Player2 Cam");
+				Debug.Log("Player2 Camera");
 			}
 
 			worldMousePosition = currentCam.ScreenToWorldPoint(Input.mousePosition);

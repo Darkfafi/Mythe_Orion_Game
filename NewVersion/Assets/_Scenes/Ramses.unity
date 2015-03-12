@@ -191,6 +191,8 @@ GameObject:
   - 212: {fileID: 761311713}
   - 114: {fileID: 761311712}
   - 61: {fileID: 761311715}
+  - 114: {fileID: 761311716}
+  - 50: {fileID: 761311717}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -257,6 +259,32 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 8.97999954, y: 8}
   m_Center: {x: 0, y: 0}
+--- !u!114 &761311716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761311711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddeeeaaa20f80954ba6260ebfd5643fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &761311717
+Rigidbody2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 761311711}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 0
+  m_FixedAngle: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
 --- !u!1001 &1126562389
 Prefab:
   m_ObjectHideFlags: 0
@@ -317,7 +345,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1449612843}
-  - 114: {fileID: 1449612842}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -325,19 +352,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1449612842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449612841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a0c5e204ff27bb4d9311315135dfa0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraOne: {fileID: 719694989}
-  cameraTwo: {fileID: 1579577716}
 --- !u!4 &1449612843
 Transform:
   m_ObjectHideFlags: 0
