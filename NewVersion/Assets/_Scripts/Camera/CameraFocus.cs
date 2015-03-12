@@ -15,7 +15,10 @@ public class CameraFocus : MonoBehaviour {
 	public GameObject target;
 
 	void Start(){
-	
+
+		
+		transform.position = new Vector3(target.transform.position.x - cameraX,target.transform.position.y + cameraY,target.transform.position.z - cameraZoom);
+
 		if(UpsideDown){
 			//Matrix4x4 m = Matrix4x4.TRS(gameObject.transform.position, new Quaternion(0,0,0,0), new Vector3(1, -1, 1));
 			//camera.worldToCameraMatrix = m;
@@ -31,8 +34,9 @@ public class CameraFocus : MonoBehaviour {
 	void Update () {
 		if(target != null){
 			Vector3 dis = target.transform.position - transform.position;
-			float moveSpeed = dis.magnitude;
-			transform.position = Vector3.MoveTowards(transform.position,new Vector3(target.transform.position.x - cameraX,target.transform.position.y + cameraY,target.transform.position.z - cameraZoom),moveSpeed / 2.5f * Time.deltaTime);
+			float moveSpeed = dis.magnitude * 0.3f;
+
+			transform.position = Vector3.MoveTowards(transform.position,new Vector3(target.transform.position.x - cameraX,target.transform.position.y + cameraY,target.transform.position.z - cameraZoom),moveSpeed * Time.deltaTime);
 		}
 	}
 	public void SetTarget(GameObject givenTarget){
