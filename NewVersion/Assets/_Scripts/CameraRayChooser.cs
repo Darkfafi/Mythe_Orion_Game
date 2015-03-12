@@ -33,9 +33,16 @@ public class CameraRayChooser : MonoBehaviour {
 
 			if(hit.collider != null){
 				if(hit.transform.gameObject.GetComponent<TouchAbleObject>() != null){
-					currentTarget = hit.transform.gameObject.name;
-					Debug.Log(hit.transform.gameObject.name);
+					currentTarget = hit.transform.gameObject;
+					Debug.Log(currentTarget.name);
+					currentTarget.GetComponent<TouchAbleObject>().StartTouchObject();
 				}
+			}
+		}
+		if (Input.GetMouseButtonUp (0)) {
+			if(currentTarget != null){
+				currentTarget.GetComponent<TouchAbleObject>().StopTouchObject();
+				currentTarget = null;
 			}
 		}
 	}

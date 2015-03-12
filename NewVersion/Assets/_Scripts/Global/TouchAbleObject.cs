@@ -7,9 +7,11 @@ public class TouchAbleObject : MonoBehaviour {
 
 	public virtual void StartTouchObject(){
 		getsTouched = true;
+		SendMessage ("StartTouch");
 	}
 
 	public virtual void StopTouchObject(){
 		getsTouched = false;
+		SendMessage ("StopTouch");
 	}
 }

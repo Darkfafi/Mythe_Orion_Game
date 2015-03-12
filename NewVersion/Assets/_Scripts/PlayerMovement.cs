@@ -16,9 +16,9 @@ public class PlayerMovement : Movement {
 	void Update () {
 
 		if(Input.GetMouseButtonDown(0)){
-			tiltValue = new Vector2(0,0);
+			tiltValue = new Vector2(0,0);/*
 			swipeStartPosition = Input.mousePosition;
-			controlling = true;
+			controlling = true;*/
 		}
 
 		if(controlling){
@@ -51,11 +51,26 @@ public class PlayerMovement : Movement {
 		}
 
 		if(Input.GetMouseButtonUp(0)){
+			/*
 			if(tiltValue.x < 1 && tiltValue.y < 1){
 				Stop();
 				controlling = false;
 				swipeDirectionValue = new Vector2();
-			}
+			}*/
+		}
+	}
+
+	void StartTouch(){
+		tiltValue = new Vector2(0,0);
+		swipeStartPosition = Input.mousePosition;
+		controlling = true;
+	}
+
+	void StopTouch(){
+		if(tiltValue.x < 1 && tiltValue.y < 1){
+			Stop();
+			controlling = false;
+			swipeDirectionValue = new Vector2();
 		}
 	}
 }
