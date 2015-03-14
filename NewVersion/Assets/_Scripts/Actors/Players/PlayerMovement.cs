@@ -19,7 +19,6 @@ public class PlayerMovement : Movement {
 
 		if(transform.rotation.z == 1){
 			mousePos = new Vector3(Screen.width - mousePos.x, Screen.height - mousePos.y,mousePos.z);
-			Debug.Log(swipeStartPosition + ": " + mousePos);
 		}
 
 		if(controlling){

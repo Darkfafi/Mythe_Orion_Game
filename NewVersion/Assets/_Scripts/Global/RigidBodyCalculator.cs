@@ -25,4 +25,11 @@ public class RigidBodyCalculator : MonoBehaviour {
 			rigidbody.gravityScale = -rigidbody.gravityScale; //maakt het positief (valt naar beneden).
 		}
 	}
+
+	public Vector2 GetVectorToRotation(Vector2 vectorDirection){
+		if(transform.rotation.z == 1){
+			vectorDirection = -vectorDirection;
+		}
+		return vectorDirection;
+	}
 }

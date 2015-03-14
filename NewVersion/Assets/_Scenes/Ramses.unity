@@ -248,11 +248,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a786202d9da6a5489190254af9673c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraY: 2.20000005
+  cameraY: -2.79999995
   cameraX: 0
   cameraZoom: 1
   UpsideDown: 0
-  target: {fileID: 163346, guid: ee6e4812acd38ad4cafb23756da04d9e, type: 2}
+  target: {fileID: 761311711}
 --- !u!1 &720610846
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,22 +501,22 @@ Prefab:
     - target: {fileID: 11499502, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 163346, guid: ee6e4812acd38ad4cafb23756da04d9e, type: 2}
+      objectReference: {fileID: 761311711}
     - target: {fileID: 11499504, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
       propertyPath: target
       value: 
-      objectReference: {fileID: 144388, guid: 31080a93933303c4dbb79ba651df3195, type: 2}
+      objectReference: {fileID: 2105440379}
     - target: {fileID: 11499502, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
       propertyPath: cameraY
-      value: 2.20000005
+      value: -2.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 11499504, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
       propertyPath: cameraY
-      value: -2.20000005
+      value: -2.79999995
       objectReference: {fileID: 0}
     - target: {fileID: 11499504, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
       propertyPath: UpsideDown
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0edb643541bfef54ca9e33d71b9f1622, type: 2}
@@ -651,11 +651,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a786202d9da6a5489190254af9673c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraY: -2.20000005
+  cameraY: -2.79999995
   cameraX: 0
   cameraZoom: 1
-  UpsideDown: 0
-  target: {fileID: 144388, guid: 31080a93933303c4dbb79ba651df3195, type: 2}
+  UpsideDown: 1
+  target: {fileID: 2105440379}
 --- !u!92 &1579577714
 Behaviour:
   m_ObjectHideFlags: 0

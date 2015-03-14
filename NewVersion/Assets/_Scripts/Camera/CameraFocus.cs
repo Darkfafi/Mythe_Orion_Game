@@ -16,26 +16,32 @@ public class CameraFocus : MonoBehaviour {
 
 	void Start(){
 
-		
-		transform.position = new Vector3(target.transform.position.x - cameraX,target.transform.position.y + cameraY,target.transform.position.z - cameraZoom);
-
-		if(UpsideDown){
-			Matrix4x4 mat = Camera.main.projectionMatrix;
-			mat *= Matrix4x4.Scale(new Vector3(-1, 1, 1));
-			camera.projectionMatrix = mat;
-			transform.Rotate(new Vector3(0,0,180));
-		}
+		transform.position = new Vector3(target.transform.position.x - cameraX,calculateY(),target.transform.position.z);
 	}
 
 	// Update is called once per frame
 	void Update () {
+		this.camera.orthographicSize = cameraZoom * 5;
+
 		if(target != null){
 			Vector3 dis = target.transform.position - transform.position;
 			float moveSpeed = dis.magnitude * 0.85f;
 
-			transform.position = Vector3.MoveTowards(transform.position,new Vector3(target.transform.position.x - cameraX,target.transform.position.y + cameraY,target.transform.position.z - cameraZoom),moveSpeed * Time.deltaTime);
+
+
+			transform.position = Vector3.MoveTowards(transform.position,new Vector3(target.transform.position.x - cameraX,calculateY(),target.transform.position.z - 1),moveSpeed * Time.deltaTime);
 		}
 	}
+
+	private float calculateY(){
+		float yPos = target.transform.position.y + cameraY + camera.orthographicSize;
+		
+		if(UpsideDown){
+			yPos = target.transform.position.y + (cameraY * -1) + (camera.orthographicSize * -1);
+		}
+		return yPos;
+	}
+
 	public void SetTarget(GameObject givenTarget){
 		target = givenTarget;
 	}
