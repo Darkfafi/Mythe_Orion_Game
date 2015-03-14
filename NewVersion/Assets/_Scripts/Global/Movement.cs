@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
 
 	public bool moving = false;
 
-	public int speed = 1;
+	public int speed = 2;
 
 	public void Move(int dir){
 		//Debug.Log ("Move " + dir);
@@ -21,7 +21,7 @@ public class Movement : MonoBehaviour {
 	}
 
 	public void Jump(){
-		//Debug.Log("Jump");
+		Debug.Log("Jump");
 		//jump with vector 2 up.
 	}
 }

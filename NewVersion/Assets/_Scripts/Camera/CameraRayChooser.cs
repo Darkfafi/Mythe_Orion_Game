@@ -37,6 +37,7 @@ public class CameraRayChooser : MonoBehaviour {
 					currentTarget = hit.transform.gameObject;
 					currentTarget.GetComponent<TouchAbleObject>().StartTouchObject();
 					Debug.Log(currentTarget.name);
+					//if not player. Then send to camera player what object clicked if interactable with player
 				}
 			}
 		}

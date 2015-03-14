@@ -15,20 +15,27 @@ public class PlayerMovement : Movement {
 
 	void Update () {
 
+		Vector3 mousePos = Input.mousePosition;
+
+		if(transform.rotation.z == 1){
+			mousePos = new Vector3(Screen.width - mousePos.x, Screen.height - mousePos.y,mousePos.z);
+			Debug.Log(swipeStartPosition + ": " + mousePos);
+		}
+
 		if(controlling){
-			tiltValue = new Vector2(Mathf.Abs(Input.mousePosition.x - swipeStartPosition.x),Mathf.Abs(Input.mousePosition.y - swipeStartPosition.y));
+			tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
 			if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
 				if(tiltValue.x > tiltValue.y){
-					if(Input.mousePosition.x < swipeStartPosition.x){
+					if(mousePos.x < swipeStartPosition.x){
 						swipeDirectionValue.x = LEFT;
-					}else if(Input.mousePosition.x > swipeStartPosition.x){
+					}else if(mousePos.x > swipeStartPosition.x){
 						swipeDirectionValue.x = RIGHT;
 					}
 					moving = true;
 				}else{
-					if(Input.mousePosition.y < swipeStartPosition.y){
+					if(mousePos.y < swipeStartPosition.y){
 						//throw ball/ star / thingy
-					}else if(Input.mousePosition.y > swipeStartPosition.y){
+					}else if(mousePos.y > swipeStartPosition.y){
 						Jump();
 					}
 				}
@@ -47,6 +54,11 @@ public class PlayerMovement : Movement {
 	void StartTouch(){
 		tiltValue = new Vector2(0,0);
 		swipeStartPosition = Input.mousePosition;
+
+		if(transform.rotation.z == 1){
+			swipeStartPosition = new Vector2(Screen.width - swipeStartPosition.x, Screen.height - swipeStartPosition.y);
+		}
+
 		controlling = true;
 	}
 

@@ -50,8 +50,8 @@
      <Compile Include="Assets\_Scripts\Camera\CameraFocus.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraRayChooser.cs" />
      <Compile Include="Assets\_Scripts\Global\Movement.cs" />
+     <Compile Include="Assets\_Scripts\Global\RigidBodyCalculator.cs" />
      <Compile Include="Assets\_Scripts\Global\TouchAbleObject.cs" />
-     <Compile Include="Assets\_Scripts\PlayerMovementTouch.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
