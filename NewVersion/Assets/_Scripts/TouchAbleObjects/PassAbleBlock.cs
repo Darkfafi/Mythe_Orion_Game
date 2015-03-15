@@ -6,8 +6,13 @@ public class PassAbleBlock : TouchAbleObject {
 	bool passing = false;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		gameObject.AddComponent<RigidBodyCalculator> ();
+	}
+
+	void Start(){
+		rigidbody2D.mass = 0.5f;
+		rigidbody2D.fixedAngle = true;
 	}
 
 	void OnTriggerExit2D(Collider2D other){
