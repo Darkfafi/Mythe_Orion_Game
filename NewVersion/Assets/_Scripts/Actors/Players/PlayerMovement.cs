@@ -33,7 +33,7 @@ public class PlayerMovement : Movement {
 					moving = true;
 				}else{
 					if(mousePos.y < swipeStartPosition.y){
-						//throw ball/ star / thingy
+						GetComponent<StarHolder>().ThrowStar();
 						Stop();
 					}else if(mousePos.y > swipeStartPosition.y){
 						Jump();

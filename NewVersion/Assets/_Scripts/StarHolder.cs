@@ -6,6 +6,7 @@ public class StarHolder : MonoBehaviour {
 	public GameObject star;
 	public GameObject starPrefab;
 	public bool holdingStar = false;
+	private bool starHit = false;
 
 	void Start(){
 		if (holdingStar == true && star.activeInHierarchy == false) {
@@ -20,24 +21,26 @@ public class StarHolder : MonoBehaviour {
 			Instantiate(starPrefab, star.transform.position, star.transform.rotation);
 			holdingStar = false;
 			star.SetActive(false);
+			starHit = true;
 		}
 	}
 	public void OnTriggerEnter2D (Collider2D hit){
 		if (hit.tag == "Star"){
-			if(hit.GetComponent<StarBehavior>().goDown == true && tag == "Player2"){
-				holdingStar = true;
-				star.SetActive(true);
-				Destroy(hit.gameObject);
+			if(starHit == true){
+				starHit = false;
 			}
-			else if (hit.GetComponent<StarBehavior>().goDown == false && tag == "Player1"){
-				holdingStar = true;
-				star.SetActive(true);
-				Destroy(hit.gameObject);
+			else {
+				if(tag == "Player2"){
+					holdingStar = true;
+					star.SetActive(true);
+					Destroy(hit.gameObject);
+				}
+				else if (tag == "Player1"){
+					holdingStar = true;
+					star.SetActive(true);
+					Destroy(hit.gameObject);
+				}
 			}
 		}
-		Debug.Log (hit.tag + " " + hit.GetComponent<StarBehavior>().goDown);
-	}
-	void OnMouseDown () {
-		ThrowStar ();
 	}
 }
