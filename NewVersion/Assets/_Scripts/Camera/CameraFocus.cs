@@ -25,7 +25,7 @@ public class CameraFocus : MonoBehaviour {
 
 		if(target != null){
 			Vector3 dis = target.transform.position - transform.position;
-			float moveSpeed = dis.magnitude * 0.85f;
+			float moveSpeed = (dis.magnitude * 0.85f);
 
 
 

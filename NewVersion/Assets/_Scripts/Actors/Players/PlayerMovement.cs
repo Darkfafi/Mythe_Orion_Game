@@ -34,6 +34,7 @@ public class PlayerMovement : Movement {
 				}else{
 					if(mousePos.y < swipeStartPosition.y){
 						//throw ball/ star / thingy
+						Stop();
 					}else if(mousePos.y > swipeStartPosition.y){
 						Jump();
 					}

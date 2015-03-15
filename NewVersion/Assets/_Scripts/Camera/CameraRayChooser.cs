@@ -19,11 +19,11 @@ public class CameraRayChooser : MonoBehaviour {
 			if(Input.mousePosition.y > Screen.height / 2){
 				//cameraOne
 				currentCam = cameraOne;
-				Debug.Log("Player1 Camera");
+				//Debug.Log("Player1 Camera");
 			}else{
 				//cameraTwo
 				currentCam = cameraTwo;
-				Debug.Log("Player2 Camera");
+				//Debug.Log("Player2 Camera");
 			}
 
 			worldMousePosition = currentCam.ScreenToWorldPoint(Input.mousePosition);
@@ -36,7 +36,7 @@ public class CameraRayChooser : MonoBehaviour {
 				if(hit.transform.gameObject.GetComponent<TouchAbleObject>() != null){
 					currentTarget = hit.transform.gameObject;
 					currentTarget.GetComponent<TouchAbleObject>().StartTouchObject();
-					Debug.Log(currentTarget.name);
+					//Debug.Log(currentTarget.name);
 					//if not player. Then send to camera player what object clicked if interactable with player
 				}
 			}
