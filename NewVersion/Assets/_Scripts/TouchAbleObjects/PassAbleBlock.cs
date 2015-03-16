@@ -4,6 +4,7 @@ using System.Collections;
 public class PassAbleBlock : TouchAbleObject {
 
 	bool passing = false;
+	public float massObject = 10000;
 
 	// Use this for initialization
 	void Awake () {
@@ -11,8 +12,8 @@ public class PassAbleBlock : TouchAbleObject {
 	}
 
 	void Start(){
-		rigidbody2D.mass = 0.5f;
 		rigidbody2D.fixedAngle = true;
+		rigidbody2D.mass = massObject;
 	}
 
 	void OnTriggerExit2D(Collider2D other){
@@ -26,7 +27,7 @@ public class PassAbleBlock : TouchAbleObject {
 					transform.rotation = new Quaternion(0,0,180,0); // anders naar 180
 				}
 				GetComponent<RigidBodyCalculator>().CheckRotationForGravity(); //dan calculeer wat je zwaartekracht moet zijn
-				rigidbody2D.AddForce(GetComponent<RigidBodyCalculator>().GetVectorToRotation(-Vector2.up) * 350); //en duw jezelf naar de grond zodat je niet een boog makt voor je de grond raakt
+				rigidbody2D.AddForce(GetComponent<RigidBodyCalculator>().GetVectorToRotation(-Vector2.up) * ((400 * rigidbody2D.mass) * gameObject.transform.localScale.y)); //en duw jezelf naar de grond zodat je niet een boog makt voor je de grond raakt
 			}
 		}
 	}

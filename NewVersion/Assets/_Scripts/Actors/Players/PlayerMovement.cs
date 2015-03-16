@@ -14,7 +14,7 @@ public class PlayerMovement : Movement {
 	//als het word opgetilt en er geen tilt was dan stop. anders doe tilt opdracht (zoals springen etc)
 
 	void Update () {
-
+		//Debug.Log (transform.rotation);
 		Vector3 mousePos = Input.mousePosition;
 
 		if(transform.rotation.z == 1){
