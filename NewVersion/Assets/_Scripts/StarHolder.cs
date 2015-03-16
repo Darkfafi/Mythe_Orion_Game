@@ -30,12 +30,7 @@ public class StarHolder : MonoBehaviour {
 				starHit = false;
 			}
 			else {
-				if(tag == "Player2"){
-					holdingStar = true;
-					star.SetActive(true);
-					Destroy(hit.gameObject);
-				}
-				else if (tag == "Player1"){
+				if(tag == "Player"){
 					holdingStar = true;
 					star.SetActive(true);
 					Destroy(hit.gameObject);
