@@ -24,7 +24,7 @@ public class StarHolder : MonoBehaviour {
 			starHit = true;
 		}
 	}
-	public void OnTriggerEnter2D (Collider2D hit){
+	void OnTriggerEnter2D (Collider2D hit){
 		if (hit.tag == "Star"){
 			if(starHit == true){
 				starHit = false;
