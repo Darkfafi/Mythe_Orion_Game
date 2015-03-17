@@ -51,15 +51,16 @@
      <Compile Include="Assets\_Scripts\Camera\CameraFocus.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraRayChooser.cs" />
      <Compile Include="Assets\_Scripts\Data\SaveLoadData.cs" />
-     <Compile Include="Assets\_Scripts\DestructableCollisionCheck.cs" />
      <Compile Include="Assets\_Scripts\EndLevel.cs" />
      <Compile Include="Assets\_Scripts\Global\Movement.cs" />
      <Compile Include="Assets\_Scripts\Global\RigidBodyCalculator.cs" />
      <Compile Include="Assets\_Scripts\Global\TouchAbleObject.cs" />
+     <Compile Include="Assets\_Scripts\InteractableObjects\DestructableCollisionCheck.cs" />
      <Compile Include="Assets\_Scripts\Star\StarBehavior.cs" />
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
      <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\LevelButton.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\UITimer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
