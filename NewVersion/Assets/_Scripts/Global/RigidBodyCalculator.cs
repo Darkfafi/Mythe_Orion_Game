@@ -5,11 +5,11 @@ public class RigidBodyCalculator : MonoBehaviour {
 
 	public bool rotationToGravity = true;
 
-	private Rigidbody2D rigidbody;
+	//private Rigidbody2D rigidbody;
 
 	// Use this for initialization
 	void Awake () {
-		rigidbody = gameObject.AddComponent<Rigidbody2D> ();
+		gameObject.AddComponent<Rigidbody2D> ();
 		if(rotationToGravity){
 			CheckRotationForGravity();
 		}
@@ -18,11 +18,11 @@ public class RigidBodyCalculator : MonoBehaviour {
 	public void CheckRotationForGravity(){
 		//Debug.Log (gameObject.transform.rotation);
 		if(Mathf.Abs(gameObject.transform.rotation.z) == 1){
-			if(rigidbody.gravityScale == Mathf.Abs(rigidbody.gravityScale)){
-				rigidbody.gravityScale = -rigidbody.gravityScale; //maakt het negatief (valt naar boven).
+			if(rigidbody2D.gravityScale == Mathf.Abs(rigidbody2D.gravityScale)){
+				rigidbody2D.gravityScale = -rigidbody2D.gravityScale; //maakt het negatief (valt naar boven).
 			}
-		}else if(rigidbody.gravityScale != Mathf.Abs(rigidbody.gravityScale)){
-			rigidbody.gravityScale = -rigidbody.gravityScale; //maakt het positief (valt naar beneden).
+		}else if(rigidbody2D.gravityScale != Mathf.Abs(rigidbody2D.gravityScale)){
+			rigidbody2D.gravityScale = -rigidbody2D.gravityScale; //maakt het positief (valt naar beneden).
 		}
 	}
 
