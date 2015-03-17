@@ -18,6 +18,7 @@ public class StarHolder : MonoBehaviour {
 	}
 	public void ThrowStar (){
 		if (holdingStar == true) {
+			GetComponentInParent<Rigidbody2D>().mass = 1;
 			Instantiate(starPrefab, star.transform.position, star.transform.rotation);
 			holdingStar = false;
 			star.SetActive(false);
@@ -30,12 +31,14 @@ public class StarHolder : MonoBehaviour {
 				starHit = false;
 			}
 			else {
-				if(tag == "Player"){
-					holdingStar = true;
-					star.SetActive(true);
-					Destroy(hit.gameObject);
-				}
+				CatchStar();
+				Destroy(hit.gameObject);
 			}
 		}
+	}
+	void CatchStar(){
+		GetComponentInParent<Rigidbody2D> ().mass = 10000;
+		holdingStar = true;
+		star.SetActive(true);
 	}
 }
