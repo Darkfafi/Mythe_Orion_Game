@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PassAbleBlock : TouchAbleObject {
+public class PassAbleBlock : InteractableObject {
 
 	bool passing = false;
 	public float massObject = 10000;
@@ -32,14 +32,12 @@ public class PassAbleBlock : TouchAbleObject {
 		}
 	}
 
-	void StartTouch(){
+	public override void Interact ()
+	{
+		base.Interact ();
 		if(!passing){
 			passing = true;
 			collider2D.isTrigger = true;
 		}
-	}
-
-	void StopTouch(){
-
 	}
 }

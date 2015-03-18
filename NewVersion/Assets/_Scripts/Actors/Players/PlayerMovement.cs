@@ -5,7 +5,7 @@ using System.Collections;
 
 public class PlayerMovement : Movement {
 
-	public Vector2 swipeStartPosition;
+	private Vector2 swipeStartPosition;
 	private Vector2 swipeDirectionValue = new Vector2 ();
 
 	private bool controlling = false;
@@ -33,7 +33,7 @@ public class PlayerMovement : Movement {
 					moving = true;
 				}else{
 					if(mousePos.y < swipeStartPosition.y){
-						GetComponent<StarHolder>().ThrowStar();
+						GetComponentInChildren<StarHolder>().ThrowStar();
 						Stop();
 					}else if(mousePos.y > swipeStartPosition.y){
 						Jump();

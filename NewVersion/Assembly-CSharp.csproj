@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GameController.cs" />
+     <Compile Include="Assets\_Scripts\Actors\Players\Player.cs" />
      <Compile Include="Assets\_Scripts\Actors\Players\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraFocus.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraRayChooser.cs" />
@@ -56,6 +57,7 @@
      <Compile Include="Assets\_Scripts\Global\RigidBodyCalculator.cs" />
      <Compile Include="Assets\_Scripts\Global\TouchAbleObject.cs" />
      <Compile Include="Assets\_Scripts\InteractableObjects\DestructableCollisionCheck.cs" />
+     <Compile Include="Assets\_Scripts\InteractableObjects\InteractableObject.cs" />
      <Compile Include="Assets\_Scripts\Star\StarBehavior.cs" />
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
      <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />

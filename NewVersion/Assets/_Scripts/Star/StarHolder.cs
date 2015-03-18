@@ -19,7 +19,7 @@ public class StarHolder : MonoBehaviour {
 	public void ThrowStar (){
 		if (holdingStar == true) {
 			GetComponentInParent<Rigidbody2D>().mass = 1;
-			Instantiate(starPrefab, star.transform.position, star.transform.rotation);
+			Instantiate(starPrefab, transform.position, transform.rotation);
 			holdingStar = false;
 			star.SetActive(false);
 			starHit = true;
