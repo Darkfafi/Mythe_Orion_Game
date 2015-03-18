@@ -4,7 +4,7 @@ using System.Collections;
 public class PassAbleBlock : InteractableObject {
 
 	bool passing = false;
-	public float massObject = 10000;
+	public float massObject = 1000000;
 
 	// Use this for initialization
 	void Awake () {

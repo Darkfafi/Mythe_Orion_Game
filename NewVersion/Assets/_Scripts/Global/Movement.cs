@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour {
 	
 	public bool moving = false;
 
-	private int currentDir;
+	public int currentDir;
 	private float scaleX;
 	public float speed;
 

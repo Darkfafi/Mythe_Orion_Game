@@ -10,7 +10,8 @@ public class StarHolder : MonoBehaviour {
 
 	void Start(){
 		if (holdingStar == true && star.activeInHierarchy == false) {
-			star.SetActive(true);
+			CatchStar();
+
 		}
 		else if (holdingStar == false && star.activeInHierarchy == true) {
 			star.SetActive(false);

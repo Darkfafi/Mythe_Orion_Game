@@ -69,4 +69,8 @@ public class PlayerMovement : Movement {
 			swipeDirectionValue = new Vector2();
 		}
 	}
+
+	public bool getControlling(){
+		return controlling;
+	}
 }
