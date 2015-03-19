@@ -6,26 +6,18 @@ public class SliderPosition : MonoBehaviour {
 
 	public Transform player;
 	private float xPos;
-	private float lvlWidth = 0;
+	public Transform end;
 	private Slider thisSlider;
 	public GameObject ground;
 	private float beginPosX;
 
 	void Start () {
-		if(player.position.x > 0){
-			lvlWidth -= player.position.x;
-		}
-		else {
-			lvlWidth += player.position.x;
-		}
-		foreach (Transform child in ground.transform)
-		{
-			lvlWidth += child.GetComponent<Renderer>().bounds.size.x;
-		}
+		beginPosX = player.position.x;
+
 		thisSlider = GetComponent<Slider> ();
 	}
 	void Update () {
-		xPos = player.position.x / lvlWidth;
+		xPos = (player.position.x - beginPosX) / end.position.x;
 		thisSlider.value = xPos;
 	}
 }
