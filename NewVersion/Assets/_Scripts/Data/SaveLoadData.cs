@@ -7,18 +7,26 @@ using System.Runtime.Serialization.Formatters.Binary;
 //Gemaakt door Ramses
 
 public class SaveLoadData : MonoBehaviour {
+
 	
+	private PlayerProgression playerProgression;
+
 	private BinaryFormatter binaryFormatter = new BinaryFormatter();
 	private FileStream file;
 
-	public void Save(string name, int currentLevel = 0,Dictionary<int,float> levelsCompleteWithTime = null){
+	void Awake(){
+		playerProgression = GetComponent<PlayerProgression> ();
+	}
+
+	public void Save(){
 		file = File.Create(Application.persistentDataPath + "/SaveData.dat");
 
 		SaveData saveData = new SaveData();
-		//via een appart script aanroepen. Waar alle informatie in staat net als vorige game playerprograssion.
-		saveData.name = name;
-		saveData.currentLevel = currentLevel;
-		saveData.levelsCompleteWithTime = levelsCompleteWithTime;
+		//via een appart script aanroepen. Waar alle informatie in staat net als vorige game playerprograssion
+
+		saveData.name = playerProgression.nameUser;
+		saveData.currentLevel = playerProgression.currentLevel;
+		saveData.levelsCompleteWithTime = playerProgression.levelsCompleteWithTime;
 
 		binaryFormatter.Serialize (file, saveData);
 		file.Close();
@@ -33,6 +41,9 @@ public class SaveLoadData : MonoBehaviour {
 
 			SaveData savedData = (SaveData)binaryFormatter.Deserialize(file);
 
+			playerProgression.nameUser = savedData.name;
+			playerProgression.currentLevel = savedData.currentLevel;
+			playerProgression.levelsCompleteWithTime = savedData.levelsCompleteWithTime;
 
 			file.Close();
 			Debug.Log("Loaded Game");
@@ -43,6 +54,6 @@ public class SaveLoadData : MonoBehaviour {
 	public class SaveData{
 		public string name;
 		public int currentLevel;
-		public Dictionary<int,float> levelsCompleteWithTime = new Dictionary<int, float>();
+		public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>();
 	}
 }

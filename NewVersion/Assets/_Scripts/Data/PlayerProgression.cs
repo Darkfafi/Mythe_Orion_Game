@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PlayerProgression : MonoBehaviour {
 
-	string name;
-	int currentLevel;
+	public string nameUser;
+	public int currentLevel;
+	public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>();
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	public int GetLevelTime(int levelIndex){
+		int result = 0;
+		if (levelsCompleteWithTime.ContainsKey(levelIndex)) {
+			result = levelsCompleteWithTime [levelIndex];
+		}
+		return result;
 	}
 }

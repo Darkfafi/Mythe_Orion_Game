@@ -51,6 +51,7 @@
      <Compile Include="Assets\_Scripts\Actors\Players\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraFocus.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraRayChooser.cs" />
+     <Compile Include="Assets\_Scripts\Data\DataManager.cs" />
      <Compile Include="Assets\_Scripts\Data\PlayerProgression.cs" />
      <Compile Include="Assets\_Scripts\Data\SaveLoadData.cs" />
      <Compile Include="Assets\_Scripts\EndLevel.cs" />
@@ -62,7 +63,7 @@
      <Compile Include="Assets\_Scripts\Star\StarBehavior.cs" />
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
      <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\LevelButton.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UITimer.cs" />
  <Reference Include="UnityEngine.UI">
