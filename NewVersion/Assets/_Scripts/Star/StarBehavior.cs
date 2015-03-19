@@ -7,11 +7,11 @@ public class StarBehavior : MonoBehaviour {
 
 	void Update(){
 		transform.Translate (-Vector2.up * Time.deltaTime * speed);
-		if (transform.position.y > 15) {
-			transform.position = new Vector3(transform.position.x, -transform.position.y, transform.position.z);
+		if (transform.position.y > 16) {
+			transform.position = new Vector3(transform.position.x, -(transform.position.y - 1), transform.position.z);
 		}
-		else if (transform.position.y < -15) {
-			transform.position = new Vector3(transform.position.x, -transform.position.y, transform.position.z);
+		else if (transform.position.y < -16) {
+			transform.position = new Vector3(transform.position.x, -(transform.position.y + 1), transform.position.z);
 		}
 	}
 }

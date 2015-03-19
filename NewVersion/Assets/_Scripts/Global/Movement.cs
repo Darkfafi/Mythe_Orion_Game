@@ -12,7 +12,7 @@ public class Movement : MonoBehaviour {
 	private float scaleX;
 	public float speed;
 
-	Animator anim;
+	public Animator anim;
 
 	void Start(){
 		anim = GetComponent<Animator> ();
@@ -39,7 +39,7 @@ public class Movement : MonoBehaviour {
 		moving = false;
 		anim.Play("Idle");
 		currentDir = 0;
-		Debug.Log ("Stop");
+//		Debug.Log ("Stop");
 	}
 
 	public void Jump(){

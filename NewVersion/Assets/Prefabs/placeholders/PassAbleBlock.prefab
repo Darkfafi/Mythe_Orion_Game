@@ -52,6 +52,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1320d4f87b30b943b22159fa860a838, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionDistance: 5
+  interactableWithStarUser: 1
+  massObject: 1e+06
 --- !u!212 &21225922
 SpriteRenderer:
   m_ObjectHideFlags: 1

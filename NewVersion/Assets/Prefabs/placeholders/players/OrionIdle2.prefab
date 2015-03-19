@@ -10,10 +10,8 @@ GameObject:
   - 4: {fileID: 448090}
   - 212: {fileID: 21248090}
   - 95: {fileID: 9548090}
-  - 114: {fileID: 11448094}
-  - 114: {fileID: 11448092}
-  - 114: {fileID: 11448090}
-  - 61: {fileID: 6148090}
+  - 114: {fileID: 11412582}
+  - 61: {fileID: 6164928}
   m_Layer: 0
   m_Name: OrionIdle2
   m_TagString: Player
@@ -58,12 +56,12 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 191288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.21700001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 448090}
   m_RootOrder: 0
---- !u!61 &6148090
+--- !u!61 &6164928
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,8 +70,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1.24000001, y: 2.75999999}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 1.24000001, y: 2.75999975}
+  m_Center: {x: 0, y: 1.37999988}
 --- !u!61 &6191288
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -100,7 +98,7 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11448090
+--- !u!114 &11412582
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -108,35 +106,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 148090}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf6881fce270e142bc30b08cff4c3bc, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de2f85d8af4e4640afbd096d632c677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationToGravity: 1
---- !u!114 &11448092
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddeeeaaa20f80954ba6260ebfd5643fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &11448094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbaf156ca1c700e40ac891dcb289ddb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moving: 0
-  speed: 2
-  swipeStartPosition: {x: 0, y: 0}
 --- !u!114 &11491288
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -28,9 +28,7 @@ GameObject:
   - 212: {fileID: 21273118}
   - 95: {fileID: 9573118}
   - 114: {fileID: 11473122}
-  - 114: {fileID: 11473120}
-  - 114: {fileID: 11473118}
-  - 61: {fileID: 6173118}
+  - 61: {fileID: 6123470}
   m_Layer: 0
   m_Name: OrionIdle
   m_TagString: Player
@@ -45,7 +43,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 159708}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 1.32000005, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 473118}
@@ -63,6 +61,17 @@ Transform:
   - {fileID: 459708}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6123470
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 173118}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Size: {x: 1.24000001, y: 2.75999975}
+  m_Center: {x: 0, y: 1.37999988}
 --- !u!61 &6159708
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -73,17 +82,6 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
---- !u!61 &6173118
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173118}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 1.24000001, y: 2.75999999}
   m_Center: {x: 0, y: 0}
 --- !u!95 &9573118
 Animator:
@@ -114,29 +112,6 @@ MonoBehaviour:
   star: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   holdingStar: 1
---- !u!114 &11473118
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbf6881fce270e142bc30b08cff4c3bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rotationToGravity: 1
---- !u!114 &11473120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 173118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddeeeaaa20f80954ba6260ebfd5643fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11473122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -145,12 +120,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 173118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbaf156ca1c700e40ac891dcb289ddb8, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de2f85d8af4e4640afbd096d632c677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moving: 0
-  speed: 2
-  swipeStartPosition: {x: 0, y: 0}
 --- !u!212 &21273118
 SpriteRenderer:
   m_ObjectHideFlags: 1

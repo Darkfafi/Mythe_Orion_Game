@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: e95cba8939f5a2f429b966b9fc3e0136
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Interactie_0
+    21300002: Interactie_1
+    21300004: Interactie_2
+    21300006: Interactie_3
+    21300008: Interactie_4
+    21300010: Interactie_5
+    21300012: Interactie_6
+    21300014: Interactie_7
+    21300016: Interactie_8
+    21300018: Interactie_9
+    21300020: Interactie_10
+    21300022: Interactie_11
+    21300024: Interactie_12
+    21300026: Interactie_13
+    21300028: Interactie_14
+    21300030: Interactie_15
+    21300032: Interactie_16
+    21300034: Interactie_17
+    21300036: Interactie_18
+    21300038: Interactie_19
+    21300040: Interactie_20
+    21300042: Interactie_21
+    21300044: Interactie_22
+    21300046: Interactie_23
+    21300048: Interactie_24
+    21300050: Interactie_25
+    21300052: Interactie_26
+    21300054: Interactie_27
+    21300056: Interactie_28
+    21300058: Interactie_29
+    21300060: Interactie_30
+    21300062: Interactie_31
+    21300064: Interactie_32
+    21300066: Interactie_33
+    21300068: Interactie_34
+    21300070: Interactie_35
+    21300072: Interactie_36
+    21300074: Interactie_37
+    21300076: Interactie_38
+    21300078: Interactie_39
+    21300080: Interactie_40
+    21300082: Interactie_41
+    21300084: Interactie_42
+    21300086: Interactie_43
+    21300088: Interactie_44
+    21300090: Interactie_45
+    21300092: Interactie_46
+    21300094: Interactie_47
+    21300096: Interactie_48
+    21300098: Interactie_49
+    21300100: Interactie_50
+    21300102: Interactie_51
+    21300104: Interactie_52
+    21300106: Interactie_53
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -42,6 +96,546 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: Interactie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_2
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_3
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_4
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_5
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 3345
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_7
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_8
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_9
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_10
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_11
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 2927
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_13
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_14
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_15
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_16
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_17
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 2509
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_19
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_20
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_21
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_22
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_23
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 2091
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_25
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_26
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_27
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_28
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_29
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1673
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_31
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_32
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_33
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_34
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_35
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1255
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_37
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_38
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_39
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_40
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_41
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 837
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_43
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_44
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_45
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_46
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_47
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 419
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_49
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_50
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_51
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_52
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Interactie_53
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 1
+        width: 307
+        height: 417
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

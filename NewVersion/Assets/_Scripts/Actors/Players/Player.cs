@@ -73,6 +73,7 @@ public class Player : MonoBehaviour {
 
 		if(targetObject != null){
 			if(rigidbody2D.mass > 1000){
+				playerMove.anim.Play("Interact");
 				targetObject.GetComponent<InteractableObject>().Interact();
 				movingToDestination = false;
 			}

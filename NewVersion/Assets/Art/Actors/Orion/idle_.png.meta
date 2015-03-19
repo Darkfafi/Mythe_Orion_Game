@@ -74,7 +74,7 @@ TextureImporter:
         y: 592
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__1
@@ -84,7 +84,7 @@ TextureImporter:
         y: 592
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__2
@@ -94,7 +94,7 @@ TextureImporter:
         y: 592
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__3
@@ -104,7 +104,7 @@ TextureImporter:
         y: 592
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__4
@@ -114,7 +114,7 @@ TextureImporter:
         y: 592
         width: 123
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__5
@@ -124,7 +124,7 @@ TextureImporter:
         y: 592
         width: 123
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__6
@@ -134,7 +134,7 @@ TextureImporter:
         y: 592
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__7
@@ -144,7 +144,7 @@ TextureImporter:
         y: 592
         width: 123
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__8
@@ -154,7 +154,7 @@ TextureImporter:
         y: 592
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__9
@@ -164,7 +164,7 @@ TextureImporter:
         y: 297
         width: 127
         height: 275
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__10
@@ -174,7 +174,7 @@ TextureImporter:
         y: 297
         width: 124
         height: 275
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__11
@@ -184,7 +184,7 @@ TextureImporter:
         y: 297
         width: 125
         height: 275
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__12
@@ -194,7 +194,7 @@ TextureImporter:
         y: 297
         width: 125
         height: 275
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__13
@@ -204,7 +204,7 @@ TextureImporter:
         y: 297
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__14
@@ -214,7 +214,7 @@ TextureImporter:
         y: 297
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__15
@@ -224,7 +224,7 @@ TextureImporter:
         y: 297
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__16
@@ -234,7 +234,7 @@ TextureImporter:
         y: 297
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__17
@@ -244,7 +244,7 @@ TextureImporter:
         y: 297
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__18
@@ -254,7 +254,7 @@ TextureImporter:
         y: 2
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__19
@@ -264,7 +264,7 @@ TextureImporter:
         y: 2
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__20
@@ -274,7 +274,7 @@ TextureImporter:
         y: 2
         width: 125
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__21
@@ -284,7 +284,7 @@ TextureImporter:
         y: 2
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__22
@@ -294,7 +294,7 @@ TextureImporter:
         y: 2
         width: 123
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: idle__23
@@ -304,7 +304,7 @@ TextureImporter:
         y: 2
         width: 124
         height: 276
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

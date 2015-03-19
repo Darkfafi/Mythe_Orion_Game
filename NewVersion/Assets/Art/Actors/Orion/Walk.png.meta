@@ -79,7 +79,7 @@ TextureImporter:
         y: 680
         width: 143
         height: 292
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_1
@@ -89,7 +89,7 @@ TextureImporter:
         y: 680
         width: 142
         height: 294
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_2
@@ -99,7 +99,7 @@ TextureImporter:
         y: 680
         width: 141
         height: 296
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_3
@@ -109,7 +109,7 @@ TextureImporter:
         y: 680
         width: 136
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_4
@@ -119,7 +119,7 @@ TextureImporter:
         y: 678
         width: 128
         height: 302
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_5
@@ -129,7 +129,7 @@ TextureImporter:
         y: 678
         width: 124
         height: 309
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_6
@@ -139,7 +139,7 @@ TextureImporter:
         y: 678
         width: 125
         height: 311
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_7
@@ -149,7 +149,7 @@ TextureImporter:
         y: 678
         width: 130
         height: 309
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_8
@@ -159,7 +159,7 @@ TextureImporter:
         y: 678
         width: 131
         height: 307
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_9
@@ -169,7 +169,7 @@ TextureImporter:
         y: 678
         width: 134
         height: 302
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_10
@@ -179,7 +179,7 @@ TextureImporter:
         y: 342
         width: 136
         height: 300
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_11
@@ -189,7 +189,7 @@ TextureImporter:
         y: 342
         width: 139
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_12
@@ -199,7 +199,7 @@ TextureImporter:
         y: 342
         width: 141
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_13
@@ -209,7 +209,7 @@ TextureImporter:
         y: 343
         width: 143
         height: 297
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_14
@@ -219,7 +219,7 @@ TextureImporter:
         y: 344
         width: 144
         height: 294
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_15
@@ -229,7 +229,7 @@ TextureImporter:
         y: 344
         width: 145
         height: 294
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_16
@@ -239,7 +239,7 @@ TextureImporter:
         y: 344
         width: 139
         height: 296
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_17
@@ -249,7 +249,7 @@ TextureImporter:
         y: 344
         width: 137
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_18
@@ -259,7 +259,7 @@ TextureImporter:
         y: 344
         width: 132
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_19
@@ -269,7 +269,7 @@ TextureImporter:
         y: 344
         width: 128
         height: 303
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_20
@@ -279,7 +279,7 @@ TextureImporter:
         y: 8
         width: 124
         height: 307
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_21
@@ -289,7 +289,7 @@ TextureImporter:
         y: 6
         width: 125
         height: 311
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_22
@@ -299,7 +299,7 @@ TextureImporter:
         y: 5
         width: 125
         height: 310
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_23
@@ -309,7 +309,7 @@ TextureImporter:
         y: 5
         width: 127
         height: 308
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_24
@@ -319,7 +319,7 @@ TextureImporter:
         y: 5
         width: 132
         height: 301
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_25
@@ -329,7 +329,7 @@ TextureImporter:
         y: 5
         width: 136
         height: 301
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_26
@@ -339,7 +339,7 @@ TextureImporter:
         y: 6
         width: 140
         height: 298
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_27
@@ -349,7 +349,7 @@ TextureImporter:
         y: 6
         width: 141
         height: 296
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Walk_28
@@ -359,7 +359,7 @@ TextureImporter:
         y: 8
         width: 139
         height: 294
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 

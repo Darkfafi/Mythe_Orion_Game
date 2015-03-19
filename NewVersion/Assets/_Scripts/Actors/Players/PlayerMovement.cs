@@ -22,24 +22,26 @@ public class PlayerMovement : Movement {
 		}
 
 		if(controlling){
-			tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
-			if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
-				if(tiltValue.x > tiltValue.y){
-					if(mousePos.x < swipeStartPosition.x){
-						swipeDirectionValue.x = LEFT;
-					}else if(mousePos.x > swipeStartPosition.x){
-						swipeDirectionValue.x = RIGHT;
+			if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
+				tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
+				if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
+					if(tiltValue.x > tiltValue.y){
+						if(mousePos.x < swipeStartPosition.x){
+							swipeDirectionValue.x = LEFT;
+						}else if(mousePos.x > swipeStartPosition.x){
+							swipeDirectionValue.x = RIGHT;
+						}
+						moving = true;
+					}else{
+						if(mousePos.y < swipeStartPosition.y){
+							GetComponentInChildren<StarHolder>().ThrowStar();
+							Stop();
+						}else if(mousePos.y > swipeStartPosition.y){
+							Jump();
+						}
 					}
-					moving = true;
-				}else{
-					if(mousePos.y < swipeStartPosition.y){
-						GetComponentInChildren<StarHolder>().ThrowStar();
-						Stop();
-					}else if(mousePos.y > swipeStartPosition.y){
-						Jump();
-					}
+					controlling = false;
 				}
-				controlling = false;
 			}
 		}
 		if(moving){
@@ -49,6 +51,7 @@ public class PlayerMovement : Movement {
 				Move(RIGHT);
 			}
 		}
+		
 	}
 
 	void StartTouch(){
@@ -64,9 +67,11 @@ public class PlayerMovement : Movement {
 
 	void StopTouch(){
 		if(tiltValue.x < 1 && tiltValue.y < 1){
-			Stop();
-			controlling = false;
-			swipeDirectionValue = new Vector2();
+			if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
+				Stop();
+				controlling = false;
+				swipeDirectionValue = new Vector2();
+			}
 		}
 	}
 
