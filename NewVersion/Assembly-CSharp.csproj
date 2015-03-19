@@ -64,8 +64,9 @@
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
      <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\SliderPosition.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\UITimer.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>
