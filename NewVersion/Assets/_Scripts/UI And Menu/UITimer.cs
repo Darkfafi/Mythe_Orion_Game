@@ -12,11 +12,11 @@ public class UITimer : MonoBehaviour {
 
 	void Start (){
 		text = gameObject.GetComponent<Text> ();
-		SetTimer (0, 55);
+		SetTimer (0, -0.5f);
 	}
 
-	public void SetTimer (int minutes, int seconds){
-		if(seconds >= 10){
+	public void SetTimer (int minutes, float seconds){
+		if(seconds >= 9.5f){
 			text.text = minutes + " : " + seconds;
 		}
 		else {
@@ -29,7 +29,7 @@ public class UITimer : MonoBehaviour {
 	void Update () {
 		if (timing == true) {
 			timerSecond += Time.deltaTime;
-			if(timerSecond >= 10){
+			if(timerSecond >= 9.5f){
 				text.text = timerMinute + " : " + timerSecond.ToString ("0");
 			}
 			else {
