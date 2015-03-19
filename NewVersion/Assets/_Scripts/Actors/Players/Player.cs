@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
 		playerMove = gameObject.AddComponent<PlayerMovement> ();
 		gameObject.AddComponent<TouchAbleObject> ();
 		gameObject.AddComponent<RigidBodyCalculator> ();
+		rigidbody2D.fixedAngle = true;
 
 		playerMove.speed = 2f;
 	}

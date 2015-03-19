@@ -11,10 +11,14 @@ public class SaveLoadData : MonoBehaviour {
 	private BinaryFormatter binaryFormatter = new BinaryFormatter();
 	private FileStream file;
 
-	public void Save(){
+	public void Save(string name, int currentLevel = 0,Dictionary<int,float> levelsCompleteWithTime = null){
 		file = File.Create(Application.persistentDataPath + "/SaveData.dat");
 
 		SaveData saveData = new SaveData();
+		//via een appart script aanroepen. Waar alle informatie in staat net als vorige game playerprograssion.
+		saveData.name = name;
+		saveData.currentLevel = currentLevel;
+		saveData.levelsCompleteWithTime = levelsCompleteWithTime;
 
 		binaryFormatter.Serialize (file, saveData);
 		file.Close();
@@ -37,7 +41,8 @@ public class SaveLoadData : MonoBehaviour {
 
 	[System.Serializable]
 	public class SaveData{
-		int currentLevel;
-		Dictionary<int,float> levelsCompleteWithTime = new Dictionary<int, float>();
+		public string name;
+		public int currentLevel;
+		public Dictionary<int,float> levelsCompleteWithTime = new Dictionary<int, float>();
 	}
 }
