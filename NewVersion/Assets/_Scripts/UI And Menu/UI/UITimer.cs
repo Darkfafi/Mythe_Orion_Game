@@ -12,7 +12,7 @@ public class UITimer : MonoBehaviour {
 
 	void Start (){
 		text = gameObject.GetComponent<Text> ();
-		SetTimer (0, -0.5f);
+		SetTimer (119, 50);
 	}
 
 	public void SetTimer (int minutes, float seconds){
@@ -40,9 +40,21 @@ public class UITimer : MonoBehaviour {
 				timerSecond -= 60;
 			}
 		}
+		if (Input.anyKey) {
+			Debug.Log(TotalTime());
+		}
 	}
-	public float TotalTime (){
-		totalTime = timerMinute + timerSecond / 100;
+	public int TotalTime (){
+		int totalTime = Mathf.RoundToInt(timerSecond);
+		int timeMinute = timerMinute;
+		while (timeMinute >= 60) {
+			timeMinute -= 60;
+			totalTime += 10000;
+		}
+		totalTime += timeMinute * 100;
+		if (timerMinute > 50339) {
+			totalTime = 8385959; //hoger dan dit crasht de database, en zet een score van 00:00:00 neer, wat dus de highscore wordt
+		}
 		return(totalTime);
 	}
 }
