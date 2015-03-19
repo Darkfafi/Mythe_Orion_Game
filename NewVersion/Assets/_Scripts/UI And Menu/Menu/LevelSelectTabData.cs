@@ -46,12 +46,14 @@ public class LevelSelectTabData : MonoBehaviour {
 				//TODO artStyle = Finished level art
 				artName = "Open";
 			}
-			timeCompleteInfo = playerProgression.GetLevelTime(levelIndex);
-
+			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Level" + levelIndex.ToString());
 		}else{
 			//TODO artStyle = Locked level art
 			artName = "Locked";
+			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Locked");
 		}
+
+		timeCompleteInfo = playerProgression.GetLevelTime(levelIndex);
 
 		GetComponent<Image> ().sprite = artList [System.Array.IndexOf(names,artName)];
 	}
