@@ -11,10 +11,10 @@ public class LevelSelectTabData : MonoBehaviour {
 	private bool selectionState = false;
 	private Sprite levelImage;
 	public int levelIndex;
-	private int timeCompleteInfo;
+	public int timeCompleteInfo;
 
 	private string[] names;
-	private string artName = "Locked";
+	private string originalArtName = "Locked";
 	private Sprite[] artList;
 
 
@@ -40,21 +40,36 @@ public class LevelSelectTabData : MonoBehaviour {
 			unlockState = true;
 			if(levelIndex == playerProgression.currentLevel){
 				//TODO artStyle = Current level art
-				artName = "Current";
+				originalArtName = "Current";
 				//GameObject.Find ("StartLevelButton").GetComponent<Image> ().sprite = levelImage; //<---- Test!!!
 			}else{
 				//TODO artStyle = Finished level art
-				artName = "Open";
+				originalArtName = "Open";
 			}
 			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Level" + levelIndex.ToString());
 		}else{
 			//TODO artStyle = Locked level art
-			artName = "Locked";
+			originalArtName = "Locked";
 			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Locked");
 		}
-
+		if (GetComponent<Image> ().sprite.name != "Selected") {
+			ChangeArtTo (originalArtName);
+		}
 		timeCompleteInfo = playerProgression.GetLevelTime(levelIndex);
+	}
 
+	public Sprite GetStartButtonArt(){
+		return levelImage;
+	}
+
+	public void ChangeArtTo(string artResourceName = "backToNormal"){
+		string artName = "";
+		if(artResourceName != "backToNormal"){
+			artName = artResourceName;
+		}else{
+			artName = originalArtName;
+		}
+		
 		GetComponent<Image> ().sprite = artList [System.Array.IndexOf(names,artName)];
 	}
 }

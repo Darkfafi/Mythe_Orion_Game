@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\GameController.cs" />
      <Compile Include="Assets\_Scripts\Actors\Players\Player.cs" />
      <Compile Include="Assets\_Scripts\Actors\Players\PlayerMovement.cs" />
      <Compile Include="Assets\_Scripts\Camera\CameraFocus.cs" />
@@ -64,6 +63,7 @@
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
      <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\MenuLevelSelection.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />
