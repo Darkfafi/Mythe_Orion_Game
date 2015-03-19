@@ -9,7 +9,7 @@ public class LevelSelectTabData : MonoBehaviour {
 
 	private bool unlockState = false;
 	private bool selectionState = false;
-	private Texture levelImage;
+	private Sprite levelImage;
 	public int levelIndex;
 	private int timeCompleteInfo;
 
@@ -19,7 +19,10 @@ public class LevelSelectTabData : MonoBehaviour {
 
 
 	void Awake(){
-		artList = Resources.LoadAll<Sprite>("Menu/TabArt");
+		artList = Resources.LoadAll<Sprite>("Menu/TabArt"); //haalt uit de resources forlder alle button art
+
+		levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Level" + levelIndex.ToString()); //haalt uit de resources folder zijn screenshot art
+
 		names = new string[artList.Length];
 
 		for(int i = 0; i < names.Length; i++) {
@@ -38,6 +41,7 @@ public class LevelSelectTabData : MonoBehaviour {
 			if(levelIndex == playerProgression.currentLevel){
 				//TODO artStyle = Current level art
 				artName = "Current";
+				//GameObject.Find ("StartLevelButton").GetComponent<Image> ().sprite = levelImage; //<---- Test!!!
 			}else{
 				//TODO artStyle = Finished level art
 				artName = "Open";
