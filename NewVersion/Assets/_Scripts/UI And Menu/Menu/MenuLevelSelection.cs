@@ -27,7 +27,7 @@ public class MenuLevelSelection : MonoBehaviour {
 			currentTab = levelTabs[selectedTab].GetComponent<LevelSelectTabData>();
 			currentTab.ChangeArtTo("Selected");
 			startLevelButton.GetComponent<Image>().sprite = currentTab.GetStartButtonArt();
-
+			startLevelButton.GetComponentInChildren<Text>().text = "Level " + (currentTab.levelIndex + 1).ToString();
 			personalTimeText.GetComponent<Text>().text = "Personal Time: " + currentTab.timeCompleteInfo.ToString();
 		}
 	}
