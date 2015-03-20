@@ -10,6 +10,6 @@ public class DataManager : MonoBehaviour {
 	void Awake () {
 		playerProgression = gameObject.AddComponent<PlayerProgression> ();
 		saveLoadData = 	gameObject.AddComponent<SaveLoadData> ();
-		saveLoadData.Load ();
+		saveLoadData.Load();
 	}
 }

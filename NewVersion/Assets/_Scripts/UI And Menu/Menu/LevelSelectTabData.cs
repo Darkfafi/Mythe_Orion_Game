@@ -39,16 +39,12 @@ public class LevelSelectTabData : MonoBehaviour {
 		if(levelIndex <= playerProgression.currentLevel){
 			unlockState = true;
 			if(levelIndex == playerProgression.currentLevel){
-				//TODO artStyle = Current level art
 				originalArtName = "Current";
-				//GameObject.Find ("StartLevelButton").GetComponent<Image> ().sprite = levelImage; //<---- Test!!!
 			}else{
-				//TODO artStyle = Finished level art
 				originalArtName = "Open";
 			}
 			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Level" + levelIndex.ToString());
 		}else{
-			//TODO artStyle = Locked level art
 			originalArtName = "Locked";
 			levelImage = Resources.Load<Sprite> ("Menu/LevelPictureArt/Locked");
 		}

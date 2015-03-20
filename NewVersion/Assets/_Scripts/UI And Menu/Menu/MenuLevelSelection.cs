@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class MenuLevelSelection : MonoBehaviour {
-
+	
 	private int selectedTab;
 	private GameObject[] levelTabs;
 	private GameObject startLevelButton;
@@ -22,6 +22,7 @@ public class MenuLevelSelection : MonoBehaviour {
 
 	void SelectTab(int tabInt){
 		LevelSelectTabData currentTab;
+
 		if(levelTabs[tabInt] != null){
 			selectedTab = tabInt;
 			currentTab = levelTabs[selectedTab].GetComponent<LevelSelectTabData>();
@@ -43,5 +44,9 @@ public class MenuLevelSelection : MonoBehaviour {
 		}
 
 		SelectTab(selectedTab);
+	}
+
+	public void StartSelectedLevel(){
+		Application.LoadLevel("LevelScene" + levelTabs[selectedTab].GetComponent<LevelSelectTabData>().levelIndex.ToString());
 	}
 }
