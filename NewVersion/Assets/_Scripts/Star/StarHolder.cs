@@ -8,6 +8,12 @@ public class StarHolder : MonoBehaviour {
 	private bool starHit = false;
 
 
+	void Start(){
+		if(holdingStar){
+			CatchStar();
+		}
+	}
+
 	public void ThrowStar (){
 		if (holdingStar == true) {
 			GetComponentInParent<Rigidbody2D>().mass = 1;
