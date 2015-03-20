@@ -47,6 +47,8 @@ public class MenuLevelSelection : MonoBehaviour {
 	}
 
 	public void StartSelectedLevel(){
-		Application.LoadLevel("LevelScene" + levelTabs[selectedTab].GetComponent<LevelSelectTabData>().levelIndex.ToString());
+		if (levelTabs [selectedTab].GetComponent<LevelSelectTabData> ().unlockState) {
+			Application.LoadLevel ("LevelScene" + levelTabs [selectedTab].GetComponent<LevelSelectTabData> ().levelIndex.ToString ());
+		}
 	}
 }

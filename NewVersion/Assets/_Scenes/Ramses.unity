@@ -523,7 +523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8af9d3d43cf8f4f9a3a97c05025a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  star: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   holdingStar: 1
 --- !u!61 &922963172
@@ -673,7 +672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f8af9d3d43cf8f4f9a3a97c05025a74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  star: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   holdingStar: 0
 --- !u!61 &1194001101
@@ -824,7 +822,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1449612843}
-  - 114: {fileID: 1449612842}
   - 114: {fileID: 1449612844}
   m_Layer: 0
   m_Name: GameController
@@ -833,17 +830,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1449612842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1449612841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4746da85570c1064d946477f2c17e7ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1449612843
 Transform:
   m_ObjectHideFlags: 0
@@ -864,7 +850,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1449612841}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ee5499e5de48ac479d8173b7c217a5c, type: 3}
+  m_Script: {fileID: 11500000, guid: 281f2c6df4375da48b3926dc5041a843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1579577712

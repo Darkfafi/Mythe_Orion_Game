@@ -24,6 +24,17 @@ public class Player : MonoBehaviour {
 		InteractableObject interactSection = interactionObject.GetComponent<InteractableObject> ();
 
 		if(InInteractionRangeTarget()){
+			/*
+			int dir;
+			if(targetObject.transform.position.x - gameObject.transform.position.x){
+				dir = -1;
+			}else{
+				dir = 1;
+			}
+			if(gameObject.transform.rotation.z >= 0.8 && gameObject.transform.rotation.z < 1.2){
+				dir *= -1;
+			}//<----------------------------------------------------------affsssssssssssssssssssssssssssssssssssssssssss en level tab generator
+			*/
 			InteractWithTarget();
 		}else{
 			if(movingToDestination == false){
