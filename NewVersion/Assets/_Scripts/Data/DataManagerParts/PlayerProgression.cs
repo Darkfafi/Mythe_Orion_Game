@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class PlayerProgression : MonoBehaviour {
 
 	public string nameUser;
-	public int currentLevel = 1;
+	public int currentLevel = 3;
 	public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>();
 
 	public int GetLevelTime(int levelIndex){

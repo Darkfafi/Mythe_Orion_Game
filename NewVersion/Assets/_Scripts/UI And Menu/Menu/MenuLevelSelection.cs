@@ -11,13 +11,15 @@ public class MenuLevelSelection : MonoBehaviour {
 
 	// Use this for initialization
 	void Awake () {
-		levelTabs = GameObject.FindGameObjectsWithTag("LevelTab");
-		startLevelButton = GameObject.Find ("StartLevelButton");
-		personalTimeText = GameObject.Find ("LevelPersonalTime");
+
 	}
 
 	void Start(){
-		SelectTab(levelTabs.Length - 1);
+		levelTabs = GameObject.FindGameObjectsWithTag("LevelTab");
+		startLevelButton = GameObject.Find ("StartLevelButton");
+		personalTimeText = GameObject.Find ("LevelPersonalTime");
+
+		SelectTab(0);
 	}
 
 	void SelectTab(int tabInt){
