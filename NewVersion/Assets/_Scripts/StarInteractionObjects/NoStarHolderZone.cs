@@ -9,7 +9,7 @@ public class NoStarHolderZone : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D other){
+	void OnTriggerStay2D(Collider2D other){
 		if(other.gameObject.tag == "Player"){
 			if(other.gameObject.rigidbody2D.mass > 500){
 				collider2D.isTrigger = false;
@@ -17,7 +17,7 @@ public class NoStarHolderZone : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionEnter2D(Collision2D other){
+	void OnCollisionStay2D(Collision2D other){
 		if(other.gameObject.tag == "Player"){
 			if(other.gameObject.rigidbody2D.mass < 500){
 				collider2D.isTrigger = true;
