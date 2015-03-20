@@ -1,0 +1,27 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class NoStarHolderZone : MonoBehaviour {
+
+	void OnTriggerExit2D(Collider2D other){
+		if(other.gameObject.tag == "Player"){
+			collider2D.isTrigger = false;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other){
+		if(other.gameObject.tag == "Player"){
+			if(other.gameObject.rigidbody2D.mass > 500){
+				collider2D.isTrigger = false;
+			}
+		}
+	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		if(other.gameObject.tag == "Player"){
+			if(other.gameObject.rigidbody2D.mass < 500){
+				collider2D.isTrigger = true;
+			}
+		}
+	}
+}

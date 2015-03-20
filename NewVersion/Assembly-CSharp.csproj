@@ -57,11 +57,12 @@
      <Compile Include="Assets\_Scripts\Global\Movement.cs" />
      <Compile Include="Assets\_Scripts\Global\RigidBodyCalculator.cs" />
      <Compile Include="Assets\_Scripts\Global\TouchAbleObject.cs" />
-     <Compile Include="Assets\_Scripts\InteractableObjects\DestructableCollisionCheck.cs" />
-     <Compile Include="Assets\_Scripts\InteractableObjects\InteractableObject.cs" />
      <Compile Include="Assets\_Scripts\Star\StarBehavior.cs" />
      <Compile Include="Assets\_Scripts\Star\StarHolder.cs" />
-     <Compile Include="Assets\_Scripts\TouchAbleObjects\PassAbleBlock.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\DestructableCollisionCheck.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\InteractableObject.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\NoStarHolderZone.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\PassAbleBlock.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelTabGenerator.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\MenuLevelSelection.cs" />
