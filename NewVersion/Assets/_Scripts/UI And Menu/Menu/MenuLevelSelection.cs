@@ -32,7 +32,11 @@ public class MenuLevelSelection : MonoBehaviour {
 
 			personalTimeText.GetComponent<Text>().text = "Personal Time: " + TimeConverter.SecTimeToHumanTimeString(currentTab.timeCompleteInfo);
 
-			SetRecordTimeText(currentTab.levelIndex);
+			if(currentTab.unlockState){
+				SetRecordTimeText(currentTab.levelIndex);
+			}else{
+				recordTimeText.GetComponent<Text>().text = "Unlock level to see record time.";
+			}
 			//recordTimeText.GetComponent<Text>().text = "Record time: by " +  
 		}
 	}
@@ -74,9 +78,13 @@ public class MenuLevelSelection : MonoBehaviour {
 		string recordText = "No connection";
 
 		if(www.error == null){
-			char[] splitchar = { ' ' };
-			string[] splitResult = www.text.Split(splitchar);
-			recordText = "Record time: by " + splitResult[0] + " "+ TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1])); 
+			if(www.text != "Null"){
+				char[] splitchar = { ' ' };
+				string[] splitResult = www.text.Split(splitchar);
+				recordText = "Record time: by " + splitResult[0] + " "+ TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1]));
+			}else{
+				recordText = "No Record time yet!";
+			}
 		}else{
 			recordText = "Internet connection needed for Record time";
 		}
