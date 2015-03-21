@@ -14,7 +14,9 @@ public class PauseMenu : MonoBehaviour {
 		Debug.Log ("timeScale = " + Time.timeScale);
 	}
 	public void Options () {
-		(Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject).transform.parent = transform;
+		GameObject options;
+		options = Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject;
+		options.transform.SetParent(gameObject.transform,false);
 	}
 	public void ReturnToLvlSelect () {
 		Application.LoadLevel ("LevelSelectionScreen");

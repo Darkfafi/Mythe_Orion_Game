@@ -20,7 +20,6 @@ public class Player : MonoBehaviour {
 
 	public void interactWithObject(GameObject interactionObject){
 		targetObject = interactionObject;
-		InteractableObject interactSection = interactionObject.GetComponent<InteractableObject> ();
 
 		if(InInteractionRangeTarget()){
 			playerMove.Move(directionToTarget());
