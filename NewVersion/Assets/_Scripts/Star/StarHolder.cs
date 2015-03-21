@@ -8,6 +8,12 @@ public class StarHolder : MonoBehaviour {
 	private bool starHit = false;
 
 
+	void Start(){
+		if(holdingStar){
+			CatchStar();
+		}
+	}
+
 	public void ThrowStar (){
 		if (holdingStar == true) {
 			GetComponentInParent<Rigidbody2D>().mass = 1;
@@ -27,6 +33,13 @@ public class StarHolder : MonoBehaviour {
 			}
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		if(other.gameObject.tag != "Star"){
+			GetComponentInParent<PlayerMovement>().Stop();
+		}
+	}
+
 	void CatchStar(){
 		GetComponentInParent<Rigidbody2D> ().mass = 10000;
 		holdingStar = true;

@@ -5,7 +5,6 @@ public class Player : MonoBehaviour {
 
 	// Use this for initialization
 	PlayerMovement playerMove;
-	float differents;
 	GameObject targetObject;
 
 	private bool movingToDestination = false;
@@ -24,21 +23,10 @@ public class Player : MonoBehaviour {
 		InteractableObject interactSection = interactionObject.GetComponent<InteractableObject> ();
 
 		if(InInteractionRangeTarget()){
-			/*
-			int dir;
-			if(targetObject.transform.position.x - gameObject.transform.position.x){
-				dir = -1;
-			}else{
-				dir = 1;
-			}
-			if(gameObject.transform.rotation.z >= 0.8 && gameObject.transform.rotation.z < 1.2){
-				dir *= -1;
-			}//<----------------------------------------------------------affsssssssssssssssssssssssssssssssssssssssssss en level tab generator
-			*/
+			playerMove.Move(directionToTarget());
 			InteractWithTarget();
 		}else{
 			if(movingToDestination == false){
-		 		differents = interactionObject.transform.position.x - transform.position.x;
 				movingToDestination = true;
 				playerMove.Stop();
 			}
@@ -52,14 +40,7 @@ public class Player : MonoBehaviour {
 			int direction = playerMove.currentDir;
 			if(!InInteractionRangeTarget()){
 				if(playerMove.currentDir == 0){ //<-- zodat het maar 1 keer word berekend.
-					if(differents < 0){
-						direction = -1;
-					}else{
-						direction = 1;
-					}
-					if(gameObject.transform.rotation.z >= 0.8 && gameObject.transform.rotation.z < 1.2){
-						direction *= -1;
-					}
+					direction = directionToTarget();
 				}
 				playerMove.Move(direction);
 			}else{
@@ -73,6 +54,23 @@ public class Player : MonoBehaviour {
 			if(Vector2.Distance(transform.position,targetObject.transform.position) <= targetObject.GetComponent<InteractableObject>().interactionDistance){
 				result = true;
 			}
+		}
+		return result;
+	}
+
+	int directionToTarget(){
+		int result = 0;
+		if (targetObject != null) {
+			if(targetObject.transform.position.x  - gameObject.transform.position.x < 0){
+				result = -1;
+			}else{
+				result = 1;
+			}
+
+			if(gameObject.transform.rotation.z > 0.8f && gameObject.transform.rotation.z < 1.2f){
+				result *= -1;
+			}
+
 		}
 		return result;
 	}

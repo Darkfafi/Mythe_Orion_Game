@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class EndLevel : MonoBehaviour {
 
 	public int playersAtFinish = 0;
@@ -14,7 +14,7 @@ public class EndLevel : MonoBehaviour {
 		if (other.gameObject.tag == "Player") {
 			playersAtFinish += 1;
 			if(playersAtFinish == totalPlayers){
-				NextLevel();
+				FinishLevel();
 			}
 		}
 	}
@@ -25,7 +25,8 @@ public class EndLevel : MonoBehaviour {
 		}
 	}
 
-	void NextLevel(){
-		Debug.Log("Next level");
+	void FinishLevel(){
+		//Show Victory Screen.
+		GameObject.Find ("GameController").GetComponent<DataManager> ().FinishLevelWithTime (GameObject.Find ("TimeText").GetComponent<UITimer>().TotalTime());
 	}
 }

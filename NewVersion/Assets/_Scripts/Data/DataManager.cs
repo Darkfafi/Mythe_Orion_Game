@@ -12,4 +12,22 @@ public class DataManager : MonoBehaviour {
 		saveLoadData = 	gameObject.AddComponent<SaveLoadData> ();
 		saveLoadData.Load();
 	}
+
+	public void FinishLevelWithTime(int time){
+		bool sendDataToDatabase = true;
+
+		if (playerProgression.levelsCompleteWithTime.ContainsKey (playerProgression.currentPlayingLevel) == false) {
+			playerProgression.levelsCompleteWithTime.Add (playerProgression.currentPlayingLevel, time);
+		}else if (playerProgression.levelsCompleteWithTime[playerProgression.currentPlayingLevel] > time){ //alleen als je een betere tijd heb gehaald.
+			playerProgression.levelsCompleteWithTime[playerProgression.currentPlayingLevel] = time;
+		}else{
+			sendDataToDatabase = false;
+		}
+
+		saveLoadData.Save ();
+		if (sendDataToDatabase) {
+			gameObject.AddComponent<NameLevelTimeDataSend> ().SendData ();
+		}
+		Application.LoadLevel ("LevelSelectionScreen");
+	}
 }

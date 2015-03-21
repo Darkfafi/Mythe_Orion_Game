@@ -8,7 +8,6 @@ public class LevelSelectTabData : MonoBehaviour {
 	PlayerProgression playerProgression;
 
 	public bool unlockState = false;
-	private bool selectionState = false;
 	private Sprite levelImage;
 	public int levelIndex;
 	public int timeCompleteInfo;
