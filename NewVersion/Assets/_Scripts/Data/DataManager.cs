@@ -29,8 +29,9 @@ public class DataManager : MonoBehaviour {
 		saveLoadData.Save ();
 		if (sendDataToDatabase) {
 			gameObject.AddComponent<NameLevelTimeDataSend> ().SendData ();
+		} else {
+			DoneSendingData();
 		}
-
 	}
 
 	void DoneSendingData(){
