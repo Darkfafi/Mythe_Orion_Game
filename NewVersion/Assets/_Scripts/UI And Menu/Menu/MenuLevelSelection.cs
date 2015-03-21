@@ -8,11 +8,13 @@ public class MenuLevelSelection : MonoBehaviour {
 	private GameObject[] levelTabs;
 	private GameObject startLevelButton;
 	private GameObject personalTimeText;
+	private GameObject recordTimeText;
 
 	void Start(){
 		levelTabs = GameObject.FindGameObjectsWithTag("LevelTab");
 		startLevelButton = GameObject.Find ("StartLevelButton");
 		personalTimeText = GameObject.Find ("LevelPersonalTime");
+		recordTimeText = GameObject.Find ("LevelRecordTime");
 
 		SelectTab(selectedTab);
 	}
@@ -29,6 +31,9 @@ public class MenuLevelSelection : MonoBehaviour {
 			startLevelButton.GetComponentInChildren<Text>().text = "Level " + (currentTab.levelIndex + 1).ToString();
 
 			personalTimeText.GetComponent<Text>().text = "Personal Time: " + TimeConverter.SecTimeToHumanTimeString(currentTab.timeCompleteInfo);
+
+			SetRecordTimeText(currentTab.levelIndex);
+			//recordTimeText.GetComponent<Text>().text = "Record time: by " +  
 		}
 	}
 
@@ -54,4 +59,28 @@ public class MenuLevelSelection : MonoBehaviour {
 			Application.LoadLevel ("LevelScene" + levelTabs [selectedTab].GetComponent<LevelSelectTabData> ().levelIndex.ToString ());
 		}
 	}
+
+	void SetRecordTimeText(int levelIndex){
+		string url = "http://15826.hosts.ma-cloud.nl/Leerjaar2/Projecten/Mythe/phpRecordTimeGet.php";
+		WWWForm form = new WWWForm ();
+		form.AddField ("level", levelIndex);
+		WWW www = new WWW (url, form);
+		StartCoroutine (WaitForRequest (www));
+	}
+	IEnumerator WaitForRequest(WWW www){
+
+		yield return www;
+
+		string recordText = "No connection";
+
+		if(www.error == null){
+			char[] splitchar = { ' ' };
+			string[] splitResult = www.text.Split(splitchar);
+			recordText = "Record time: by " + splitResult[0] + " "+ TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1])); 
+		}else{
+			recordText = "Internet connection needed for Record time";
+		}
+		recordTimeText.GetComponent<Text>().text = recordText;
+	}
+
 }
