@@ -65,9 +65,10 @@
      <Compile Include="Assets\_Scripts\StarInteractionObjects\NoStarHolderZone.cs" />
      <Compile Include="Assets\_Scripts\StarInteractionObjects\PassAbleBlock.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\CreateAccountScreen\CreateAccount.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelTabGenerator.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\Menu\MenuLevelSelection.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelSelectTabData.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelTabGenerator.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\MenuLevelSelection.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\ShowUserName.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />

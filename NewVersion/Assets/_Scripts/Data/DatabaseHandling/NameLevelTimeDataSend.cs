@@ -27,5 +27,7 @@ public class NameLevelTimeDataSend : MonoBehaviour {
 		}else{
 			Debug.Log("Erroorrrr: "+ www.error);
 		}
+
+		SendMessage ("DoneSendingData");
 	}
 }

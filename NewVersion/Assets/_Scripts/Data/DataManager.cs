@@ -11,6 +11,8 @@ public class DataManager : MonoBehaviour {
 		playerProgression = gameObject.AddComponent<PlayerProgression> ();
 		saveLoadData = 	gameObject.AddComponent<SaveLoadData> ();
 		saveLoadData.Load();
+
+		SendMessage("AllDataComponentsAdded",SendMessageOptions.DontRequireReceiver); //laat weten dat alle data dingen zijn geadd.
 	}
 
 	public void FinishLevelWithTime(int time){
@@ -28,6 +30,14 @@ public class DataManager : MonoBehaviour {
 		if (sendDataToDatabase) {
 			gameObject.AddComponent<NameLevelTimeDataSend> ().SendData ();
 		}
+
+	}
+
+	void DoneSendingData(){
 		Application.LoadLevel ("LevelSelectionScreen");
+	}
+
+	public PlayerProgression GetPlayerProgression(){
+		return playerProgression;
 	}
 }
