@@ -12,4 +12,15 @@ public class DataManager : MonoBehaviour {
 		saveLoadData = 	gameObject.AddComponent<SaveLoadData> ();
 		saveLoadData.Load();
 	}
+
+	public void FinishLevelWithTime(int time){
+		if (playerProgression.levelsCompleteWithTime.ContainsKey (playerProgression.currentPlayingLevel) == false) {
+			playerProgression.levelsCompleteWithTime.Add (playerProgression.currentPlayingLevel, time);
+		}else{
+			playerProgression.levelsCompleteWithTime[playerProgression.currentPlayingLevel] = time;
+		}
+		saveLoadData.Save ();
+		gameObject.AddComponent<NameLevelTimeDataSend> ().SendData ();
+		Application.LoadLevel ("LevelSelectionScreen");
+	}
 }

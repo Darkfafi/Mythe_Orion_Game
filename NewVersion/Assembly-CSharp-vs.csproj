@@ -53,6 +53,7 @@
      <Compile Include="Assets\_Scripts\Data\DataManager.cs" />
      <Compile Include="Assets\_Scripts\Data\DataManagerParts\PlayerProgression.cs" />
      <Compile Include="Assets\_Scripts\Data\DataManagerParts\SaveLoadData.cs" />
+     <Compile Include="Assets\_Scripts\Data\DatabaseHandling\NameLevelTimeDataSend.cs" />
      <Compile Include="Assets\_Scripts\EndLevel.cs" />
      <Compile Include="Assets\_Scripts\Global\Movement.cs" />
      <Compile Include="Assets\_Scripts\Global\RigidBodyCalculator.cs" />
@@ -63,12 +64,14 @@
      <Compile Include="Assets\_Scripts\StarInteractionObjects\InteractableObject.cs" />
      <Compile Include="Assets\_Scripts\StarInteractionObjects\NoStarHolderZone.cs" />
      <Compile Include="Assets\_Scripts\StarInteractionObjects\PassAbleBlock.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\CreateAccountScreen\CreateAccount.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelectTabData.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelTabGenerator.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\MenuLevelSelection.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />
+     <Compile Include="Assets\_Scripts\Utils\TimeConverter.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

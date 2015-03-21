@@ -24,9 +24,11 @@ public class MenuLevelSelection : MonoBehaviour {
 			selectedTab = tabInt;
 			currentTab = levelTabs[selectedTab].GetComponent<LevelSelectTabData>();
 			currentTab.ChangeArtTo("Selected");
+
 			startLevelButton.GetComponent<Image>().sprite = currentTab.GetStartButtonArt();
 			startLevelButton.GetComponentInChildren<Text>().text = "Level " + (currentTab.levelIndex + 1).ToString();
-			personalTimeText.GetComponent<Text>().text = "Personal Time: " + currentTab.timeCompleteInfo.ToString();
+
+			personalTimeText.GetComponent<Text>().text = "Personal Time: " + TimeConverter.SecTimeToHumanTimeString(currentTab.timeCompleteInfo);
 		}
 	}
 
@@ -45,6 +47,10 @@ public class MenuLevelSelection : MonoBehaviour {
 
 	public void StartSelectedLevel(){
 		if (levelTabs [selectedTab].GetComponent<LevelSelectTabData> ().unlockState) {
+
+			GetComponent<PlayerProgression>().currentPlayingLevel = levelTabs[selectedTab].GetComponent<LevelSelectTabData>().levelIndex;
+			GetComponent<SaveLoadData>().Save();
+
 			Application.LoadLevel ("LevelScene" + levelTabs [selectedTab].GetComponent<LevelSelectTabData> ().levelIndex.ToString ());
 		}
 	}

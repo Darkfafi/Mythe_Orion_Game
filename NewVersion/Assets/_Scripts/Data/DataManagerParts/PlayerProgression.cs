@@ -4,9 +4,12 @@ using System.Collections.Generic;
 
 public class PlayerProgression : MonoBehaviour {
 
-	public string nameUser = "";
-	public int currentLevel = 0;
-	public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>();
+	public string nameUser = "Ramses"; //De speler zijn Username
+	public int currentLevel = 0; //Hoe ver de speler is in het spel.
+
+	public int currentPlayingLevel = 0; //het level die hij op dit moment speeld
+
+	public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>(); //lijst van level/time data
 
 	public int GetLevelTime(int levelIndex){
 		int result = 0;

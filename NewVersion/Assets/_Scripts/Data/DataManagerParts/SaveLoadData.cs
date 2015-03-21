@@ -27,6 +27,7 @@ public class SaveLoadData : MonoBehaviour {
 		saveData.name = playerProgression.nameUser;
 		saveData.currentLevel = playerProgression.currentLevel;
 		saveData.levelsCompleteWithTime = playerProgression.levelsCompleteWithTime;
+		saveData.currentPlayingLevel = playerProgression.currentPlayingLevel;
 
 		binaryFormatter.Serialize (file, saveData);
 		file.Close();
@@ -40,10 +41,10 @@ public class SaveLoadData : MonoBehaviour {
 			file = File.Open(Application.persistentDataPath + "/SaveData.dat",FileMode.Open);
 
 			SaveData savedData = (SaveData)binaryFormatter.Deserialize(file);
-
 			playerProgression.nameUser = savedData.name;
 			playerProgression.currentLevel = savedData.currentLevel;
 			playerProgression.levelsCompleteWithTime = savedData.levelsCompleteWithTime;
+			playerProgression.currentPlayingLevel = savedData.currentPlayingLevel;
 
 			file.Close();
 			Debug.Log("Loaded Game");
@@ -55,5 +56,6 @@ public class SaveLoadData : MonoBehaviour {
 		public string name;
 		public int currentLevel;
 		public Dictionary<int,int> levelsCompleteWithTime = new Dictionary<int, int>();
+		public int currentPlayingLevel;
 	}
 }

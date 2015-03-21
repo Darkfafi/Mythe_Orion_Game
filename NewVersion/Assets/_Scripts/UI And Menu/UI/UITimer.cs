@@ -17,10 +17,10 @@ public class UITimer : MonoBehaviour {
 
 	public void SetTimer (int minutes, float seconds){
 		if(seconds >= 10){
-			text.text = minutes + " : " + seconds;
+			text.text = minutes + ":" + seconds;
 		}
 		else {
-			text.text = minutes + " : 0" + seconds;
+			text.text = minutes + ":0" + seconds;
 		}
 		timerMinute = minutes;
 		timerSecond = seconds;
@@ -30,10 +30,10 @@ public class UITimer : MonoBehaviour {
 		if (timing == true) {
 			timerSecond += Time.deltaTime;
 			if(timerSecond >= 10){
-				text.text = timerMinute + " : " + Mathf.Floor (timerSecond);
+				text.text = timerMinute + ":" + Mathf.Floor (timerSecond);
 			}
 			else {
-				text.text = timerMinute + " : 0" + Mathf.Floor (timerSecond);
+				text.text = timerMinute + ":0" + Mathf.Floor (timerSecond);
 			}
 			if(timerSecond >= 60){
 				timerMinute ++;
