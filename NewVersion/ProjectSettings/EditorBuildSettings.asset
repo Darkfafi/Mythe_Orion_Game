@@ -4,10 +4,4 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-<<<<<<< HEAD
-    path: Assets/_Scenes/Real_Scenes/Nick/Menu.unity
-=======
-    path: Assets/_Scenes/Real_Scenes/Ramses/LevelSelectionScreen.unity
->>>>>>> 53718b34dd45b9b36432ad252df3571915b407b7
+  m_Scenes: []
