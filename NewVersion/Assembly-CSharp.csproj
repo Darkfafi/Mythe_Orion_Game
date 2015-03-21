@@ -73,7 +73,7 @@
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\Reset.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\SliderUpdater.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
-     <Compile Include="Assets\_Scripts\UI And Menu\UI\PauzeCheck.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\UI\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />
      <Compile Include="Assets\_Scripts\Utils\TimeConverter.cs" />
