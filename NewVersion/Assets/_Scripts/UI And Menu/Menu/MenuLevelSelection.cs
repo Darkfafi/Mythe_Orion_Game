@@ -9,12 +9,14 @@ public class MenuLevelSelection : MonoBehaviour {
 	private GameObject startLevelButton;
 	private GameObject personalTimeText;
 	private GameObject recordTimeText;
+	private GameObject startText;
 
 	void Start(){
 		levelTabs = GameObject.FindGameObjectsWithTag("LevelTab");
 		startLevelButton = GameObject.Find ("StartLevelButton");
 		personalTimeText = GameObject.Find ("LevelPersonalTime");
 		recordTimeText = GameObject.Find ("LevelRecordTime");
+		startText = GameObject.Find("StartText");
 
 		SelectTab(selectedTab);
 	}
@@ -34,8 +36,10 @@ public class MenuLevelSelection : MonoBehaviour {
 
 			if(currentTab.unlockState){
 				SetRecordTimeText(currentTab.levelIndex);
+				startText.GetComponent<Text>().text = "Press to Play";
 			}else{
-				recordTimeText.GetComponent<Text>().text = "Unlock level to see record time.";
+				recordTimeText.GetComponent<Text>().text = "Unlock level to see world record time";
+				startText.GetComponent<Text>().text = "Locked";
 			}
 			//recordTimeText.GetComponent<Text>().text = "Record time: by " +  
 		}
@@ -81,12 +85,12 @@ public class MenuLevelSelection : MonoBehaviour {
 			if(www.text != "Null"){
 				char[] splitchar = { ' ' };
 				string[] splitResult = www.text.Split(splitchar);
-				recordText = "Record time: by " + splitResult[0] + " "+ TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1]));
+				recordText = "World record time: " + TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1])) +" by "+ splitResult[0];
 			}else{
-				recordText = "No Record time yet!";
+				recordText = "No World record time yet!";
 			}
 		}else{
-			recordText = "Internet connection needed for Record time";
+			recordText = "Internet connection needed for World record time";
 		}
 		recordTimeText.GetComponent<Text>().text = recordText;
 	}

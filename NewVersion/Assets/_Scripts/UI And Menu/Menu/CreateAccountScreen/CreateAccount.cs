@@ -17,7 +17,10 @@ public class CreateAccount : MonoBehaviour {
 		string usernameGiven = GameObject.Find("UserNameInput").GetComponent<Text>().text;
 		if(usernameGiven.Length < 3){
 			reportText.GetComponent<Text>().text = "Account name must be at least 3 characters long";
-		}else{
+		}else if(usernameGiven.Length > 15){
+			reportText.GetComponent<Text>().text = "Account name can't be longer than 15 characters";
+		}
+		else{
 			StartCreateAccount(usernameGiven);
 		}
 	}
