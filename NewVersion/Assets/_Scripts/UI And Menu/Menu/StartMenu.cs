@@ -4,6 +4,7 @@ using System.Collections;
 public class StartMenu : MonoBehaviour {
 
 	private PlayerProgression playerProgression;
+	public GameObject OptionsPrefab;
 
 	void Start () {
 		playerProgression = GetComponent<PlayerProgression> ();
@@ -24,9 +25,6 @@ public class StartMenu : MonoBehaviour {
 		Application.LoadLevel ("NameAccountCreate");
 	}
 	public void Options () {
-		Application.LoadLevel ("Options");
-	}
-	public void Credits () {
-		Application.LoadLevel ("Credits");
+		(Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject).transform.parent = transform;
 	}
 }
