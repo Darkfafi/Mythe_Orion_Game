@@ -7,11 +7,11 @@ public class PauseMenu : MonoBehaviour {
 
 	public void Pauze () {
 		Time.timeScale = 0;
-		Debug.Log ("timeScale = " + Time.timeScale);
+		//Debug.Log ("timeScale = " + Time.timeScale);
 	}
 	public void Resume () {
 		Time.timeScale = 1;
-		Debug.Log ("timeScale = " + Time.timeScale);
+		//Debug.Log ("timeScale = " + Time.timeScale);
 	}
 	public void Options () {
 		GameObject options;
