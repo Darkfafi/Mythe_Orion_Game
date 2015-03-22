@@ -2,8 +2,9 @@
 using System.Collections;
 
 public class PauseMenu : MonoBehaviour {
-
+	
 	public GameObject OptionsPrefab;
+	public GameObject PauseTabMenu;
 
 	public void Pauze () {
 		Time.timeScale = 0;
@@ -17,6 +18,7 @@ public class PauseMenu : MonoBehaviour {
 		GameObject options;
 		options = Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject;
 		options.transform.SetParent(gameObject.transform,false);
+		options.transform.position = PauseTabMenu.transform.position;
 	}
 	public void ReturnToLvlSelect () {
 		Application.LoadLevel ("LevelSelectionScreen");
