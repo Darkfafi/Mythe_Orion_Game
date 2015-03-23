@@ -31,6 +31,6 @@ public class CreateAccount : MonoBehaviour {
 		playerProg.currentPlayingLevel = 0;
 		playerProg.levelsCompleteWithTime = new Dictionary<int, int> (); 
 		GetComponent<SaveLoadData> ().Save ();
-		Application.LoadLevel ("LevelSelectionScreen");
+		Application.LoadLevel ("Menu");
 	}
 }

@@ -21,7 +21,7 @@ public class LevelTabGenerator : MonoBehaviour {
 
 			levelTab.transform.SetParent(gameObject.transform,false);
 
-			levelTab.transform.localScale = new Vector3(1,5,1);
+			levelTab.transform.localScale = new Vector3(1,4.5f,1);
 
 			levelTab.GetComponent<LevelSelectTabData>().levelIndex = i;
 		}

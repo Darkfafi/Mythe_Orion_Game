@@ -76,6 +76,7 @@
      <Compile Include="Assets\_Scripts\UI And Menu\UI\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\UITimer.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\UI\VictoryScreen.cs" />
      <Compile Include="Assets\_Scripts\Utils\TimeConverter.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
