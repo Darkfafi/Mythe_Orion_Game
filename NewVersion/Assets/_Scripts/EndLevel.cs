@@ -5,6 +5,7 @@ public class EndLevel : MonoBehaviour {
 
 	public int playersAtFinish = 0;
 	public int totalPlayers = 1;
+	public GameObject victoryScreen;
 
 	void Start(){
 		totalPlayers = GameObject.FindGameObjectsWithTag ("Player").Length;
@@ -26,7 +27,11 @@ public class EndLevel : MonoBehaviour {
 	}
 
 	void FinishLevel(){
-		//Show Victory Screen.
 		GameObject.Find ("GameController").GetComponent<DataManager> ().FinishLevelWithTime (GameObject.Find ("TimeText").GetComponent<UITimer>().TotalTime());
+		GameObject victory;
+		GameObject canvas = GameObject.Find ("Canvas");
+		victory = Instantiate (victoryScreen, canvas.transform.position, transform.rotation) as GameObject;
+		victory.transform.SetParent(canvas.transform,false);
+		victory.transform.position = canvas.transform.position;
 	}
 }

@@ -35,7 +35,7 @@ public class DataManager : MonoBehaviour {
 	}
 
 	void DoneSendingData(){
-		Application.LoadLevel ("LevelSelectionScreen");
+		//Application.LoadLevel ("LevelSelectionScreen");
 	}
 
 	public PlayerProgression GetPlayerProgression(){
