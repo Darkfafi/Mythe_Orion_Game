@@ -26,4 +26,7 @@ public class PauseMenu : MonoBehaviour {
 	public void ReturnToMenu () {
 		Application.LoadLevel ("Menu");
 	}
+	public void Restart () {
+		Application.LoadLevel ("LevelScene" + GameObject.Find ("GameController").GetComponent<PlayerProgression> ().currentPlayingLevel);
+	}
 }
