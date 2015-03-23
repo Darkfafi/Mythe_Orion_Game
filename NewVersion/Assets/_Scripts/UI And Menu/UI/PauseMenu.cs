@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using UnityEngine.UI;
 public class PauseMenu : MonoBehaviour {
 	
 	public GameObject OptionsPrefab;
@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour {
 
 	public void Pauze () {
 		Time.timeScale = 0;
+
 		//Debug.Log ("timeScale = " + Time.timeScale);
 	}
 	public void Resume () {
