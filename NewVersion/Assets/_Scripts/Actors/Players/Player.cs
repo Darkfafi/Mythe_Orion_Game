@@ -97,4 +97,19 @@ public class Player : MonoBehaviour {
 			}
 		}
 	}
+	void IdleState(){
+		if(rigidbody2D.mass > 500){
+			playerMove.anim.Play("Idle_Star");
+		}else{
+			playerMove.anim.Play("Idle");
+		}
+	}
+
+	void WalkingState(){
+		playerMove.anim.Play("Walk");
+	}
+
+	void JumpingState(){
+		Debug.Log("Jump");
+	}
 }

@@ -18,11 +18,7 @@ public class PauseMenu : MonoBehaviour {
 	public void Options () {
 		GameObject options;
 		options = Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject;
-<<<<<<< HEAD
 		options.transform.SetParent(PauseTabMenu.transform,false);
-=======
-		options.transform.SetParent(GameObject.Find("UI").transform,false);
->>>>>>> origin/master
 		options.transform.position = PauseTabMenu.transform.position;
 	}
 	public void ReturnToLvlSelect () {

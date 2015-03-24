@@ -24,7 +24,8 @@ public class Movement : MonoBehaviour {
 		//sendmassage(playanim,typeAsPara)
 		if(currentDir != dir){
 			int calcDir = dir;
-			anim.Play("Walk");
+			//anim.Play("Walk");
+			SendMessage("WalkingState");
 			if(transform.rotation.z > 0.8 && transform.rotation.x < 1.2){
 				calcDir = -dir;
 			}
@@ -37,13 +38,15 @@ public class Movement : MonoBehaviour {
 
 	public void Stop(){
 		moving = false;
-		anim.Play("Idle");
+		//anim.Play("Idle");
+		SendMessage("IdleState");
 		currentDir = 0;
 //		Debug.Log ("Stop");
 	}
 
 	public void Jump(){
-		Debug.Log("Jump");
+		//Debug.Log("Jump");
+		SendMessage("JumpingState");
 		rigidbody2D.AddForce (GetComponent<RigidBodyCalculator> ().GetVectorToRotation (Vector2.up) * 350);
 	}
 }

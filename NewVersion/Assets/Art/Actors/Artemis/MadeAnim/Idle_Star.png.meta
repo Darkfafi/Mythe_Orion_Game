@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: 319fcbad7ddfb394ea10ddaa685dbfdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Idle_Star_0
+    21300002: Idle_Star_1
+    21300004: Idle_Star_2
+    21300006: Idle_Star_3
+    21300008: Idle_Star_4
+    21300010: Idle_Star_5
+    21300012: Idle_Star_6
+    21300014: Idle_Star_7
+    21300016: Idle_Star_8
+    21300018: Idle_Star_9
+    21300020: Idle_Star_10
+    21300022: Idle_Star_11
+    21300024: Idle_Star_12
+    21300026: Idle_Star_13
+    21300028: Idle_Star_14
+    21300030: Idle_Star_15
+    21300032: Idle_Star_16
+    21300034: Idle_Star_17
+    21300036: Idle_Star_18
+    21300038: Idle_Star_19
+    21300040: Idle_Star_20
+    21300042: Idle_Star_21
+    21300044: Idle_Star_22
+    21300046: Idle_Star_23
+    21300048: Idle_Star_24
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Idle_Star_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1548
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_1
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1548
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_2
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1548
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_3
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1548
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1548
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1161
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_6
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 1161
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_7
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 1161
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_8
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1161
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_9
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1161
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_11
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 774
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_12
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 774
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_13
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 774
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_14
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 774
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 387
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 387
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_17
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 387
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_18
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 387
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_19
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 387
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_21
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_22
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 0
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_23
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 0
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Idle_Star_24
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 0
+        width: 206
+        height: 387
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
