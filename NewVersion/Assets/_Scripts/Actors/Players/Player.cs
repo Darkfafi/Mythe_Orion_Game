@@ -46,6 +46,7 @@ public class Player : MonoBehaviour {
 				InteractWithTarget();
 			}
 		}
+		CheckAnimations ();
 	}
 	bool InInteractionRangeTarget(){
 		bool result = false;
@@ -57,6 +58,15 @@ public class Player : MonoBehaviour {
 		return result;
 	}
 
+
+	void CheckAnimations (){
+		if(playerMove.anim.GetCurrentAnimatorStateInfo(0).IsName("Interact") && 
+		   playerMove.anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.3f && 
+		   playerMove.anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.32f){
+			
+			targetObject.GetComponent<InteractableObject>().Interact();
+		}
+	}
 	int directionToTarget(){
 		int result = 0;
 		if (targetObject != null) {
@@ -83,7 +93,6 @@ public class Player : MonoBehaviour {
 		if(targetObject != null){
 			if(rigidbody2D.mass > 1000){
 				playerMove.anim.Play("Interact");
-				targetObject.GetComponent<InteractableObject>().Interact();
 				movingToDestination = false;
 			}
 		}

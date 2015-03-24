@@ -44,6 +44,6 @@ public class Movement : MonoBehaviour {
 
 	public void Jump(){
 		Debug.Log("Jump");
-		rigidbody2D.AddForce (GetComponent<RigidBodyCalculator> ().GetVectorToRotation (Vector2.up) * 300);
+		rigidbody2D.AddForce (GetComponent<RigidBodyCalculator> ().GetVectorToRotation (Vector2.up) * 350);
 	}
 }

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class PlayerProgression : MonoBehaviour {
 
-	public string nameUser = "Ramses"; //De speler zijn Username
+	public string nameUser; //De speler zijn Username
 	public int currentLevel = 0; //Hoe ver de speler is in het spel.
 
 	public int currentPlayingLevel = 0; //het level die hij op dit moment speeld

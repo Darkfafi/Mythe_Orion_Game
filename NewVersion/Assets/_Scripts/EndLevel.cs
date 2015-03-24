@@ -29,7 +29,7 @@ public class EndLevel : MonoBehaviour {
 	void FinishLevel(){
 		GameObject.Find ("GameController").GetComponent<DataManager> ().FinishLevelWithTime (GameObject.Find ("TimeText").GetComponent<UITimer>().TotalTime());
 		GameObject victory;
-		GameObject canvas = GameObject.Find ("Canvas");
+		GameObject canvas = GameObject.Find ("UI");
 		victory = Instantiate (victoryScreen, canvas.transform.position, transform.rotation) as GameObject;
 		victory.transform.SetParent(canvas.transform,false);
 		victory.transform.position = canvas.transform.position;

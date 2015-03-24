@@ -6,16 +6,14 @@ public class StartMenu : MonoBehaviour {
 	private PlayerProgression playerProgression;
 	public GameObject OptionsPrefab;
 
-	void Start () {
+	void AllDataComponentsAdded () {
 		playerProgression = GetComponent<PlayerProgression> ();
-	}
-	public void Play () {
-		if (playerProgression.nameUser != null) {
-			Continue();
-		}
-		else {
+		if(playerProgression.nameUser == null){
 			NewGame();
 		}
+	}
+	public void Play () {
+		Continue();
 	}
 
 	void Continue () {
