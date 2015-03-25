@@ -22,12 +22,15 @@ public class PauseMenu : MonoBehaviour {
 		options.transform.position = PauseTabMenu.transform.position;
 	}
 	public void ReturnToLvlSelect () {
+		Resume ();
 		Application.LoadLevel ("LevelSelectionScreen");
 	}
 	public void ReturnToMenu () {
+		Resume ();
 		Application.LoadLevel ("Menu");
 	}
 	public void Restart () {
+		Resume ();
 		Application.LoadLevel ("LevelScene" + GameObject.Find ("GameController").GetComponent<PlayerProgression> ().currentPlayingLevel);
 	}
 }

@@ -27,15 +27,20 @@ public class DataManager : MonoBehaviour {
 		}
 
 		saveLoadData.Save ();
+
 		if (sendDataToDatabase) {
 			gameObject.AddComponent<NameLevelTimeDataSend> ().SendData ();
-		} else {
+		}else {
 			DoneSendingData();
 		}
 	}
 
 	void DoneSendingData(){
-		//Application.LoadLevel ("LevelSelectionScreen");
+
+		if(playerProgression.currentLevel == playerProgression.currentPlayingLevel){
+			playerProgression.currentLevel += 1; //als dit level zijn current level was. Ga naar volgend level.
+		}
+		saveLoadData.Save ();
 	}
 
 	public PlayerProgression GetPlayerProgression(){
