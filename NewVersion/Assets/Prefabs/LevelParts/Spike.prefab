@@ -28,6 +28,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 490302}
+  - 61: {fileID: 6198382}
+  - 114: {fileID: 11498382}
   m_Layer: 0
   m_Name: Spike
   m_TagString: Untagged
@@ -45,7 +47,6 @@ GameObject:
   - 4: {fileID: 490304}
   - 212: {fileID: 21290304}
   - 114: {fileID: 11490304}
-  - 61: {fileID: 6190298}
   - 61: {fileID: 6190300}
   m_Layer: 0
   m_Name: PressurePlate
@@ -73,8 +74,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 190302}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 37.2000008, y: 4.51999998, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1, y: -1.26999998, z: 0}
+  m_LocalScale: {x: .5, y: .569999993, z: 1}
   m_Children:
   - {fileID: 490300}
   - {fileID: 490304}
@@ -103,17 +104,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_Size: {x: 21, y: 1.89999998}
   m_Center: {x: 0, y: -.300000012}
---- !u!61 &6190298
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190304}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 24.2399998, y: 10}
-  m_Center: {x: 0, y: -3.55999994}
 --- !u!61 &6190300
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -147,6 +137,17 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1.5, y: 2.9000001}
   m_Center: {x: 11.3000002, y: 0}
+--- !u!61 &6198382
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190302}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 24.3999996, y: 1}
+  m_Center: {x: 0, y: -6.38999987}
 --- !u!114 &11490302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -170,6 +171,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spikesUp: 1
+--- !u!114 &11498382
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 190302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84f277fb93b34344498cf1b56437ada6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &21290302
 SpriteRenderer:
   m_ObjectHideFlags: 1

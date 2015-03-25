@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9683f0a3237923e4d85731c85219673c
+guid: ecd62dd3ea7f63b478fefdc0179ab990
 TextureImporter:
   fileIDToRecycleName:
     21300000: Jump_End_0
@@ -20,8 +20,6 @@ TextureImporter:
     21300030: Jump_End_15
     21300032: Jump_End_16
     21300034: Jump_End_17
-    21300036: Jump_End_18
-    21300038: Jump_End_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -60,188 +58,192 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -1
+    compressionQuality: 50
   spriteSheet:
     sprites:
     - name: Jump_End_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1185
-        width: 349
-        height: 395
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_1
       rect:
         serializedVersion: 2
-        x: 349
-        y: 1185
-        width: 349
-        height: 395
+        x: 269
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_2
       rect:
         serializedVersion: 2
-        x: 698
-        y: 1185
-        width: 349
-        height: 395
+        x: 538
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_3
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 1185
-        width: 349
-        height: 395
+        x: 807
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_4
       rect:
         serializedVersion: 2
-        x: 1396
-        y: 1185
-        width: 349
-        height: 395
+        x: 1076
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 790
-        width: 349
-        height: 395
+        x: 1345
+        y: 770
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_6
       rect:
         serializedVersion: 2
-        x: 349
-        y: 790
-        width: 349
-        height: 395
+        x: 0
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_7
       rect:
         serializedVersion: 2
-        x: 698
-        y: 790
-        width: 349
-        height: 395
+        x: 269
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_8
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 790
-        width: 349
-        height: 395
+        x: 538
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_9
       rect:
         serializedVersion: 2
-        x: 1396
-        y: 790
-        width: 349
-        height: 395
+        x: 807
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 395
-        width: 349
-        height: 395
+        x: 1076
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_11
       rect:
         serializedVersion: 2
-        x: 349
-        y: 395
-        width: 349
-        height: 395
+        x: 1345
+        y: 385
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_12
       rect:
         serializedVersion: 2
-        x: 698
-        y: 395
-        width: 349
-        height: 395
+        x: 0
+        y: 0
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_13
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 395
-        width: 349
-        height: 395
+        x: 269
+        y: 0
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_14
       rect:
         serializedVersion: 2
-        x: 1396
-        y: 395
-        width: 349
-        height: 395
+        x: 538
+        y: 0
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_15
       rect:
         serializedVersion: 2
-        x: 0
+        x: 807
         y: 0
-        width: 349
-        height: 395
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_16
       rect:
         serializedVersion: 2
-        x: 349
+        x: 1076
         y: 0
-        width: 349
-        height: 395
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_End_17
       rect:
         serializedVersion: 2
-        x: 698
+        x: 1345
         y: 0
-        width: 349
-        height: 395
+        width: 269
+        height: 385
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

@@ -43,5 +43,6 @@ public class StarHolder : MonoBehaviour {
 	void CatchStar(){
 		GetComponentInParent<Rigidbody2D> ().mass = 10000;
 		holdingStar = true;
+		SendMessageUpwards ("CaughtStar");
 	}
 }

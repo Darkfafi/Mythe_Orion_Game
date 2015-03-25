@@ -117,6 +117,10 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	void CaughtStar(){
+		IdleState ();
+	}
+
 	public void CharacterJump(){
 		float dir;
 		if(transform.localScale.x < 0){

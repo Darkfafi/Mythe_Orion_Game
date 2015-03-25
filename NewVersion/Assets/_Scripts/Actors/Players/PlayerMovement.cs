@@ -24,7 +24,7 @@ public class PlayerMovement : Movement {
 		if(controlling){
 			if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
 				tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
-				if(tiltValue.x > 5  || tiltValue.y > 5){ // als hij minimaal zover heeft geswiped
+				if(tiltValue.x > 30  || tiltValue.y > 30){ // als hij minimaal zover heeft geswiped
 					if(tiltValue.x > tiltValue.y){
 						if(mousePos.x < swipeStartPosition.x){
 							swipeDirectionValue.x = LEFT;

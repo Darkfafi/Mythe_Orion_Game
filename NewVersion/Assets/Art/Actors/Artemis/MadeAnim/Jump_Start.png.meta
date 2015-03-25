@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1568a98f9d28e8d4ba6870199653db2b
+guid: 2fcd54b88d26b094e954c3cc0cbc60c7
 TextureImporter:
   fileIDToRecycleName:
     21300000: Jump_Start_0
@@ -17,6 +17,7 @@ TextureImporter:
     21300024: Jump_Start_12
     21300026: Jump_Start_13
     21300028: Jump_Start_14
+    21300030: Jump_Start_15
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -55,158 +56,162 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings: []
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
   spriteSheet:
     sprites:
     - name: Jump_Start_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 926
-        width: 280
-        height: 463
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_1
       rect:
         serializedVersion: 2
-        x: 280
-        y: 926
-        width: 280
-        height: 463
+        x: 252
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_2
       rect:
         serializedVersion: 2
-        x: 560
-        y: 926
-        width: 280
-        height: 463
+        x: 504
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_3
       rect:
         serializedVersion: 2
-        x: 840
-        y: 926
-        width: 280
-        height: 463
+        x: 756
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_4
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 926
-        width: 280
-        height: 463
+        x: 1008
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 463
-        width: 280
-        height: 463
+        x: 1260
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_6
       rect:
         serializedVersion: 2
-        x: 280
-        y: 463
-        width: 280
-        height: 463
+        x: 1512
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_7
       rect:
         serializedVersion: 2
-        x: 560
-        y: 463
-        width: 280
-        height: 463
+        x: 1764
+        y: 408
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_8
       rect:
         serializedVersion: 2
-        x: 840
-        y: 463
-        width: 280
-        height: 463
+        x: 0
+        y: 0
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_9
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 463
-        width: 280
-        height: 463
+        x: 252
+        y: 0
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_10
       rect:
         serializedVersion: 2
-        x: 0
+        x: 504
         y: 0
-        width: 280
-        height: 463
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_11
       rect:
         serializedVersion: 2
-        x: 280
+        x: 756
         y: 0
-        width: 280
-        height: 463
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_12
       rect:
         serializedVersion: 2
-        x: 560
+        x: 1008
         y: 0
-        width: 280
-        height: 463
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_13
       rect:
         serializedVersion: 2
-        x: 840
+        x: 1260
         y: 0
-        width: 280
-        height: 463
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Jump_Start_14
       rect:
         serializedVersion: 2
-        x: 1120
+        x: 1512
         y: 0
-        width: 280
-        height: 463
+        width: 252
+        height: 408
       alignment: 7
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 

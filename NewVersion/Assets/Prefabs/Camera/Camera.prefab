@@ -106,7 +106,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: .5
+    y: .519999981
     width: 1
     height: .5
   near clip plane: .300000012
@@ -138,7 +138,7 @@ Camera:
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: -.0199999996
     width: 1
     height: .5
   near clip plane: .300000012
@@ -202,9 +202,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a786202d9da6a5489190254af9673c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraY: -1
+  cameraY: -1.29999995
   cameraX: 0
-  cameraZoom: 1.5
+  cameraZoom: 1.29999995
   UpsideDown: 0
   target: {fileID: 0}
 --- !u!114 &11499504
@@ -218,9 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a786202d9da6a5489190254af9673c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraY: -1
+  cameraY: -1.29999995
   cameraX: 0
-  cameraZoom: 1.5
+  cameraZoom: 1.29999995
   UpsideDown: 1
   target: {fileID: 0}
 --- !u!124 &12499502
