@@ -6,11 +6,9 @@ public class PressurePlate : MonoBehaviour {
 	private Rigidbody2D rigidbodyPlayer = null;
 	public bool spikesUp = true;
 
-	void OnTriggerEnter2D (Collider2D hit) {
-		if (hit.tag == "Player") {
-			rigidbodyPlayer = hit.GetComponent<Rigidbody2D>();
-			Debug.Log(rigidbodyPlayer);
-		}
+	void PlayerOnPlate (GameObject hit) {
+		rigidbodyPlayer = hit.GetComponent<Rigidbody2D>();
+		//Debug.Log(rigidbodyPlayer);
 	}
 	void Update () {
 		if (rigidbodyPlayer != null) {
@@ -35,9 +33,7 @@ public class PressurePlate : MonoBehaviour {
 			transform.Translate(Vector2.up * -Time.deltaTime);
 		}
 	}
-	void OnTriggerExit2D (Collider2D hit) {
-		if(hit.tag == "Player"){
-			rigidbodyPlayer = null;
-		}
+	void PlayerLeftPlate () {
+		rigidbodyPlayer = null;
 	}
 }

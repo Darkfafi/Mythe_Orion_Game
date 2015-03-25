@@ -5,10 +5,12 @@ using UnityEngine.UI;
 public class SliderPosition : MonoBehaviour {
 
 	public Transform player;
+
 	private float xPos;
 	public Transform end;
+
 	private Slider thisSlider;
-	public float startDisance;
+	private float startDisance;
 	private float beginPosX;
 
 	void Start () {

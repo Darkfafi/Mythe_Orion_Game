@@ -64,6 +64,9 @@
      <Compile Include="Assets\_Scripts\StarInteractionObjects\InteractableObject.cs" />
      <Compile Include="Assets\_Scripts\StarInteractionObjects\NoStarHolderZone.cs" />
      <Compile Include="Assets\_Scripts\StarInteractionObjects\PassAbleBlock.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\PressurePlate\PressurePlate.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\PressurePlate\PressurePlateTrigger.cs" />
+     <Compile Include="Assets\_Scripts\StarInteractionObjects\PressurePlate\Spikes.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\CreateAccountScreen\CreateAccount.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelSelectTabData.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelTabGenerator.cs" />
