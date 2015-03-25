@@ -1,32 +1,37 @@
 fileFormatVersion: 2
-guid: 319fcbad7ddfb394ea10ddaa685dbfdf
+guid: 7161b444a98efdb48bdee21e7f3e0eea
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Idle_Star_0
-    21300002: Idle_Star_1
-    21300004: Idle_Star_2
-    21300006: Idle_Star_3
-    21300008: Idle_Star_4
-    21300010: Idle_Star_5
-    21300012: Idle_Star_6
-    21300014: Idle_Star_7
-    21300016: Idle_Star_8
-    21300018: Idle_Star_9
-    21300020: Idle_Star_10
-    21300022: Idle_Star_11
-    21300024: Idle_Star_12
-    21300026: Idle_Star_13
-    21300028: Idle_Star_14
-    21300030: Idle_Star_15
-    21300032: Idle_Star_16
-    21300034: Idle_Star_17
-    21300036: Idle_Star_18
-    21300038: Idle_Star_19
-    21300040: Idle_Star_20
-    21300042: Idle_Star_21
-    21300044: Idle_Star_22
-    21300046: Idle_Star_23
-    21300048: Idle_Star_24
+    21300000: Walk_Star_0
+    21300002: Walk_Star_1
+    21300004: Walk_Star_2
+    21300006: Walk_Star_3
+    21300008: Walk_Star_4
+    21300010: Walk_Star_5
+    21300012: Walk_Star_6
+    21300014: Walk_Star_7
+    21300016: Walk_Star_8
+    21300018: Walk_Star_9
+    21300020: Walk_Star_10
+    21300022: Walk_Star_11
+    21300024: Walk_Star_12
+    21300026: Walk_Star_13
+    21300028: Walk_Star_14
+    21300030: Walk_Star_15
+    21300032: Walk_Star_16
+    21300034: Walk_Star_17
+    21300036: Walk_Star_18
+    21300038: Walk_Star_19
+    21300040: Walk_Star_20
+    21300042: Walk_Star_21
+    21300044: Walk_Star_22
+    21300046: Walk_Star_23
+    21300048: Walk_Star_24
+    21300050: Walk_Star_25
+    21300052: Walk_Star_26
+    21300054: Walk_Star_27
+    21300056: Walk_Star_28
+    21300058: Walk_Star_29
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -65,260 +70,306 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    compressionQuality: 50
+  buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Idle_Star_0
+    - name: Walk_Star_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1548
-        width: 206
-        height: 387
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_1
+    - name: Walk_Star_1
       rect:
         serializedVersion: 2
-        x: 206
-        y: 1548
-        width: 206
-        height: 387
+        x: 195
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_2
+    - name: Walk_Star_2
       rect:
         serializedVersion: 2
-        x: 412
-        y: 1548
-        width: 206
-        height: 387
+        x: 390
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_3
+    - name: Walk_Star_3
       rect:
         serializedVersion: 2
-        x: 618
-        y: 1548
-        width: 206
-        height: 387
+        x: 585
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_4
+    - name: Walk_Star_4
       rect:
         serializedVersion: 2
-        x: 824
-        y: 1548
-        width: 206
-        height: 387
+        x: 780
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_5
+    - name: Walk_Star_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1161
-        width: 206
-        height: 387
+        x: 975
+        y: 1544
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_6
-      rect:
-        serializedVersion: 2
-        x: 206
-        y: 1161
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_7
-      rect:
-        serializedVersion: 2
-        x: 412
-        y: 1161
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_8
-      rect:
-        serializedVersion: 2
-        x: 618
-        y: 1161
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_9
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 1161
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_10
+    - name: Walk_Star_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 774
-        width: 206
-        height: 387
+        y: 1158
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_11
+    - name: Walk_Star_7
       rect:
         serializedVersion: 2
-        x: 206
-        y: 774
-        width: 206
-        height: 387
+        x: 195
+        y: 1158
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_12
+    - name: Walk_Star_8
       rect:
         serializedVersion: 2
-        x: 412
-        y: 774
-        width: 206
-        height: 387
+        x: 390
+        y: 1158
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_13
+    - name: Walk_Star_9
       rect:
         serializedVersion: 2
-        x: 618
-        y: 774
-        width: 206
-        height: 387
+        x: 585
+        y: 1158
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_14
+    - name: Walk_Star_10
       rect:
         serializedVersion: 2
-        x: 824
-        y: 774
-        width: 206
-        height: 387
+        x: 780
+        y: 1158
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_15
+    - name: Walk_Star_11
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 1158
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 387
-        width: 206
-        height: 387
+        y: 772
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_16
+    - name: Walk_Star_13
       rect:
         serializedVersion: 2
-        x: 206
-        y: 387
-        width: 206
-        height: 387
+        x: 195
+        y: 772
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_17
+    - name: Walk_Star_14
       rect:
         serializedVersion: 2
-        x: 412
-        y: 387
-        width: 206
-        height: 387
+        x: 390
+        y: 772
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_18
+    - name: Walk_Star_15
       rect:
         serializedVersion: 2
-        x: 618
-        y: 387
-        width: 206
-        height: 387
+        x: 585
+        y: 772
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_19
+    - name: Walk_Star_16
       rect:
         serializedVersion: 2
-        x: 824
-        y: 387
-        width: 206
-        height: 387
+        x: 780
+        y: 772
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_20
+    - name: Walk_Star_17
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 772
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_19
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_20
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_21
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_22
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_23
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 386
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_24
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 206
-        height: 387
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_21
+    - name: Walk_Star_25
       rect:
         serializedVersion: 2
-        x: 206
+        x: 195
         y: 0
-        width: 206
-        height: 387
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_22
+    - name: Walk_Star_26
       rect:
         serializedVersion: 2
-        x: 412
+        x: 390
         y: 0
-        width: 206
-        height: 387
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_23
+    - name: Walk_Star_27
       rect:
         serializedVersion: 2
-        x: 618
+        x: 585
         y: 0
-        width: 206
-        height: 387
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_24
+    - name: Walk_Star_28
       rect:
         serializedVersion: 2
-        x: 824
+        x: 780
         y: 0
-        width: 206
-        height: 387
+        width: 195
+        height: 386
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Walk_Star_29
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 0
+        width: 195
+        height: 386
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

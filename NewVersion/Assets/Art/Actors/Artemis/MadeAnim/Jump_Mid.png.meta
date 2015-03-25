@@ -1,32 +1,27 @@
 fileFormatVersion: 2
-guid: 319fcbad7ddfb394ea10ddaa685dbfdf
+guid: e9f6ab453ba8ab54194c9a2d4b61db5e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Idle_Star_0
-    21300002: Idle_Star_1
-    21300004: Idle_Star_2
-    21300006: Idle_Star_3
-    21300008: Idle_Star_4
-    21300010: Idle_Star_5
-    21300012: Idle_Star_6
-    21300014: Idle_Star_7
-    21300016: Idle_Star_8
-    21300018: Idle_Star_9
-    21300020: Idle_Star_10
-    21300022: Idle_Star_11
-    21300024: Idle_Star_12
-    21300026: Idle_Star_13
-    21300028: Idle_Star_14
-    21300030: Idle_Star_15
-    21300032: Idle_Star_16
-    21300034: Idle_Star_17
-    21300036: Idle_Star_18
-    21300038: Idle_Star_19
-    21300040: Idle_Star_20
-    21300042: Idle_Star_21
-    21300044: Idle_Star_22
-    21300046: Idle_Star_23
-    21300048: Idle_Star_24
+    21300000: Jump_Mid_0
+    21300002: Jump_Mid_1
+    21300004: Jump_Mid_2
+    21300006: Jump_Mid_3
+    21300008: Jump_Mid_4
+    21300010: Jump_Mid_5
+    21300012: Jump_Mid_6
+    21300014: Jump_Mid_7
+    21300016: Jump_Mid_8
+    21300018: Jump_Mid_9
+    21300020: Jump_Mid_10
+    21300022: Jump_Mid_11
+    21300024: Jump_Mid_12
+    21300026: Jump_Mid_13
+    21300028: Jump_Mid_14
+    21300030: Jump_Mid_15
+    21300032: Jump_Mid_16
+    21300034: Jump_Mid_17
+    21300036: Jump_Mid_18
+    21300038: Jump_Mid_19
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -65,260 +60,206 @@ TextureImporter:
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
-  buildTargetSettings:
-  - buildTarget: Android
-    maxTextureSize: 2048
-    textureFormat: -1
-    compressionQuality: 50
+  buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Idle_Star_0
+    - name: Jump_Mid_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1548
+        y: 1560
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_1
+    - name: Jump_Mid_1
       rect:
         serializedVersion: 2
         x: 206
-        y: 1548
+        y: 1560
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_2
+    - name: Jump_Mid_2
       rect:
         serializedVersion: 2
         x: 412
-        y: 1548
+        y: 1560
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_3
+    - name: Jump_Mid_3
       rect:
         serializedVersion: 2
         x: 618
-        y: 1548
+        y: 1560
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_4
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 1548
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_5
+    - name: Jump_Mid_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 1161
+        y: 1170
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_6
+    - name: Jump_Mid_5
       rect:
         serializedVersion: 2
         x: 206
-        y: 1161
+        y: 1170
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_7
+    - name: Jump_Mid_6
       rect:
         serializedVersion: 2
         x: 412
-        y: 1161
+        y: 1170
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_8
+    - name: Jump_Mid_7
       rect:
         serializedVersion: 2
         x: 618
-        y: 1161
+        y: 1170
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_9
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 1161
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_10
+    - name: Jump_Mid_8
       rect:
         serializedVersion: 2
         x: 0
-        y: 774
+        y: 780
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_11
+    - name: Jump_Mid_9
       rect:
         serializedVersion: 2
         x: 206
-        y: 774
+        y: 780
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_12
+    - name: Jump_Mid_10
       rect:
         serializedVersion: 2
         x: 412
-        y: 774
+        y: 780
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_13
+    - name: Jump_Mid_11
       rect:
         serializedVersion: 2
         x: 618
-        y: 774
+        y: 780
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_14
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 774
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_15
+    - name: Jump_Mid_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 387
+        y: 390
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_16
+    - name: Jump_Mid_13
       rect:
         serializedVersion: 2
         x: 206
-        y: 387
+        y: 390
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_17
+    - name: Jump_Mid_14
       rect:
         serializedVersion: 2
         x: 412
-        y: 387
+        y: 390
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_18
+    - name: Jump_Mid_15
       rect:
         serializedVersion: 2
         x: 618
-        y: 387
+        y: 390
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_19
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 387
-        width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_20
+    - name: Jump_Mid_16
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_21
+    - name: Jump_Mid_17
       rect:
         serializedVersion: 2
         x: 206
         y: 0
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_22
+    - name: Jump_Mid_18
       rect:
         serializedVersion: 2
         x: 412
         y: 0
         width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_23
+    - name: Jump_Mid_19
       rect:
         serializedVersion: 2
         x: 618
         y: 0
         width: 206
-        height: 387
-      alignment: 7
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: Idle_Star_24
-      rect:
-        serializedVersion: 2
-        x: 824
-        y: 0
-        width: 206
-        height: 387
+        height: 390
       alignment: 7
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

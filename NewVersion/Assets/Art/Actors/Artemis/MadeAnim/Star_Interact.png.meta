@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: ee22b769f7da6e54287424a6ee2d6cbd
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Star_Interact_0
+    21300002: Star_Interact_1
+    21300004: Star_Interact_2
+    21300006: Star_Interact_3
+    21300008: Star_Interact_4
+    21300010: Star_Interact_5
+    21300012: Star_Interact_6
+    21300014: Star_Interact_7
+    21300016: Star_Interact_8
+    21300018: Star_Interact_9
+    21300020: Star_Interact_10
+    21300022: Star_Interact_11
+    21300024: Star_Interact_12
+    21300026: Star_Interact_13
+    21300028: Star_Interact_14
+    21300030: Star_Interact_15
+    21300032: Star_Interact_16
+    21300034: Star_Interact_17
+    21300036: Star_Interact_18
+    21300038: Star_Interact_19
+    21300040: Star_Interact_20
+    21300042: Star_Interact_21
+    21300044: Star_Interact_22
+    21300046: Star_Interact_23
+    21300048: Star_Interact_24
+    21300050: Star_Interact_25
+    21300052: Star_Interact_26
+    21300054: Star_Interact_27
+    21300056: Star_Interact_28
+    21300058: Star_Interact_29
+    21300060: Star_Interact_30
+    21300062: Star_Interact_31
+    21300064: Star_Interact_32
+    21300066: Star_Interact_33
+    21300068: Star_Interact_34
+    21300070: Star_Interact_35
+    21300072: Star_Interact_36
+    21300074: Star_Interact_37
+    21300076: Star_Interact_38
+    21300078: Star_Interact_39
+    21300080: Star_Interact_40
+    21300082: Star_Interact_41
+    21300084: Star_Interact_42
+    21300086: Star_Interact_43
+    21300088: Star_Interact_44
+    21300090: Star_Interact_45
+    21300092: Star_Interact_46
+    21300094: Star_Interact_47
+    21300096: Star_Interact_48
+    21300098: Star_Interact_49
+    21300100: Star_Interact_50
+    21300102: Star_Interact_51
+    21300104: Star_Interact_52
+    21300106: Star_Interact_53
+    21300108: Star_Interact_54
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Star_Interact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5890
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 5890
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 5890
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 5890
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 5890
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5301
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 5301
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 5301
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_8
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 5301
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 5301
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4712
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 4712
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 4712
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 4712
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 4712
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4123
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 4123
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 4123
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_18
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 4123
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 4123
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3534
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 3534
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 3534
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 3534
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3534
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2945
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2945
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2945
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_28
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2945
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_29
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2945
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2356
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2356
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_32
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2356
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2356
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_34
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2356
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1767
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1767
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_37
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1767
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_38
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1767
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_39
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1767
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1178
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_41
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1178
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_42
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1178
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_43
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1178
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_44
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1178
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 589
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_46
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 589
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_47
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 589
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_48
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 589
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_49
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 589
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_51
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_52
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_53
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Star_Interact_54
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 589
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

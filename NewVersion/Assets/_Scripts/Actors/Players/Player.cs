@@ -46,7 +46,6 @@ public class Player : MonoBehaviour {
 				InteractWithTarget();
 			}
 		}
-		CheckAnimations ();
 	}
 	bool InInteractionRangeTarget(){
 		bool result = false;
@@ -58,15 +57,6 @@ public class Player : MonoBehaviour {
 		return result;
 	}
 
-
-	void CheckAnimations (){
-		if(playerMove.anim.GetCurrentAnimatorStateInfo(0).IsName("Interact") && 
-		   playerMove.anim.GetCurrentAnimatorStateInfo(0).normalizedTime > 0.3f && 
-		   playerMove.anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.32f){
-			
-			targetObject.GetComponent<InteractableObject>().Interact();
-		}
-	}
 	int directionToTarget(){
 		int result = 0;
 		if (targetObject != null) {
@@ -97,6 +87,13 @@ public class Player : MonoBehaviour {
 			}
 		}
 	}
+
+	void OnCollisionEnter2D(Collision2D other){
+		if(playerMove.anim.GetCurrentAnimatorStateInfo(0).IsName("JumpMid")){
+			playerMove.Stop();
+			playerMove.anim.Play("JumpEnd");
+		}
+	}
 	void IdleState(){
 		if(rigidbody2D.mass > 500){
 			playerMove.anim.Play("Idle_Star");
@@ -106,10 +103,31 @@ public class Player : MonoBehaviour {
 	}
 
 	void WalkingState(){
-		playerMove.anim.Play("Walk");
+		if (rigidbody2D.mass > 500) {
+			playerMove.anim.Play ("Walk_Star");
+		}else{
+			playerMove.anim.Play ("Walk");
+		}
 	}
 
 	void JumpingState(){
-		Debug.Log("Jump");
+		if (rigidbody2D.mass < 500) {
+			playerMove.Stop();
+			playerMove.anim.Play ("JumpStart");
+		}
+	}
+
+	public void CharacterJump(){
+		float dir;
+		if(transform.localScale.x < 0){
+			dir = -1;
+		}else{
+			dir = 1;
+		}
+		rigidbody2D.AddForce (GetComponent<RigidBodyCalculator> ().GetVectorToRotation (new Vector2(0.4f * dir,1.1f)) * 350);
+	}
+
+	public void DoInteraction(){
+		targetObject.GetComponent<InteractableObject>().Interact();
 	}
 }
