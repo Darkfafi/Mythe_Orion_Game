@@ -8,16 +8,24 @@ public class SliderPosition : MonoBehaviour {
 	private float xPos;
 	public Transform end;
 	private Slider thisSlider;
-	public GameObject ground;
+	public float startDisance;
 	private float beginPosX;
 
 	void Start () {
 		beginPosX = player.position.x;
 
+		startDisance = Mathf.Abs (beginPosX) + Mathf.Abs (end.position.x);
+
 		thisSlider = GetComponent<Slider> ();
 	}
 	void Update () {
-		xPos = (player.position.x - beginPosX) / end.position.x;
+
+		float distance = Mathf.Abs (end.position.x) - (player.transform.position.x);
+
+		float part = startDisance - distance;
+
+		xPos = (part) / startDisance;
+
 		thisSlider.value = xPos;
 	}
 }

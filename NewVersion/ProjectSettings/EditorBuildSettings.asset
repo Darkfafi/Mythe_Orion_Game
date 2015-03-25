@@ -8,8 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Real_Scenes/Nick/Menu.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Ramses/LevelSelectionScreen.unity
-  - enabled: 1
     path: Assets/_Scenes/Real_Scenes/Ramses/NameAccountCreate.unity
+  - enabled: 1
+    path: Assets/_Scenes/Real_Scenes/Ramses/LevelSelectionScreen.unity
   - enabled: 1
     path: Assets/_Scenes/LevelScene0.unity
