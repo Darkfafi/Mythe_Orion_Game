@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	PlayerMovement playerMove;
 	GameObject targetObject;
+	SoundController soundController;
 
 	private Vector2 beginPos;
 
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour {
 		gameObject.AddComponent<TouchAbleObject> ();
 		gameObject.AddComponent<RigidBodyCalculator> ();
 		rigidbody2D.fixedAngle = true;
+		soundController = GetComponent<SoundController> ();
 
 		playerMove.speed = 2f;
 	}
@@ -88,6 +90,7 @@ public class Player : MonoBehaviour {
 
 		if(targetObject != null){
 			if(rigidbody2D.mass > 1000){
+				soundController.PlaySound(0, false);
 				playerMove.anim.Play("Interact");
 				movingToDestination = false;
 			}

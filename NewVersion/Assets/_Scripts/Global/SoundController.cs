@@ -12,7 +12,14 @@ public class SoundController : MonoBehaviour {
 	public void StopSound () {
 		source.Stop ();
 	}
-	public void PlaySound (int SoundNumber) {
+	public void PlaySound (int SoundNumber, bool loop) {
+		Debug.Log(sounds[SoundNumber] + " " + SoundNumber + " " + loop);
+		if (loop == false) {
+			source.loop = false;
+		}
+		else {
+			source.loop = true;
+		}
 		source.PlayOneShot(sounds[SoundNumber], PlayerPrefs.GetFloat("SoundLevel"));
 	}
 }
