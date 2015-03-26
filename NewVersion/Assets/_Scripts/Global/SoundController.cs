@@ -16,10 +16,14 @@ public class SoundController : MonoBehaviour {
 		Debug.Log(sounds[SoundNumber] + " " + SoundNumber + " " + loop);
 		if (loop == false) {
 			source.loop = false;
+			source.volume = 1;
+			source.PlayOneShot(sounds[SoundNumber], PlayerPrefs.GetFloat("SoundLevel"));
 		}
 		else {
 			source.loop = true;
+			source.volume = PlayerPrefs.GetFloat("SoundLevel");
+			source.clip = sounds[SoundNumber];
+			source.Play();
 		}
-		source.PlayOneShot(sounds[SoundNumber], PlayerPrefs.GetFloat("SoundLevel"));
 	}
 }
