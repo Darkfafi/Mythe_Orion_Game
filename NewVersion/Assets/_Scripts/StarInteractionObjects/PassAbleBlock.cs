@@ -38,9 +38,9 @@ public class PassAbleBlock : InteractableObject {
 	{
 		base.Interact ();
 		if(!passing){
-			soundController.PlaySound(0, false);
 			passing = true;
 			collider2D.isTrigger = true;
+			soundController.PlaySound(0, false);
 		}
 	}
 }

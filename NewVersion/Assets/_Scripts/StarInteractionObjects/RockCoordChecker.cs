@@ -24,7 +24,6 @@ public class RockCoordChecker : MonoBehaviour {
 		}
 		else if (timeBeforeCheck <= 0) {
 			if (posXDoubleCheck == transform.position.x){
-				Debug.Log(posX + " " + transform.position.x);
 				soundController.StopSound();
 				moving = false;
 			}

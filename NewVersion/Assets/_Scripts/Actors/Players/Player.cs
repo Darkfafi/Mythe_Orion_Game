@@ -90,9 +90,9 @@ public class Player : MonoBehaviour {
 
 		if(targetObject != null){
 			if(rigidbody2D.mass > 1000){
-				soundController.PlaySound(0, false);
 				playerMove.anim.Play("Interact");
 				movingToDestination = false;
+				soundController.PlaySound(0, false);
 			}
 		}
 	}
@@ -145,11 +145,8 @@ public class Player : MonoBehaviour {
 	}
 
 	public void Death(){
-		playerMove.Stop ();
 		BroadcastMessage ("PlayerDeath");
-		if(GameObject.FindGameObjectWithTag ("Star") != null){
-			Destroy(GameObject.FindGameObjectWithTag ("Star"));
-		}
+		playerMove.Stop ();
 		transform.position = beginPos;
 	}
 }
