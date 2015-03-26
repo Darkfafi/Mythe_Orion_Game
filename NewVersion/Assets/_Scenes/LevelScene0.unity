@@ -2048,6 +2048,10 @@ Prefab:
       propertyPath: m_SizeDelta.x
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 156470, guid: cf05fd6adf81e174480a38f4129346b5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cf05fd6adf81e174480a38f4129346b5, type: 2}
   m_RootGameObject: {fileID: 979424523}
