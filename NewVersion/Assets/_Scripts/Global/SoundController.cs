@@ -13,7 +13,7 @@ public class SoundController : MonoBehaviour {
 		source.Stop ();
 	}
 	public void PlaySound (int SoundNumber, bool loop) {
-		Debug.Log(sounds[SoundNumber] + " " + SoundNumber + " " + loop);
+		//Debug.Log(sounds[SoundNumber] + " " + SoundNumber + " " + loop);
 		if (loop == false) {
 			source.loop = false;
 			source.volume = 1;
