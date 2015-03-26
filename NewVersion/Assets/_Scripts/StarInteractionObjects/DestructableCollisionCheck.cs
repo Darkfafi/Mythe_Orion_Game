@@ -5,6 +5,7 @@ public class DestructableCollisionCheck : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D hit){
 		if (hit.tag == "Star") {
+			GetComponent<SoundController>().PlaySound(0, false);
 			DestroyAnim();
 		}
 		if (hit.tag == "Player") {
