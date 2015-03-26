@@ -16,7 +16,7 @@ GameObject:
   - 114: {fileID: 11478412}
   m_Layer: 0
   m_Name: MoveableBlock
-  m_TagString: Untagged
+  m_TagString: Pushable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,8 +27,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 156336}
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 31.0499992, y: 1.48000002, z: 0}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: -4.37113883e-08}
+  m_LocalPosition: {x: -3.20000005, y: -5.5, z: 0}
+>>>>>>> origin/master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -42,7 +47,7 @@ Rigidbody2D:
   m_Mass: 10000
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 1
+  m_GravityScale: -1
   m_FixedAngle: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -161,7 +166,7 @@ SpriteRenderer:
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3b8f4f1bae08e8a46a4853f1e0c42503, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00cdc159bcec9654a81e8bbd389930fb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000
 Prefab:
