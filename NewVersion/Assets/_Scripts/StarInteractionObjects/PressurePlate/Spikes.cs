@@ -10,9 +10,6 @@ public class Spikes : MonoBehaviour {
 			for(int i = 0; i < players.Length; i++){
 				players[i].GetComponent<Player>().Death();
 			}
-
-
-			print("spikes hit");
 		}
 	}
 }

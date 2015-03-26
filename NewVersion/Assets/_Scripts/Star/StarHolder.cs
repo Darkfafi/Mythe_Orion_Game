@@ -37,7 +37,9 @@ public class StarHolder : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D other){
 		if(other.gameObject.tag != "Star"){
-			GetComponentInParent<PlayerMovement>().Stop();
+			if(other.gameObject.tag != "Pushable" || GetComponentInParent<Rigidbody2D>().mass < 500){
+				GetComponentInParent<PlayerMovement>().Stop();
+			}
 		}
 	}
 
@@ -49,6 +51,12 @@ public class StarHolder : MonoBehaviour {
 	void PlayerDeath(){
 		if(startWithStar){
 			CatchStar();
+		}else{
+			ThrowStar();
+			starHit = false;
+		}
+		if(GameObject.FindGameObjectWithTag ("Star") != null){
+			Destroy(GameObject.FindGameObjectWithTag ("Star"));
 		}
 	}
 }

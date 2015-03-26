@@ -5,13 +5,18 @@ public class DestructableCollisionCheck : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D hit){
 		if (hit.tag == "Star") {
-			DestroyObject();
+			DestroyAnim();
 		}
 		if (hit.tag == "Player") {
 			hit.GetComponent<PlayerMovement>().Stop();
 		}
 	}
-	void DestroyObject(){
+
+	void DestroyAnim(){
+		GetComponent<Animator>().Play("Destroy");
+	}
+
+	public void DestroyObject(){
 		Destroy (this.gameObject);
 	}
 }

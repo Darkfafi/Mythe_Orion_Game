@@ -4,7 +4,7 @@ using System.Collections;
 public class PressurePlateTrigger : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D hit) {
-		Debug.Log("Enter");
+		//Debug.Log("Enter");
 		if (hit.tag == "Player") {
 			BroadcastMessage("PlayerOnPlate",hit.gameObject);
 		}
