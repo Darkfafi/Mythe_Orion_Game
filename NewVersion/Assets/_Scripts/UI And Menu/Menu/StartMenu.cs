@@ -6,6 +6,16 @@ public class StartMenu : MonoBehaviour {
 	private PlayerProgression playerProgression;
 	public GameObject OptionsPrefab;
 
+	void Start () {
+		if (!PlayerPrefs.HasKey ("SoundLevel")) {
+			PlayerPrefs.SetFloat("SoundLevel", 1);
+			PlayerPrefs.Save();
+		}
+		if (!PlayerPrefs.HasKey ("MusicLevel")) {
+			PlayerPrefs.SetFloat("MusicLevel", 1);
+			PlayerPrefs.Save();
+		}
+	}
 	void AllDataComponentsAdded () {
 		playerProgression = GetComponent<PlayerProgression> ();
 		if(playerProgression.nameUser == null){

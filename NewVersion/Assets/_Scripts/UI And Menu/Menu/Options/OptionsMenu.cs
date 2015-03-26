@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+
 public class OptionsMenu : MonoBehaviour {
 
 	private PlayerProgression playerProgression;
@@ -12,12 +13,14 @@ public class OptionsMenu : MonoBehaviour {
 		}
 	}
 	public void Sound (Slider slider) {
-		float SoundValue = slider.value;
-		PlayerPrefs.SetFloat ("SoundLevel", SoundValue);
+		PlayerPrefs.SetFloat ("SoundLevel", slider.value);
+		PlayerPrefs.Save();
+		Debug.Log (PlayerPrefs.GetFloat("SoundLevel"));
 	}
 	public void Music (Slider slider) {
-		float MusicValue = slider.value;
-		PlayerPrefs.SetFloat ("MusicValue", MusicValue);
+		PlayerPrefs.SetFloat ("MusicLevel", slider.value);
+		PlayerPrefs.Save();
+		Debug.Log (slider.value);
 	}
 	public void DestroyOptions () {
 		Destroy (gameObject);

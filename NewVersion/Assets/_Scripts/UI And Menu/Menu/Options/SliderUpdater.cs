@@ -10,6 +10,14 @@ public class SliderUpdater : MonoBehaviour {
 
 	void Start () {
 		slider = GetComponent<Slider> ();
+		if (gameObject.name == "Sound") {
+			slider.value = PlayerPrefs.GetFloat("SoundLevel");
+			UpdateText();
+		}
+		else if (gameObject.name == "Music"){
+			slider.value = PlayerPrefs.GetFloat("MusicLevel");
+			UpdateText();
+		}
 	}
 	public void UpdateText () {
 		if(slider.enabled == true){
