@@ -23,6 +23,10 @@ public class StartMenu : MonoBehaviour {
 		Application.LoadLevel ("NameAccountCreate");
 	}
 	public void Options () {
-		(Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject).transform.parent = transform;
+		GameObject options;
+		GameObject Canvas = GameObject.Find ("Canvas");
+		options = Instantiate (OptionsPrefab, transform.parent.position, transform.rotation) as GameObject;
+		options.transform.SetParent(Canvas.transform,false);
+		options.transform.position = Canvas.transform.position;
 	}
 }
