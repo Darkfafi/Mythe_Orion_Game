@@ -130,7 +130,7 @@ TextureImporter:
         width: 206
         height: 387
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: Idle_Star_6
       rect:

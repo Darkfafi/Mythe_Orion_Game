@@ -24,7 +24,7 @@ public class PressurePlate : MonoBehaviour {
 		}
 	}
 	void MoveUp () {
-		if(spikesUp == true && transform.localPosition.y < -1.5f){
+		if(spikesUp == true && transform.localPosition.y < -1.3f){
 			transform.Translate(Vector2.up * Time.deltaTime);
 		}
 	}

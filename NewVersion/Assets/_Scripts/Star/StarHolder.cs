@@ -4,12 +4,13 @@ using System.Collections;
 public class StarHolder : MonoBehaviour {
 
 	public GameObject starPrefab;
-	public bool holdingStar = false;
+	public bool startWithStar = false;
+	private bool holdingStar = false;
 	private bool starHit = false;
 
 
 	void Start(){
-		if(holdingStar){
+		if(startWithStar){
 			CatchStar();
 		}
 	}
@@ -44,5 +45,10 @@ public class StarHolder : MonoBehaviour {
 		GetComponentInParent<Rigidbody2D> ().mass = 10000;
 		holdingStar = true;
 		SendMessageUpwards ("CaughtStar");
+	}
+	void PlayerDeath(){
+		if(startWithStar){
+			CatchStar();
+		}
 	}
 }

@@ -7,6 +7,8 @@ public class Player : MonoBehaviour {
 	PlayerMovement playerMove;
 	GameObject targetObject;
 
+	private Vector2 beginPos;
+
 	private bool movingToDestination = false;
 
 	void Awake () {
@@ -16,6 +18,10 @@ public class Player : MonoBehaviour {
 		rigidbody2D.fixedAngle = true;
 
 		playerMove.speed = 2f;
+	}
+
+	void Start(){
+		beginPos = transform.position;
 	}
 
 	public void interactWithObject(GameObject interactionObject){
@@ -133,5 +139,14 @@ public class Player : MonoBehaviour {
 
 	public void DoInteraction(){
 		targetObject.GetComponent<InteractableObject>().Interact();
+	}
+
+	public void Death(){
+		playerMove.Stop ();
+		BroadcastMessage ("PlayerDeath");
+		if(GameObject.FindGameObjectWithTag ("Star") != null){
+			Destroy(GameObject.FindGameObjectWithTag ("Star"));
+		}
+		transform.position = beginPos;
 	}
 }
