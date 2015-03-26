@@ -9,7 +9,9 @@ public class SoundController : MonoBehaviour {
 	void Start () {
 		source = GetComponent<AudioSource>();
 	}
-
+	public void StopSound () {
+		source.Stop ();
+	}
 	public void PlaySound () {
 		source.PlayOneShot(sound, PlayerPrefs.GetFloat("SoundLevel"));
 	}
