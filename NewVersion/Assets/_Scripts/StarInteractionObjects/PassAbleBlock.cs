@@ -5,6 +5,7 @@ public class PassAbleBlock : InteractableObject {
 
 	bool passing = false;
 	public float massObject = 1000000;
+	private SoundController soundController;
 
 	// Use this for initialization
 	void Awake () {
@@ -12,6 +13,7 @@ public class PassAbleBlock : InteractableObject {
 	}
 
 	void Start(){
+		soundController = GetComponent<SoundController> ();
 		rigidbody2D.fixedAngle = true;
 		rigidbody2D.mass = massObject;
 	}
@@ -36,7 +38,7 @@ public class PassAbleBlock : InteractableObject {
 	{
 		base.Interact ();
 		if(!passing){
-			GetComponent<SoundController>().PlaySound(0, false);
+			soundController.PlaySound(0, false);
 			passing = true;
 			collider2D.isTrigger = true;
 		}
