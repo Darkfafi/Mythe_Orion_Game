@@ -31,7 +31,7 @@ public class SaveLoadData : MonoBehaviour {
 
 		binaryFormatter.Serialize (file, saveData);
 		file.Close();
-		Debug.Log("Saved Data");
+		//Debug.Log("Saved Data");
 	}
 
 	public void Load(){
@@ -47,7 +47,7 @@ public class SaveLoadData : MonoBehaviour {
 			playerProgression.currentPlayingLevel = savedData.currentPlayingLevel;
 
 			file.Close();
-			Debug.Log("Loaded Game");
+			//Debug.Log("Loaded Game");
 		}
 	}
 
