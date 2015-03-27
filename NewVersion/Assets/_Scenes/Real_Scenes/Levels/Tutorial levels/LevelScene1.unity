@@ -2557,6 +2557,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 922963170}
+  - {fileID: 1313126219}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!61 &848135501
@@ -3922,6 +3923,45 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 926071232}
   m_GameObject: {fileID: 1308949549}
+--- !u!1 &1313126218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1313126219}
+  - 61: {fileID: 1313126220}
+  m_Layer: 0
+  m_Name: TouchBox
+  m_TagString: TouchTracker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1313126219
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313126218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 848135500}
+  m_RootOrder: 1
+--- !u!61 &1313126220
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1313126218}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 8.60000038, y: 9}
+  m_Center: {x: 0, y: 3.46000004}
 --- !u!1 &1322199662
 GameObject:
   m_ObjectHideFlags: 0
