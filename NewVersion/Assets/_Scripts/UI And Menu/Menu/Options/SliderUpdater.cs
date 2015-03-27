@@ -7,6 +7,7 @@ public class SliderUpdater : MonoBehaviour {
 	private Slider slider;
 	public Text text;
 	private float sliderValue = 1;
+	public Toggle toggle;
 
 	void Start () {
 		slider = GetComponent<Slider> ();
@@ -20,13 +21,17 @@ public class SliderUpdater : MonoBehaviour {
 		}
 	}
 	public void UpdateText () {
-		if(slider.enabled == true){
-			sliderValue = slider.value;
-			float sliderValueTemp = sliderValue * 100;
-			text.text = sliderValueTemp.ToString("0") + "%";
+		sliderValue = slider.value;
+		float sliderValueTemp = sliderValue * 100;
+		text.text = sliderValueTemp.ToString("0") + "%";
+		if (slider.value == 0) {
+			toggle.isOn = false;
 		}
-		else {
-			text.text = "0%";
-		}
+	}
+	public void UpdateSlider (float number) {
+		slider.value = number;
+	}
+	public float SliderValue () {
+		return(sliderValue);
 	}
 }
