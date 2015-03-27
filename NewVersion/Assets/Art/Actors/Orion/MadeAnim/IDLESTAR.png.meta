@@ -1,0 +1,311 @@
+fileFormatVersion: 2
+guid: 5618916abfc61f94b9da8027fd613849
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: IDLESTAR_0
+    21300002: IDLESTAR_1
+    21300004: IDLESTAR_2
+    21300006: IDLESTAR_3
+    21300008: IDLESTAR_4
+    21300010: IDLESTAR_5
+    21300012: IDLESTAR_6
+    21300014: IDLESTAR_7
+    21300016: IDLESTAR_8
+    21300018: IDLESTAR_9
+    21300020: IDLESTAR_10
+    21300022: IDLESTAR_11
+    21300024: IDLESTAR_12
+    21300026: IDLESTAR_13
+    21300028: IDLESTAR_14
+    21300030: IDLESTAR_15
+    21300032: IDLESTAR_16
+    21300034: IDLESTAR_17
+    21300036: IDLESTAR_18
+    21300038: IDLESTAR_19
+    21300040: IDLESTAR_20
+    21300042: IDLESTAR_21
+    21300044: IDLESTAR_22
+    21300046: IDLESTAR_23
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: IDLESTAR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_1
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_2
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_3
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_4
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_5
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 1287
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_7
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_8
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_9
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_10
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_11
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 858
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_13
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_14
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_15
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_16
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_17
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 429
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_19
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_20
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_21
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_22
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: IDLESTAR_23
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 0
+        width: 236
+        height: 429
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

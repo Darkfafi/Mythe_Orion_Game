@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: 2a562940bde40cf45b67fe148d25ec56
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: interactie_0
+    21300002: interactie_1
+    21300004: interactie_2
+    21300006: interactie_3
+    21300008: interactie_4
+    21300010: interactie_5
+    21300012: interactie_6
+    21300014: interactie_7
+    21300016: interactie_8
+    21300018: interactie_9
+    21300020: interactie_10
+    21300022: interactie_11
+    21300024: interactie_12
+    21300026: interactie_13
+    21300028: interactie_14
+    21300030: interactie_15
+    21300032: interactie_16
+    21300034: interactie_17
+    21300036: interactie_18
+    21300038: interactie_19
+    21300040: interactie_20
+    21300042: interactie_21
+    21300044: interactie_22
+    21300046: interactie_23
+    21300048: interactie_24
+    21300050: interactie_25
+    21300052: interactie_26
+    21300054: interactie_27
+    21300056: interactie_28
+    21300058: interactie_29
+    21300060: interactie_30
+    21300062: interactie_31
+    21300064: interactie_32
+    21300066: interactie_33
+    21300068: interactie_34
+    21300070: interactie_35
+    21300072: interactie_36
+    21300074: interactie_37
+    21300076: interactie_38
+    21300078: interactie_39
+    21300080: interactie_40
+    21300082: interactie_41
+    21300084: interactie_42
+    21300086: interactie_43
+    21300088: interactie_44
+    21300090: interactie_45
+    21300092: interactie_46
+    21300094: interactie_47
+    21300096: interactie_48
+    21300098: interactie_49
+    21300100: interactie_50
+    21300102: interactie_51
+    21300104: interactie_52
+    21300106: interactie_53
+    21300108: interactie_54
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Android
+    maxTextureSize: 4096
+    textureFormat: -1
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: interactie_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_1
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_2
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_3
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_4
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_5
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_6
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_7
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_8
+      rect:
+        serializedVersion: 2
+        x: 3424
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_9
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_10
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_11
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_12
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_13
+      rect:
+        serializedVersion: 2
+        x: 5564
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_14
+      rect:
+        serializedVersion: 2
+        x: 5992
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_15
+      rect:
+        serializedVersion: 2
+        x: 6420
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_16
+      rect:
+        serializedVersion: 2
+        x: 6848
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_17
+      rect:
+        serializedVersion: 2
+        x: 7276
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_18
+      rect:
+        serializedVersion: 2
+        x: 7704
+        y: 1188
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_20
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_21
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_22
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_23
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_24
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_25
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_26
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_27
+      rect:
+        serializedVersion: 2
+        x: 3424
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_28
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_29
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_30
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_31
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_32
+      rect:
+        serializedVersion: 2
+        x: 5564
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_33
+      rect:
+        serializedVersion: 2
+        x: 5992
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_34
+      rect:
+        serializedVersion: 2
+        x: 6420
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_35
+      rect:
+        serializedVersion: 2
+        x: 6848
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_36
+      rect:
+        serializedVersion: 2
+        x: 7276
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_37
+      rect:
+        serializedVersion: 2
+        x: 7704
+        y: 594
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_39
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_40
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_41
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_42
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_43
+      rect:
+        serializedVersion: 2
+        x: 2140
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_44
+      rect:
+        serializedVersion: 2
+        x: 2568
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_45
+      rect:
+        serializedVersion: 2
+        x: 2996
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_46
+      rect:
+        serializedVersion: 2
+        x: 3424
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_47
+      rect:
+        serializedVersion: 2
+        x: 3852
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_48
+      rect:
+        serializedVersion: 2
+        x: 4280
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_49
+      rect:
+        serializedVersion: 2
+        x: 4708
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_50
+      rect:
+        serializedVersion: 2
+        x: 5136
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_51
+      rect:
+        serializedVersion: 2
+        x: 5564
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_52
+      rect:
+        serializedVersion: 2
+        x: 5992
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_53
+      rect:
+        serializedVersion: 2
+        x: 6420
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: interactie_54
+      rect:
+        serializedVersion: 2
+        x: 6848
+        y: 0
+        width: 428
+        height: 594
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

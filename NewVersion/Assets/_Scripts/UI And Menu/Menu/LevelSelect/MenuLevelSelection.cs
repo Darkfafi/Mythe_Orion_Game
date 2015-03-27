@@ -17,7 +17,7 @@ public class MenuLevelSelection : MonoBehaviour {
 		personalTimeText = GameObject.Find ("LevelPersonalTime");
 		recordTimeText = GameObject.Find ("LevelRecordTime");
 		startText = GameObject.Find("StartText");
-
+		selectedTab = GetComponent<PlayerProgression> ().currentLevel;
 		SelectTab(selectedTab);
 	}
 
