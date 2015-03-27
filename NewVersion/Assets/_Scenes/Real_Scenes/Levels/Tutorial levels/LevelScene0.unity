@@ -618,6 +618,10 @@ Prefab:
       propertyPath: m_Center.x
       value: -.150000006
       objectReference: {fileID: 0}
+    - target: {fileID: 11459708, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+      propertyPath: startWithStar
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
   m_RootGameObject: {fileID: 848135497}
@@ -2623,7 +2627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
-  startWithStar: 0
+  startWithStar: 1
 --- !u!61 &922963172
 BoxCollider2D:
   m_ObjectHideFlags: 0
