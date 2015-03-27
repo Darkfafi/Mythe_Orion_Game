@@ -527,6 +527,46 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 926071232}
   m_GameObject: {fileID: 147207485}
+--- !u!1 &156055055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 178844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+  m_PrefabInternal: {fileID: 696876353}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 156055056}
+  - 61: {fileID: 156055057}
+  m_Layer: 0
+  m_Name: TouchBox
+  m_TagString: TouchTracker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &156055056
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 478844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+  m_PrefabInternal: {fileID: 696876353}
+  m_GameObject: {fileID: 156055055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1981175404}
+  m_RootOrder: 1
+--- !u!61 &156055057
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6178844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 696876353}
+  m_GameObject: {fileID: 156055055}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 8.60000038, y: 9}
+  m_Center: {x: 0, y: 3.46000004}
 --- !u!1001 &187642524
 Prefab:
   m_ObjectHideFlags: 0
@@ -2322,6 +2362,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 922963170}
+  - {fileID: 880601930}
   m_Father: {fileID: 0}
   m_RootOrder: 5
 --- !u!61 &848135501
@@ -2500,6 +2541,46 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 52d605532f11ffa4a9e70861b1a9943a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &880601929
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 178844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+  m_PrefabInternal: {fileID: 187642524}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 880601930}
+  - 61: {fileID: 880601931}
+  m_Layer: 0
+  m_Name: TouchBox
+  m_TagString: TouchTracker
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &880601930
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 478844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+  m_PrefabInternal: {fileID: 187642524}
+  m_GameObject: {fileID: 880601929}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 848135500}
+  m_RootOrder: 1
+--- !u!61 &880601931
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 6178844, guid: 428dd4f17b52a43478a5ad7c5f8b02fb,
+    type: 2}
+  m_PrefabInternal: {fileID: 187642524}
+  m_GameObject: {fileID: 880601929}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 8.60000038, y: 9}
+  m_Center: {x: 0, y: 3.46000004}
 --- !u!1 &922963169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2525,7 +2606,7 @@ Transform:
   m_GameObject: {fileID: 922963169}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: .400000006, y: 1.84000003, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 3, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848135500}
   m_RootOrder: 0
@@ -2542,7 +2623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
-  startWithStar: 1
+  startWithStar: 0
 --- !u!61 &922963172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3070,8 +3151,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: .839999974, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.38000011, y: 1}
+  m_Center: {x: -.150000006, y: 0}
 --- !u!114 &1060898403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5514,6 +5595,7 @@ Transform:
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children:
   - {fileID: 1060898404}
+  - {fileID: 156055056}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!61 &1981175405
