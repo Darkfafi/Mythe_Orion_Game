@@ -31,7 +31,7 @@ public class Player : MonoBehaviour {
 		if(!playerMove.anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
 			targetObject = interactionObject;
 
-			if(InInteractionRangeTarget()){
+			if(InInteractionRangeTarget() && rigidbody2D.mass > 500){
 				playerMove.Move(directionToTarget());
 				InteractWithTarget();
 			}else{

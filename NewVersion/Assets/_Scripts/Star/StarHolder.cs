@@ -32,13 +32,9 @@ public class StarHolder : MonoBehaviour {
 				CatchStar();
 				Destroy(hit.gameObject);
 			}
-		}
-	}
-
-	void OnCollisionEnter2D(Collision2D other){
-		if(other.gameObject.tag != "Star"){
-			if(other.gameObject.tag != "Pushable" || GetComponentInParent<Rigidbody2D>().mass < 500){
-				GetComponentInParent<PlayerMovement>().Stop();
+		}else{
+			if(hit.tag != "Pushable" || GetComponentInParent<Rigidbody2D>().mass < 500){
+				SendMessageUpwards("Stop");
 			}
 		}
 	}

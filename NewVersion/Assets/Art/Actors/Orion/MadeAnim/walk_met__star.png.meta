@@ -1,0 +1,366 @@
+fileFormatVersion: 2
+guid: a800615187083c6418fbbcc8191a6c74
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: walk_met__star_0
+    21300002: walk_met__star_1
+    21300004: walk_met__star_2
+    21300006: walk_met__star_3
+    21300008: walk_met__star_4
+    21300010: walk_met__star_5
+    21300012: walk_met__star_6
+    21300014: walk_met__star_7
+    21300016: walk_met__star_8
+    21300018: walk_met__star_9
+    21300020: walk_met__star_10
+    21300022: walk_met__star_11
+    21300024: walk_met__star_12
+    21300026: walk_met__star_13
+    21300028: walk_met__star_14
+    21300030: walk_met__star_15
+    21300032: walk_met__star_16
+    21300034: walk_met__star_17
+    21300036: walk_met__star_18
+    21300038: walk_met__star_19
+    21300040: walk_met__star_20
+    21300042: walk_met__star_21
+    21300044: walk_met__star_22
+    21300046: walk_met__star_23
+    21300048: walk_met__star_24
+    21300050: walk_met__star_25
+    21300052: walk_met__star_26
+    21300054: walk_met__star_27
+    21300056: walk_met__star_28
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: walk_met__star_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_3
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_4
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_5
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_6
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_7
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 1335
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_9
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_10
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_11
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_12
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_13
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_14
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_15
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 890
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_17
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_18
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_19
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_20
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_21
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_22
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_23
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 445
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_25
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_26
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_27
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 0
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: walk_met__star_28
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 0
+        width: 216
+        height: 445
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 

@@ -36,7 +36,7 @@ public class Movement : MonoBehaviour {
 		currentDir = dir;
 	}
 
-	public void Stop(){
+	public virtual void Stop(){
 		moving = false;
 		//anim.Play("Idle");
 		SendMessage("IdleState");

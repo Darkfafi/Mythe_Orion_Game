@@ -53,7 +53,12 @@ public class PlayerMovement : Movement {
 		}
 		
 	}
-
+	public override void Stop ()
+	{
+		if(anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting") == false){
+			base.Stop ();
+		}
+	}
 	void StartTouch(){
 		tiltValue = new Vector2(0,0);
 		swipeStartPosition = Input.mousePosition;
