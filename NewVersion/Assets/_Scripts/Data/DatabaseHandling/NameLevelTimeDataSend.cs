@@ -12,7 +12,7 @@ public class NameLevelTimeDataSend : MonoBehaviour {
 		WWWForm form = new WWWForm ();
 		form.AddField ("name", playerProg.nameUser);
 		form.AddField ("level", playerProg.currentPlayingLevel);
-		form.AddField("time", playerProg.levelsCompleteWithTime[playerProg.currentPlayingLevel]); //data moet eerst opgeslagen worden voor het word opgestuurd
+		form.AddField("time", TimeConverter.SecTimeToDatabaseTime(playerProg.levelsCompleteWithTime[playerProg.currentPlayingLevel])); //data moet eerst opgeslagen worden voor het word opgestuurd
 
 		WWW www = new WWW (url, form);
 

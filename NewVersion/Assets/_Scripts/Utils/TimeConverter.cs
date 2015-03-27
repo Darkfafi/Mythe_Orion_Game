@@ -21,4 +21,20 @@ public class TimeConverter {
 
 		return result;
 	}
+
+	public static int SecTimeToDatabaseTime(int time){
+		int dataTime = 0;
+
+		while(time >= 3600){
+			time -= 3600;
+			dataTime += 10000; // simuleert 1:00:00
+		}
+		while (time >= 60){
+			time -= 60;
+			dataTime += 100;
+		}
+		dataTime += time;
+
+		return dataTime;
+	}
 }

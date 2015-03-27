@@ -33,7 +33,6 @@ public class MenuLevelSelection : MonoBehaviour {
 			startLevelButton.GetComponentInChildren<Text>().text = "Level " + (currentTab.levelIndex + 1).ToString();
 
 			personalTimeText.GetComponent<Text>().text = "Personal Time: " + TimeConverter.SecTimeToHumanTimeString(currentTab.timeCompleteInfo);
-
 			if(currentTab.unlockState){
 				SetRecordTimeText(currentTab.levelIndex);
 				startText.GetComponent<Text>().text = "Press to Play";

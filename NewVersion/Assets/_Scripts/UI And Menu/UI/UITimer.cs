@@ -46,11 +46,11 @@ public class UITimer : MonoBehaviour {
 		int timeMinute = timerMinute;
 		while (timeMinute >= 60) {
 			timeMinute -= 60;
-			totalTime += 10000;
+			totalTime += 3600;
 		}
-		totalTime += timeMinute * 100;
+		totalTime += timeMinute * 60;
 		if (timerMinute > 50339) {
-			totalTime = 8385959; //hoger dan dit crasht de database, en zet een score van 00:00:00 neer, wat dus de highscore wordt
+			totalTime = 3016800; //hoger dan dit crasht de database, en zet een score van 00:00:00 neer, wat dus de highscore wordt
 		}
 		return(totalTime);
 	}

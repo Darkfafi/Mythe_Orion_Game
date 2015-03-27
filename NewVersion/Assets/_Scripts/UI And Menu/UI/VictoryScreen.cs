@@ -14,6 +14,7 @@ public class VictoryScreen : MonoBehaviour {
 		score = GameObject.Find ("YourTime").GetComponent<Text>();
 		bestTime = GameObject.Find ("BestTime").GetComponent<Text>();
 		worldTime = GameObject.Find ("WorldBestTime").GetComponent<Text>();
+
 		score.text = TimeConverter.SecTimeToHumanTimeString(GameObject.Find ("TimeText").GetComponent<UITimer> ().TotalTime ());
 		bestTime.text = TimeConverter.SecTimeToHumanTimeString(playerProgression.GetLevelTime (playerProgression.currentPlayingLevel));
 
