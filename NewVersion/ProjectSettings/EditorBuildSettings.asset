@@ -12,6 +12,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Real_Scenes/Ramses/LevelSelectionScreen.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Levels/Tutorial levels/LevelScene0.unity
+    path: Assets/_Scenes/Real_Scenes/Ramses/Levels/LevelScene0.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Levels/Tutorial levels/LevelScene1.unity
+    path: Assets/_Scenes/Real_Scenes/Ramses/Levels/LevelScene1.unity
