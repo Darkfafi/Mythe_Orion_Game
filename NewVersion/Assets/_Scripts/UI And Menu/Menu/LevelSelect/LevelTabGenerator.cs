@@ -17,7 +17,7 @@ public class LevelTabGenerator : MonoBehaviour {
 	void AddLevelTabs (int amount) {
 		GameObject levelTab;
 		for (int i = 0; i < amount; i++) {
-			levelTab = Instantiate(levelTabPrefab,new Vector3((transform.position.x - 400) + i * 120f,transform.position.y,0),Quaternion.identity) as GameObject;
+			levelTab = Instantiate(levelTabPrefab,new Vector3((transform.position.x - 400) + i * 120f,transform.position.y + 100,0),Quaternion.identity) as GameObject;
 
 			levelTab.transform.SetParent(gameObject.transform,false);
 

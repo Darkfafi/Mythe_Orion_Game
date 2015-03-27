@@ -2665,7 +2665,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.38000011, y: 1}
+  m_Size: {x: 1.51999998, y: 1}
   m_Center: {x: -.150000006, y: 0}
 --- !u!1001 &926071232
 Prefab:
@@ -3222,7 +3222,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.38000011, y: 1}
+  m_Size: {x: 1.63, y: 1}
   m_Center: {x: -.150000006, y: 0}
 --- !u!114 &1060898403
 MonoBehaviour:
@@ -3421,6 +3421,10 @@ Prefab:
     - target: {fileID: 473118, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
       propertyPath: m_LocalScale.x
       value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159708, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+      propertyPath: m_Size.x
+      value: 1.63
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
@@ -4801,6 +4805,10 @@ Prefab:
     - target: {fileID: 11459708, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
       propertyPath: startWithStar
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6159708, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
+      propertyPath: m_Size.x
+      value: 1.51999998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 428dd4f17b52a43478a5ad7c5f8b02fb, type: 2}
