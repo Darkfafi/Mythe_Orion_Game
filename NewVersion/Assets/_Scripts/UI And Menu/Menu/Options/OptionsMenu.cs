@@ -15,7 +15,6 @@ public class OptionsMenu : MonoBehaviour {
 	public void Sound (Slider slider) {
 		PlayerPrefs.SetFloat ("SoundLevel", slider.value);
 		PlayerPrefs.Save();
-		Debug.Log (PlayerPrefs.GetFloat("SoundLevel"));
 	}
 	public void Music (Slider slider) {
 		PlayerPrefs.SetFloat ("MusicLevel", slider.value);
