@@ -27,15 +27,18 @@ public class Player : MonoBehaviour {
 	}
 
 	public void interactWithObject(GameObject interactionObject){
-		targetObject = interactionObject;
 
-		if(InInteractionRangeTarget()){
-			playerMove.Move(directionToTarget());
-			InteractWithTarget();
-		}else{
-			if(movingToDestination == false){
-				movingToDestination = true;
-				playerMove.Stop();
+		if(!playerMove.anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
+			targetObject = interactionObject;
+
+			if(InInteractionRangeTarget()){
+				playerMove.Move(directionToTarget());
+				InteractWithTarget();
+			}else{
+				if(movingToDestination == false){
+					movingToDestination = true;
+					playerMove.Stop();
+				}
 			}
 		}
 	}
@@ -83,7 +86,6 @@ public class Player : MonoBehaviour {
 	}
 
 	void InteractWithTarget(){
-
 		movingToDestination = false;
 
 		playerMove.Stop();
