@@ -20,7 +20,6 @@ public class OptionsMenu : MonoBehaviour {
 	public void Music (Slider slider) {
 		PlayerPrefs.SetFloat ("MusicLevel", slider.value);
 		PlayerPrefs.Save();
-		Debug.Log (slider.value);
 	}
 	public void DestroyOptions () {
 		Destroy (gameObject);
