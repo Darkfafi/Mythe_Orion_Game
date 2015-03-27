@@ -38,7 +38,7 @@ public class PressurePlate : MonoBehaviour {
 			}
 		}
 		else {
-			if(soundPlaying = true) {
+			if(soundPlaying == true) {
 				soundController.StopSound();
 				soundPlaying = false;
 			}
@@ -53,7 +53,7 @@ public class PressurePlate : MonoBehaviour {
 			}
 		}
 		else {
-			if(soundPlaying = true) {
+			if(soundPlaying == true) {
 				soundController.StopSound();
 				soundPlaying = false;
 			}
