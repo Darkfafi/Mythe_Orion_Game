@@ -8,10 +8,9 @@ PlayerSettings:
   defaultScreenOrientation: 4
   targetDevice: 2
   targetGlesGraphics: 1
-  targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
+  companyName: MediacollegeAmsterdam
   productName: Arbitrium
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -68,12 +67,11 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: com.Company.Arbitrium
+  iPhoneBundleIdentifier: com.MediacollegeAmsterdam.Arbitrium
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: 8835488a2f88c904eae5bb6f18358872
   iPhoneBundleVersion: 1.0
-  iPhoneShortBundleVersion: 1.0
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -103,24 +101,15 @@ PlayerSettings:
   iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
   iPadHighResLandscapeSplashScreen: {fileID: 0}
-  iOSLaunchScreenType: 0
-  iOSLaunchScreenPortrait: {fileID: 0}
-  iOSLaunchScreenLandscape: {fileID: 0}
-  iOSLaunchScreenBackgroundColor:
-    serializedVersion: 2
-    rgba: 4281676575
-  iOSLaunchScreenFillPct: 100
-  iOSLaunchScreenSize: 100
-  iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: C:/Users/Darkfafi/Desktop/Mediacollege Amsterdam/LeerJaar2/Fase3/Projecten/Mythe/keyStores/user.keystore
+  AndroidKeyaliasName: mediacollegeamsterdam
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 0}
+    - m_Icon: {fileID: 2800000, guid: d1d00069e3065e044ac5648e098792eb, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
@@ -258,12 +247,6 @@ PlayerSettings:
   tizenGPSPermissions: 0
   tizenMicrophonePermissions: 0
   stvDeviceAddress: 
-  wp8UnprocessedPlugins: []
-  intPropertyNames:
-  - iOS::Architecture
-  - iOS::ScriptingBackend
-  iOS::Architecture: 2
-  iOS::ScriptingBackend: 0
   firstStreamedLevelWithResources: 0
   unityRebuildLibraryVersion: 9
   unityForwardCompatibleVersion: 39
