@@ -77,6 +77,7 @@
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\OptionsMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\Reset.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\SliderUpdater.cs" />
+     <Compile Include="Assets\_Scripts\UI And Menu\Menu\Options\ToggleBehavior.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\StartMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\PauseMenu.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\UI\SliderPosition.cs" />
