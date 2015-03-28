@@ -111,9 +111,9 @@ BoxCollider2D:
   m_GameObject: {fileID: 159708}
   m_Enabled: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Size: {x: 2.38000011, y: 1}
-  m_Center: {x: -.150000006, y: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 1.5, y: 1}
+  m_Center: {x: 0, y: 0}
 --- !u!61 &6178844
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
-  startWithStar: 0
+  startWithStar: 1
 --- !u!114 &11473122
 MonoBehaviour:
   m_ObjectHideFlags: 1
