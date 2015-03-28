@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Nick/Menu.unity
+    path: Assets/_Scenes/Real_Scenes/01N0110/Menu.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Ramses/NameAccountCreate.unity
+    path: Assets/_Scenes/Real_Scenes/10R1010/NameAccountCreate.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Ramses/LevelSelectionScreen.unity
+    path: Assets/_Scenes/Real_Scenes/10R1010/LevelSelectionScreen.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Ramses/Levels/LevelScene0.unity
+    path: Assets/_Scenes/Real_Scenes/10R1010/Levels/LevelScene0.unity
   - enabled: 1
-    path: Assets/_Scenes/Real_Scenes/Ramses/Levels/LevelScene1.unity
+    path: Assets/_Scenes/Real_Scenes/10R1010/Levels/LevelScene1.unity
