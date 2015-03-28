@@ -11,8 +11,8 @@ public class EndLevel : MonoBehaviour {
 		totalPlayers = GameObject.FindGameObjectsWithTag ("Player").Length;
 	}
 
-	void OnCollisionEnter2D(Collision2D other){
-		if (other.gameObject.tag == "Player") {
+	void OnTriggerEnter2D(Collider2D other){
+		if (other.gameObject.GetComponent<StarHolder>() != null) {
 			playersAtFinish += 1;
 			if(playersAtFinish == totalPlayers){
 				FinishLevel();
@@ -20,8 +20,8 @@ public class EndLevel : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionExit2D(Collision2D other){
-		if(other.gameObject.tag == "Player"){
+	void OnTriggerExit2D(Collider2D other){
+		if(other.gameObject.GetComponent<StarHolder>() != null){
 			playersAtFinish -= 1;
 		}
 	}
