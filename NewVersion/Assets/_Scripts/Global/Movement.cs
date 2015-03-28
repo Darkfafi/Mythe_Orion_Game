@@ -19,9 +19,12 @@ public class Movement : MonoBehaviour {
 		scaleX = transform.localScale.x;
 	}
 
-	public void Move(int dir){
+	public void Move(int dir,float moveSpeed = 0){
 		//Debug.Log ("Move " + dir);
 		//sendmassage(playanim,typeAsPara)
+		if(moveSpeed == 0){
+			moveSpeed = speed;
+		}
 		if(currentDir != dir){
 			int calcDir = dir;
 			//anim.Play("Walk");
@@ -32,7 +35,7 @@ public class Movement : MonoBehaviour {
 
 			transform.localScale = new Vector3(scaleX * calcDir,transform.localScale.y,transform.localScale.z);
 		}
-		gameObject.transform.Translate (new Vector2 (speed * dir,0) * Time.deltaTime);
+		gameObject.transform.Translate (new Vector2 (moveSpeed * dir,0) * Time.deltaTime);
 		currentDir = dir;
 	}
 

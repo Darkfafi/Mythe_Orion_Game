@@ -11,6 +11,8 @@ public class PlayerMovement : Movement {
 	private bool controlling = false;
 	private Vector2 tiltValue;
 
+	private float movementSpeed;
+
 	//als het word opgetilt en er geen tilt was dan stop. anders doe tilt opdracht (zoals springen etc)
 
 	void Update () {
@@ -26,11 +28,26 @@ public class PlayerMovement : Movement {
 				tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
 				if(tiltValue.x > 30  || tiltValue.y > 30){ // als hij minimaal zover heeft geswiped
 					if(tiltValue.x > tiltValue.y){
+						movementSpeed = 0;
+
 						if(mousePos.x < swipeStartPosition.x){
+							if(currentDir == LEFT){
+								movementSpeed = speed * 1.5f;
+							}
 							swipeDirectionValue.x = LEFT;
 						}else if(mousePos.x > swipeStartPosition.x){
+							if(currentDir == RIGHT){
+								movementSpeed = speed * 1.5f;
+							}
 							swipeDirectionValue.x = RIGHT;
 						}
+
+						if(movementSpeed == 0){
+							anim.speed = 1;
+						}else{
+							anim.speed = movementSpeed / speed;
+						}
+
 						moving = true;
 					}else{
 						if(mousePos.y < swipeStartPosition.y){
@@ -46,17 +63,17 @@ public class PlayerMovement : Movement {
 		}
 		if(moving){
 			if (swipeDirectionValue.x < 0){
-				Move(LEFT);
+				Move(LEFT,movementSpeed);
 			}else if (swipeDirectionValue.x > 0){
-				Move(RIGHT);
+				Move(RIGHT,movementSpeed);
 			}
 		}
-		
 	}
 	public override void Stop ()
 	{
 		if(anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting") == false){
 			base.Stop ();
+			anim.speed = 1f;
 		}
 	}
 	void StartTouch(){
