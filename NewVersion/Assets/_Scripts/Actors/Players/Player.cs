@@ -129,7 +129,7 @@ public class Player : MonoBehaviour {
 	}
 
 	void CaughtStar(){
-		IdleState ();
+		playerMove.Stop();
 	}
 
 	public void CharacterJump(){
