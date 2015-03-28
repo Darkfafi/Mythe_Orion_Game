@@ -286,14 +286,15 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Artists
 
-
     Susan van der Puijl
 
     Jelmer de Groen
 
     Luuc Veenker
 
-    Jessie Spitteler'
+    Jessie Spitteler
+
+    Joey Pang'
 --- !u!222 &193594277
 CanvasRenderer:
   m_ObjectHideFlags: 0
