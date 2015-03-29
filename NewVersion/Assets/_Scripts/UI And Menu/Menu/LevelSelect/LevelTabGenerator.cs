@@ -6,7 +6,7 @@ public class LevelTabGenerator : MonoBehaviour {
 	public GameObject levelTabPrefab;
 		
 	void Awake(){
-		AddLevelTabs (4);
+		AddLevelTabs (5);
 	}
 	// Use this for initialization
 	void Start () {
