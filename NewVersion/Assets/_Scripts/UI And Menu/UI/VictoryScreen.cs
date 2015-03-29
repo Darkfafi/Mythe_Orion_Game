@@ -36,7 +36,7 @@ public class VictoryScreen : MonoBehaviour {
 			worldTime.text = "No Internet";
 		}else{
 			if(www.text != "Null"){
-				char[] splitchar = {' '};
+				char[] splitchar = {'~'};
 				string[] splitResult = www.text.Split(splitchar);
 				worldTime.text = " by " + splitResult[0] + " \n" +TimeConverter.SecTimeToHumanTimeString (int.Parse(splitResult[1]));
 			}else{

@@ -17,7 +17,10 @@ public class MenuLevelSelection : MonoBehaviour {
 		personalTimeText = GameObject.Find ("LevelPersonalTime");
 		recordTimeText = GameObject.Find ("LevelRecordTime");
 		startText = GameObject.Find("StartText");
-		selectedTab = GetComponent<PlayerProgression> ().currentLevel;
+		if (GetComponent<PlayerProgression> ().currentLevel < levelTabs.Length) {
+			selectedTab = GetComponent<PlayerProgression> ().currentLevel;
+		}
+
 		SelectTab(selectedTab);
 	}
 
@@ -82,7 +85,7 @@ public class MenuLevelSelection : MonoBehaviour {
 
 		if(www.error == null){
 			if(www.text != "Null"){
-				char[] splitchar = { ' ' };
+				char[] splitchar = { '~' };
 				string[] splitResult = www.text.Split(splitchar);
 				recordText = "World record time: " + TimeConverter.SecTimeToHumanTimeString(int.Parse(splitResult[1])) +" by "+ splitResult[0];
 			}else{
