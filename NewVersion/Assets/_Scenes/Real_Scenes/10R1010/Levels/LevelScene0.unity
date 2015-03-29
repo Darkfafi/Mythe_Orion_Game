@@ -1336,7 +1336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerToCheck: {fileID: 848135497}
   textAfterEvent: You can move by swiping left and right and move faster by doing
-    it twice.
+    it twice. You can stop by tapping the moving character
   hasToBeInRange: 0
 --- !u!1 &503426990
 GameObject:
@@ -3336,7 +3336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToCheck: {fileID: 362623412}
   textAfterEvent: Notice how every object with a star on it is interactable by pushing,
-    throwing at or tapping it.
+    throwing at or tapping it while holding the star.
 --- !u!114 &1193064758
 MonoBehaviour:
   m_ObjectHideFlags: 0
