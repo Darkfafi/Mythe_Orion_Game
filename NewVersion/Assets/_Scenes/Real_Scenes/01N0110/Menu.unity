@@ -73,6 +73,7 @@ NavMeshSettings:
     minRegionArea: 2
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
+    tileSizeHint: 0
   m_NavMesh: {fileID: 0}
 --- !u!1 &179226561
 GameObject:
@@ -189,8 +190,8 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 163, y: -7}
-  m_SizeDelta: {x: 344.420013, y: 211.600006}
+  m_AnchoredPosition: {x: 166, y: -5}
+  m_SizeDelta: {x: 344, y: 230}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &193594276
 MonoBehaviour:
@@ -207,7 +208,7 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -737,7 +738,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 9.53670042e-06, y: 137}
+  m_AnchoredPosition: {x: 9.53670042e-06, y: 153}
   m_SizeDelta: {x: 500, y: 260}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1059368032
@@ -1111,7 +1112,7 @@ MonoBehaviour:
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 30
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -1148,8 +1149,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -150.860016, y: 5.35001755}
-  m_SizeDelta: {x: 283.299988, y: 186.899994}
+  m_AnchoredPosition: {x: -148, y: 14}
+  m_SizeDelta: {x: 283, y: 190}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1751559439
 GameObject:
@@ -1259,8 +1260,8 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ignoreReversedGraphics: 1
-  blockingObjects: 0
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
