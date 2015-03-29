@@ -10,9 +10,6 @@ GameObject:
   - 224: {fileID: 22405108}
   - 222: {fileID: 22205110}
   - 114: {fileID: 11405106}
-  - 114: {fileID: 11465678}
-  - 114: {fileID: 11465680}
-  - 61: {fileID: 6165680}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -55,17 +52,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &6165680
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105108}
-  m_Enabled: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Size: {x: 144, y: 26.7000008}
-  m_Center: {x: -103.699997, y: 14.3000002}
 --- !u!114 &11405106
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -91,7 +77,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Destroy the jar by throwing the star at it.
+  m_Text: Ow boy.. What to do.
 --- !u!114 &11405108
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,34 +136,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &11465678
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 743b3fadb1b743444863bd329d8ace12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToCheck: {fileID: 0}
-  textAfterEvent: Notice how every object with a star on it is interactable by pushing,
-    throwing at or tapping it.
---- !u!114 &11465680
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105108}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 272d1127c1c88c148a56d45eccea5b1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerToCheck: {fileID: 0}
-  textAfterEvent: You have to hit it though!
-  hasToBeInRange: 1
 --- !u!222 &22205110
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -249,7 +207,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 105112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.89999998}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 22405110}
@@ -257,7 +215,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -22.4099998, y: -9.98999977}
+  m_AnchoredPosition: {x: -54.0999985, y: 5}
   m_SizeDelta: {x: 20.1700001, y: 4}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000

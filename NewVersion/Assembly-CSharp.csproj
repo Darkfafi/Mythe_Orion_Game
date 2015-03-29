@@ -71,6 +71,7 @@
      <Compile Include="Assets\_Scripts\StarInteractionObjects\RockCoordChecker.cs" />
      <Compile Include="Assets\_Scripts\TutorialEvents\CheckIfObjectDestroyed.cs" />
      <Compile Include="Assets\_Scripts\TutorialEvents\CheckIfPlayerThrewStar.cs" />
+     <Compile Include="Assets\_Scripts\TutorialEvents\TextOnPlayerSwipe.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\CreateAccountScreen\CreateAccount.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelSelectTabData.cs" />
      <Compile Include="Assets\_Scripts\UI And Menu\Menu\LevelSelect\LevelTabGenerator.cs" />

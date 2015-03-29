@@ -23,7 +23,7 @@ public class PassAbleBlock : InteractableObject {
 			if(other.gameObject.tag == "Ground"){ //als het door de grond is gegaan
 				passing = false; //dan zet boolean uit die bijhield dat hij door de grond ging.
 				collider2D.isTrigger = false; //de trigger word een collider zodat het niet meer door dingen gaat.
-				Debug.Log(transform.eulerAngles.z);
+				//Debug.Log(transform.eulerAngles.z);
 				if(transform.eulerAngles.z > 90 && transform.rotation.z < 270){ //als de rotatie 180 was dan ga naar 0
 					transform.rotation = new Quaternion(0,0,0,0);
 				}else{
