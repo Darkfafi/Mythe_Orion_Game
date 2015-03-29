@@ -5,7 +5,7 @@ public class StarHolder : MonoBehaviour {
 
 	public GameObject starPrefab;
 	public bool startWithStar = false;
-	private bool holdingStar = false;
+	public bool holdingStar = false;
 	private bool starHit = false;
 
 
