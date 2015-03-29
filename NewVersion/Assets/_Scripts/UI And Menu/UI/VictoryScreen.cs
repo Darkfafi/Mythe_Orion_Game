@@ -17,6 +17,9 @@ public class VictoryScreen : MonoBehaviour {
 
 		score.text = TimeConverter.SecTimeToHumanTimeString(GameObject.Find ("TimeText").GetComponent<UITimer> ().TotalTime ());
 		bestTime.text = TimeConverter.SecTimeToHumanTimeString(playerProgression.GetLevelTime (playerProgression.currentPlayingLevel));
+		if(bestTime.text == ""){
+			bestTime.text = "First time played";
+		}
 
 
 		string url = "http://15826.hosts.ma-cloud.nl/Leerjaar2/Projecten/Mythe/phpRecordTimeGet.php";
@@ -27,6 +30,7 @@ public class VictoryScreen : MonoBehaviour {
 		StartCoroutine (WaitForRequest (www));
 	}
 	public void BackToSelect () {
+		Time.timeScale = 1;
 		Application.LoadLevel ("LevelSelectionScreen");
 	}
 	IEnumerator WaitForRequest(WWW www){

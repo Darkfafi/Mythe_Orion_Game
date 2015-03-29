@@ -27,6 +27,7 @@ public class EndLevel : MonoBehaviour {
 	}
 
 	void FinishLevel(){
+		Time.timeScale = 0;
 		GameObject.Find ("GameController").GetComponent<DataManager> ().FinishLevelWithTime (GameObject.Find ("TimeText").GetComponent<UITimer>().TotalTime());
 		GameObject victory;
 		GameObject canvas = GameObject.Find ("UI");
