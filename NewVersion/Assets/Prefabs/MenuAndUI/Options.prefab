@@ -1636,7 +1636,7 @@ MonoBehaviour:
         m_MethodName: Sound
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11474398}
+          m_ObjectArgument: {fileID: 11474436}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI,
             Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0
@@ -1648,7 +1648,7 @@ MonoBehaviour:
         m_MethodName: CheckValue
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11474398}
+          m_ObjectArgument: {fileID: 11474436}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Slider, UnityEngine.UI,
             Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
           m_IntArgument: 0

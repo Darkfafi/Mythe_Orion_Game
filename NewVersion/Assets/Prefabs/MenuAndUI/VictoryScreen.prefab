@@ -594,8 +594,8 @@ RectTransform:
   m_RootOrder: 6
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 1, y: 21}
-  m_SizeDelta: {x: 798.5, y: 450.920013}
+  m_AnchoredPosition: {x: .125037193, y: -2.00126648}
+  m_SizeDelta: {x: 800.25, y: 496.920013}
   m_Pivot: {x: .5, y: .5}
 --- !u!1001 &100100000
 Prefab:
