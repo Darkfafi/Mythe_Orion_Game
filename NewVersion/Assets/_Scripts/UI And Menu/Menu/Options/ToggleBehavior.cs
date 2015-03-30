@@ -6,11 +6,10 @@ public class ToggleBehavior : MonoBehaviour {
 
 	private Toggle toggle;
 	public SliderUpdater sliderUpdater;
-
-	void Start () {
-		toggle = GetComponent<Toggle> ();
-	}
+	
 	public void ValueChanged () {
+		toggle = GetComponent<Toggle> ();
+
 		if(toggle.isOn == false){
 			sliderUpdater.UpdateSlider (0);
 		}
@@ -19,7 +18,10 @@ public class ToggleBehavior : MonoBehaviour {
 		}
 		sliderUpdater.UpdateText ();
 	}
+
 	public void CheckValue (Slider slider) {
+		toggle = GetComponent<Toggle> ();
+
 		if (slider.value != 0 && toggle.isOn == false) {
 			toggle.isOn = true;
 		}
