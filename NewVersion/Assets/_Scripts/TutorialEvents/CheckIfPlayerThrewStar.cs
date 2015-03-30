@@ -22,14 +22,15 @@ public class CheckIfPlayerThrewStar : MonoBehaviour {
 		}
 	}
 	void Update(){
-		if(holdingStar && playerToCheck.GetComponentInChildren<StarHolder>().holdingStar == false){
-			if(inRange && hasToBeInRange || !hasToBeInRange){
-				GetComponent<Text>().text = textAfterEvent;
-				Destroy(this);
+		if(playerToCheck.GetComponentInChildren<StarHolder>() != null){
+			if(holdingStar && playerToCheck.GetComponentInChildren<StarHolder>().holdingStar == false){
+				if(inRange && hasToBeInRange || !hasToBeInRange){
+					GetComponent<Text>().text = textAfterEvent;
+					Destroy(this);
+				}
 			}
+			holdingStar = playerToCheck.GetComponentInChildren<StarHolder>().holdingStar == true;
 		}
-		holdingStar = playerToCheck.GetComponentInChildren<StarHolder>().holdingStar == true;
-
 	}
 
 }

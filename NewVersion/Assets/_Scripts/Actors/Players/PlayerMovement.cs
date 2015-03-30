@@ -51,7 +51,9 @@ public class PlayerMovement : Movement {
 						moving = true;
 					}else{
 						if(mousePos.y < swipeStartPosition.y){
-							GetComponentInChildren<StarHolder>().ThrowStar();
+							if(GetComponentInChildren<StarHolder>() != null){
+								GetComponentInChildren<StarHolder>().ThrowStar();
+							}
 							Stop();
 						}else if(mousePos.y > swipeStartPosition.y){
 							Jump();

@@ -812,7 +812,7 @@ Transform:
   m_PrefabInternal: {fileID: 2132363463}
   m_GameObject: {fileID: 309799503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 198549226}
@@ -2660,7 +2660,7 @@ Transform:
   m_PrefabInternal: {fileID: 1527564855}
   m_GameObject: {fileID: 880601929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848135500}
@@ -3400,7 +3400,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Size: {x: 144, y: 26.7000008}
-  m_Center: {x: -136.440002, y: 14.3000002}
+  m_Center: {x: -86.4000015, y: 21}
 --- !u!114 &1193064762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5347,7 +5347,7 @@ RectTransform:
   m_RootOrder: 16
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -18.8799992, y: -9.98999977}
+  m_AnchoredPosition: {x: -24.7000008, y: -11.75}
   m_SizeDelta: {x: 20.1700001, y: 4}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1756811846
@@ -5842,8 +5842,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 4.01999998, y: 9.47999954}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4.01999998, y: 9.36581993}
+  m_Center: {x: 0, y: .0570898056}
 --- !u!82 &1933829429
 AudioSource:
   m_ObjectHideFlags: 0
