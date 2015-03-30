@@ -35,7 +35,7 @@ public class VictoryScreen : MonoBehaviour {
 	}
 	IEnumerator WaitForRequest(WWW www){
 		yield return www;
-
+		transform.Find ("Button").gameObject.SetActive (true);
 		if (www.error != null) {
 			worldTime.text = "No Internet";
 		}else{
