@@ -25,3 +25,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/Real_Scenes/10R1010/Levels/LevelScene5.unity
   - enabled: 1
     path: Assets/_Scenes/Real_Scenes/10R1010/Levels/LevelScene6.unity
+  - enabled: 1
+    path: Assets/_Scenes/Real_Scenes/01N0110/LevelScene7.unity
