@@ -149,6 +149,7 @@ public class Player : MonoBehaviour {
 	}
 
 	public void Death(){
+		StarHolderActive (true);
 		BroadcastMessage ("PlayerDeath");
 		playerMove.Stop ();
 		transform.position = beginPos;
