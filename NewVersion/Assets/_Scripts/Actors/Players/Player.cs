@@ -106,6 +106,7 @@ public class Player : MonoBehaviour {
 		}
 	}
 	void IdleState(){
+		StarHolderActive(true);
 		if(rigidbody2D.mass > 500){
 			playerMove.anim.Play("Idle_Star");
 		}else{
@@ -125,6 +126,7 @@ public class Player : MonoBehaviour {
 		if (rigidbody2D.mass < 500) {
 			playerMove.Stop();
 			playerMove.anim.Play ("JumpStart");
+			StarHolderActive(false);
 		}
 	}
 
@@ -150,5 +152,10 @@ public class Player : MonoBehaviour {
 		BroadcastMessage ("PlayerDeath");
 		playerMove.Stop ();
 		transform.position = beginPos;
+	}
+
+	
+	public void StarHolderActive(bool active){
+		transform.Find ("StarHolder").gameObject.SetActive (active);
 	}
 }
