@@ -151,7 +151,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: JumpEnd
-  m_Speed: 1
+  m_Speed: 1.5
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 4de5376bdfff6c247b3959a0a610660c, type: 2}
@@ -196,7 +196,7 @@ State:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: JumpStart
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Motions:
   - {fileID: 7400000, guid: 7825995013fdce44fb657504c966d586, type: 2}
@@ -241,29 +241,29 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 110292808}
+      second: []
+    data:
       first: {fileID: 110202966}
-      second: []
-    data:
-      first: {fileID: 110231362}
-      second: []
-    data:
-      first: {fileID: 110248590}
-      second:
-      - {fileID: 110142580}
-    data:
-      first: {fileID: 110260162}
       second: []
     data:
       first: {fileID: 110266568}
       second:
       - {fileID: 110198338}
     data:
+      first: {fileID: 110231362}
+      second: []
+    data:
+      first: {fileID: 110260162}
+      second: []
+    data:
       first: {fileID: 110290174}
       second:
       - {fileID: 110119406}
     data:
-      first: {fileID: 110292808}
-      second: []
+      first: {fileID: 110248590}
+      second:
+      - {fileID: 110142580}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 0, y: 12, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

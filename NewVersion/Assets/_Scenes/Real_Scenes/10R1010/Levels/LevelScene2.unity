@@ -188,12 +188,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -343,8 +343,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 4.01999998, y: 9.47999954}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4.01999998, y: 9.36581993}
+  m_Center: {x: 0, y: .0570898056}
 --- !u!212 &101605912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -695,7 +695,7 @@ Transform:
   m_PrefabInternal: {fileID: 537242281}
   m_GameObject: {fileID: 311486463}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1833338265}
@@ -1075,12 +1075,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1139,8 +1139,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 4.01999998, y: 9.47999954}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4.01999998, y: 9.36581993}
+  m_Center: {x: 0, y: .0570898056}
 --- !u!212 &411480776
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1403,19 +1403,19 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you sure you want to go back to the menu? (you will lose your Current
-    progress)
+  m_Text: "Are you sure you want to go back to the menu? \n(You will lose your Current
+    progress)"
 --- !u!222 &524811900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1598,7 +1598,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Sprite: {fileID: 21300000, guid: c213302f777a6894f936f507e6ae3724, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93fab4142823abd4f9032a057e5ae91b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1771,12 +1771,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -1823,7 +1823,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -36.9999695, y: -35.6000061}
+  m_AnchoredPosition: {x: -37, y: -43.5999985}
   m_SizeDelta: {x: 63.5, y: 25}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &688873784
@@ -2266,7 +2266,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.5, y: 1}
+  m_Size: {x: 2.25, y: 1}
   m_Center: {x: 0, y: 0}
 --- !u!114 &752487424
 MonoBehaviour:
@@ -2282,6 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   startWithStar: 0
+  holdingStar: 0
 --- !u!1 &804435190
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,12 +2315,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -2729,6 +2730,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   starPrefab: {fileID: 191872, guid: 9f2de8031adad804a89d732845c7a752, type: 2}
   startWithStar: 1
+  holdingStar: 0
 --- !u!61 &922963172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2739,8 +2741,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Size: {x: 1.5, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.25, y: 1}
+  m_Center: {x: -0, y: 0}
 --- !u!1001 &926071232
 Prefab:
   m_ObjectHideFlags: 0
@@ -3118,17 +3120,17 @@ RectTransform:
   m_GameObject: {fileID: 1001100567}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: .970000029, y: 1, z: 1}
+  m_LocalScale: {x: 1.00999999, y: 1, z: 1}
   m_Children:
   - {fileID: 1703241066}
   - {fileID: 1423241505}
   - {fileID: 1492968083}
   m_Father: {fileID: 1865228604}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 5, y: -2}
-  m_SizeDelta: {x: 840, y: 450.459991}
+  m_AnchorMin: {x: 0, y: .5}
+  m_AnchorMax: {x: 1, y: .5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 450.459991}
   m_Pivot: {x: .5, y: .5}
 --- !u!1 &1001909897
 GameObject:
@@ -3353,8 +3355,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1147488453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.8099995, y: -8.43999958, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 18.8999996, y: -8.43999958, z: 0}
+  m_LocalScale: {x: 1.5, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 89992379}
   m_RootOrder: 4
@@ -3504,19 +3506,19 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you sure you want to go back to level select? (you will lose your Current
-    progress)
+  m_Text: "Are you sure you want to go back to level select? \n(You will lose your
+    Current progress)"
 --- !u!222 &1248183965
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3635,7 +3637,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: -37, y: -35.5999985}
+  m_AnchoredPosition: {x: -37, y: -42.2000008}
   m_SizeDelta: {x: 63.5, y: 25}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1301490296
@@ -3907,7 +3909,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 37, y: -35.5999985}
+  m_AnchoredPosition: {x: 37, y: -42.2000008}
   m_SizeDelta: {x: 63.5, y: 25}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1308949551
@@ -4016,7 +4018,7 @@ Transform:
   m_PrefabInternal: {fileID: 2033039583}
   m_GameObject: {fileID: 1313126218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 848135500}
@@ -5378,12 +5380,12 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 65
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
+    m_FontSize: 70
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 70
     m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -5679,9 +5681,9 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: .272000015
   m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
+  m_FallbackScreenDPI: 87.0999985
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
 --- !u!223 &1865228603
@@ -5803,8 +5805,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 4.01999998, y: 9.47999954}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 4.01999998, y: 9.36581993}
+  m_Center: {x: 0, y: .0570898056}
 --- !u!82 &1933829429
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5955,7 +5957,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 37, y: -35.5999985}
+  m_AnchoredPosition: {x: 37, y: -43.5999985}
   m_SizeDelta: {x: 63.5, y: 25}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1951639440
@@ -6194,8 +6196,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -54.5, y: -53.9000015}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -58.5, y: -56.5999985}
+  m_SizeDelta: {x: 160, y: 31.1800003}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1960112355
 MonoBehaviour:
@@ -6222,20 +6224,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .949898601, g: 1, b: .808823526, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 281867e01ae3d1643b36f26d8ddaac90, type: 3}
     m_FontSize: 26
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 4
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 0:00
 --- !u!222 &1960112357
 CanvasRenderer:
   m_ObjectHideFlags: 0

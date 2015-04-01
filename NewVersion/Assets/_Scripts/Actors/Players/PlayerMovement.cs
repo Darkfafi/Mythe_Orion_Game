@@ -26,18 +26,18 @@ public class PlayerMovement : Movement {
 		if(controlling){
 			if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
 				tiltValue = new Vector2(Mathf.Abs(mousePos.x - swipeStartPosition.x),Mathf.Abs(mousePos.y - swipeStartPosition.y));
-				if(tiltValue.x > 30  || tiltValue.y > 30){ // als hij minimaal zover heeft geswiped
+				if(tiltValue.x > 40  || tiltValue.y > 40){ // als hij minimaal zover heeft geswiped
 					if(tiltValue.x > tiltValue.y){
 						movementSpeed = 0;
 
 						if(mousePos.x < swipeStartPosition.x){
 							if(currentDir == LEFT){
-								movementSpeed = speed * 1.5f;
+								movementSpeed = speed * 1.85f;
 							}
 							swipeDirectionValue.x = LEFT;
 						}else if(mousePos.x > swipeStartPosition.x){
 							if(currentDir == RIGHT){
-								movementSpeed = speed * 1.5f;
+								movementSpeed = speed * 1.85f;
 							}
 							swipeDirectionValue.x = RIGHT;
 						}
@@ -90,7 +90,7 @@ public class PlayerMovement : Movement {
 	}
 
 	void StopTouch(){
-		if(tiltValue.x < 1 && tiltValue.y < 1){
+		if(tiltValue.x < 30 && tiltValue.y < 30){
 			if(!anim.GetCurrentAnimatorStateInfo(0).IsTag("Interacting")){
 				Stop();
 				controlling = false;
